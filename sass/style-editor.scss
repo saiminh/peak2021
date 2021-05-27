@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "Lazzer";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./fonts/Lazzer-SemiBold.woff2") format("woff2"),
+       url("./fonts/Lazzer-SemiBold.woff") format("woff");
+}
+@font-face {
+  font-family: "Lazzer";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/Lazzer-Bold.woff2") format("woff2"),
+       url("./fonts/Lazzer-Bold.woff") format("woff");
+}
+
+@import "variables";
+@import "base";
+@import "components/buttons";
+@import "components/cards";
+
+.wp-block-quote.teammember-full-content-quote {
+  border-left: none;
+}
+
+b,
+strong {
+  font-weight: 700;
+}

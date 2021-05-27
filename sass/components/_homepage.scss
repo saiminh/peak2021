@@ -1,0 +1,214 @@
+body.home .site-footer{
+  display: none;
+}
+body.home .main-navigation {
+  position: absolute;
+  right: 1rem;
+}
+body.home .peak-branding {
+  transform-origin: 0 0;
+  transform: scale(1);
+  transition: all .3s ease-in-out;
+}
+// body.home #masthead {
+//   width: auto;
+// }
+body.home .peak-branding path {
+  // fill: #000000;
+  transition: all .3s ease-in-out;
+}
+body.home.currentSegment_home-copy-segment-our-team,
+body.home.currentSegment_home-copy-segment-our-founders,
+body.home.currentSegment_home-copy-segment-our-focus,
+body.home.currentSegment_home-copy-segment-contact,
+body.home.currentSegment_home-copy-segment-content,
+body.home.currentSegment_home-copy-segment-staytuned {
+  & .peak-branding {
+    // transform: scale(.75);
+    @include for-tablet-landscape-up {
+      transform: none;
+    }
+  }
+  & .peak-branding path {
+    fill: #FFFFFF;
+    @include for-tablet-landscape-up {
+      fill: #000000;
+    }
+  }
+}
+
+
+.home-segment-nav {
+  display: none;
+  @include for-tablet-landscape-up {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(-1em, -50%);
+    z-index: 1000;
+  }
+}
+.home-segment-nav-link {
+  position: relative;
+  width: 1em;
+  height: 1em;
+  overflow: hidden;
+  text-indent: -2em;
+  margin: .5em 0;
+  &:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform-origin: 50% 50%;
+    transform: translate(-50%, -50%) scale(.5);
+    transition: transform .1s ease-in-out;
+    background-color: $color-font;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+  }
+  &:hover:after {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+.home-segment-nav-link.active:after {
+  transform: translate(-50%, -50%) scale(1);
+}
+.home-copy {
+  scroll-behavior: smooth;
+  --webkit-scroll-behavior: smooth;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  overflow-y: scroll;
+  position: relative;
+  scroll-snap-type: y mandatory;
+  @include for-tablet-landscape-up {
+  }
+}
+.home-copy-segment {
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 20vh;
+  scroll-snap-align: start;
+  scroll-behavior: smooth;
+  --webkit-scroll-behavior: smooth;
+  background-color: $color-font;
+  color: $color-bg;
+  position: relative;
+  @include for-tablet-landscape-up {
+    margin-left: 50%;
+  }
+}
+.home-copy-segment > * {
+  position: relative;
+  z-index: 1;
+}
+.home-copy-segment-title {
+  margin: 0 1em .5em 1em;
+  text-align: center;
+  line-height: 1;
+  letter-spacing: 0.015em;
+  @include for-tablet-landscape-up {
+    font-size: 3.5vw;
+  }
+}
+.home-copy-segment .wp-block-buttons{
+  margin-top: 3em;
+  z-index: 2;
+}
+.home-copy-segment > canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  // width: 100%;
+  // height: 100%;
+  z-index: 1;
+}
+.home-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  scroll-snap-align: start;
+  padding: 1em;
+  margin-left: 0;
+  gap: 2em;
+  z-index: 2;
+  background-color: $color-bg;
+  color: $color-font;
+  @include for-tablet-landscape-up {
+    min-height: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 50%; 
+  }
+}
+.home-image .post-thumbnail {
+  width: 80vw;
+  height: 80vw;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 50%;
+  @include for-tablet-landscape-up {
+    width: 41vw;
+    height: 41vw;
+  }
+}
+.home-image .post-thumbnail img {
+  margin: auto;
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  transform-origin: 50% 50%;
+  transition: transform 3s ease-in-out;
+  &:hover {
+    transform: scale(1.1) rotate(-2deg);
+  }
+}
+.home-image-contact-details {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+#home-copy-segment-staytuned {
+  padding-bottom: 0;
+}
+#home-copy-segment-staytuned p {
+  text-align: center;
+  font-size: 6vw;
+  letter-spacing: 0.015em;
+  font-weight: 600;
+  margin: 0 auto 1em auto;
+  max-width: calc(100% - 4em);
+  line-height: 1;
+  @include for-tablet-landscape-up {
+    font-size: 2.25vw;
+  }
+}
+.home-copy-segment a {
+  color: $color-bg;
+  text-decoration: none;
+}
+// Logo intro animation
+.logo-clone {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 400px;
+  width: 400px;
+  z-index: 1000;
+  & svg {
+    width: 100%;
+    height: 100%;
+  }
+}

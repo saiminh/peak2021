@@ -1,0 +1,36 @@
+.site-footer {
+  font-size: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4rem 1rem 5rem 1rem;
+  background-image: url('./img/footer-bg-mobile.svg');
+  background-size: 100% auto;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  @include for-tablet-landscape-up {
+    padding-bottom: 7rem;
+    background-image: url('./img/footer-bg-desktop.svg');
+  }
+}
+.site-footer a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.site-footer > div {
+  flex-basis: 50%;
+  flex-shrink: 0;
+  @include for-tablet-landscape-up {
+    flex-basis: 25%;
+  }
+}
+.site-footer-menu {
+  display: none;
+  @include for-tablet-landscape-up {
+    display: block;
+  }
+}
+.site-footer-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

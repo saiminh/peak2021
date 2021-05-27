@@ -1,0 +1,28 @@
+$color-font: #000000;
+$color-bg: #FFFFFF;
+$color-pink: #FF00FF;
+$color-green: #31FF3F;
+$color-cyan: #00FFFF;
+$color-blue: #000EDC;
+$color-yellow: #FFC600;
+$color-red: #F91C0E;
+:root {
+  --color-font: $color-font;
+  --color-bg: $color-bg;
+}
+
+@mixin for-phone-only {
+  @media (max-width: 599px) { @content; }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) { @content; }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) { @content; }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) { @content; }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) { @content; }
+}
