@@ -1,7 +1,7 @@
-.testimonial-carousel {
+.slider {
   margin: 5rem 0;
 }
-.testimonial-carousel > .wp-block-group__inner-container {
+.slider > .wp-block-group__inner-container {
   display: flex;
   gap: 1rem;
   overflow-x: scroll;
@@ -16,17 +16,18 @@
     display: none;
   }
 }
-.testimonial-carousel-item {
-  flex-basis: 50%;
+.slide {
+  flex-basis: 100%;
   flex-shrink: 0;
   scroll-snap-align: center;
   align-self: stretch;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   display: flex;
   flex-direction: column;
   overflow: visible;
-}
-.testimonial-carousel-item:first-child {
-  margin-left: 25%;
+  @include for-tablet-landscape-up {
+    flex-basis: 50%;
+    padding: 0 2rem;
+  }
 }

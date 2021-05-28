@@ -39,9 +39,7 @@
       Amsterdam
     </div>
     <div class="site-footer-social">
-        <p>
-          Follow Peak on:
-        </p>
+          Follow Peak on: <br>
         <a href="https://www.linkedin.com/company/peak-capital" target="_blank">
           <?php get_template_part( 'inc/inline', 'footer-social-icons-linkedin.svg' ); ?>
         </a>

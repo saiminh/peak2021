@@ -326,16 +326,18 @@ function display_teammembers() {
             <div class="card-preview-image">';
               the_post_thumbnail( 'full' );
             echo '</div>
-            <h3 class="card-preview-title">';
-            print the_title(); 
-            echo '</h3>
-            <div class="card-preview-subtitle">';
-              the_content('', true); 
-            echo '</div> 
-              <svg class="ui-plus" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <line x1="25" x2="25" y2="48" stroke="black" stroke-width="2"/>
-                <line y1="23" x2="48" y2="23" stroke="black" stroke-width="2"/>
-              </svg>
+            <div class="card-preview-text">
+              <h3 class="card-preview-title">';
+                print the_title(); 
+              echo '</h3>
+              <div class="card-preview-subtitle">';
+                the_content('', true); 
+              echo '</div> 
+                <svg class="ui-plus" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="25" x2="25" y2="48" stroke="black" stroke-width="2"/>
+                  <line y1="23" x2="48" y2="23" stroke="black" stroke-width="2"/>
+                </svg>
+              </div>
             </div>';
           $more = 1;
           echo '<div class="card-full">';
@@ -344,7 +346,9 @@ function display_teammembers() {
               the_post_thumbnail( 'full' );
             echo '</div>
               <div class="card-full-content">
-                <h1 class="card-full-content-title"><?php the_title(); ?></h1>';
+                <h1 class="card-full-content-title">';
+                  the_title(); 
+                echo '</h1>';
                   the_content();
               echo '<button class="cards-nav-close"></button>
               <button class="cards-nav-next"></button>
@@ -353,7 +357,6 @@ function display_teammembers() {
           </div>
         </div>';
       }
-      //endwhile;
       wp_reset_postdata(); 
   echo '</div>';
 }
@@ -363,3 +366,11 @@ function outputbuffer_teammembers(){
     return ob_get_clean();  // capture and return the buffer
 }
 add_shortcode( 'teammembers', 'outputbuffer_teammembers' ); 
+
+
+function wp_maintenance_mode() {
+  if (!current_user_can('edit_themes') || !is_user_logged_in()) {
+    wp_die('<h1>Not ready yet!</h1><br />We are still working on our new web presence. Please check back later.');
+  }
+}
+add_action('get_header', 'wp_maintenance_mode');

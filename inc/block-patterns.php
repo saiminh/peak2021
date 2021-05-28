@@ -56,11 +56,11 @@ if ( function_exists( 'register_block_pattern' ) ) {
           <!-- /wp:heading -->
 
           <!-- wp:image {"id":66,"sizeSlug":"full","linkDestination":"none","className":"card-full-content-coin"} -->
-          <figure class="wp-block-image size-full card-full-content-coin"><img src="http://peakdev.local/wp-content/uploads/2021/05/coin-dyme.svg" alt="" class="wp-image-66"/></figure>
+          <figure class="wp-block-image size-full card-full-content-coin"><img src="' . esc_url( get_template_directory_uri() ) . '/assets/images/roses-tremieres-hollyhocks-1884.jpg" src="' . esc_url( get_template_directory_uri() ) . '/coin-dyme.svg" alt="" class="wp-image-66"/></figure>
           <!-- /wp:image -->
 
           <!-- wp:image {"id":65,"sizeSlug":"large","linkDestination":"none","className":"card-full-content-coin"} -->
-          <figure class="wp-block-image size-large card-full-content-coin"><img src="http://peakdev.local/wp-content/uploads/2021/05/coin-studocu-1.svg" alt="" class="wp-image-65"/></figure>
+          <figure class="wp-block-image size-large card-full-content-coin"><img src="' . esc_url( get_template_directory_uri() ) . '/coin-studocu.svg" alt="" class="wp-image-65"/></figure>
           <!-- /wp:image --></div>
           <!-- /wp:column -->
 
@@ -70,11 +70,11 @@ if ( function_exists( 'register_block_pattern' ) ) {
           <!-- /wp:heading -->
 
           <!-- wp:image {"id":63,"sizeSlug":"large","linkDestination":"custom","className":"card-full-content-coin"} -->
-          <figure class="wp-block-image size-large card-full-content-coin"><a href="https://twitter.com"><img src="http://peakdev.local/wp-content/uploads/2021/05/icon-twitter.svg" alt="" class="wp-image-63"/></a></figure>
+          <figure class="wp-block-image size-large card-full-content-coin"><a href="https://twitter.com"><img src="' . esc_url( get_template_directory_uri() ) . '/icon-twitter.svg" alt="" class="wp-image-63"/></a></figure>
           <!-- /wp:image -->
 
           <!-- wp:image {"id":61,"sizeSlug":"large","linkDestination":"custom","className":"card-full-content-coin"} -->
-          <figure class="wp-block-image size-large card-full-content-coin"><a href="https://linkedin.com"><img src="http://peakdev.local/wp-content/uploads/2021/05/icon-linkedin.svg" alt="" class="wp-image-61"/></a></figure>
+          <figure class="wp-block-image size-large card-full-content-coin"><a href="https://linkedin.com"><img src="' . esc_url( get_template_directory_uri() ) . '/icon-linkedin.svg" alt="" class="wp-image-61"/></a></figure>
           <!-- /wp:image --></div>
           <!-- /wp:column --></div>
           <!-- /wp:columns --></div></div>
@@ -90,34 +90,35 @@ if ( function_exists( 'register_block_pattern' ) ) {
       'categories'    => array( 'peak2021' ),
       'viewportWidth' => 1440,
       'content'       => '
-        <!-- wp:group {"className":"testimonial-carousel"} -->
-        <div class="wp-block-group testimonial-carousel"><div class="wp-block-group__inner-container"><!-- wp:group {"className":"testimonial-carousel-item"} -->
-        <div class="wp-block-group testimonial-carousel-item"><div class="wp-block-group__inner-container"><!-- wp:heading {"textAlign":"center","level":3,"className":"testimonial-carousel-quote"} -->
+        <!-- wp:group {"className":"testimonial-carousel slider"} -->
+        <div class="wp-block-group testimonial-carousel slider"><div class="wp-block-group__inner-container">
+        <!-- wp:group {"className":"testimonial-carousel-slide slide"} -->
+        <div class="wp-block-group testimonial-carousel-slide slide"><div class="wp-block-group__inner-container"><!-- wp:heading {"textAlign":"center","level":3,"className":"testimonial-carousel-quote"} -->
         <h3 class="has-text-align-center testimonial-carousel-quote">Peak Capital is very hands on and reliable, with a strong network of LP\'s. The partners invest a lot of their time to help us grow and are available when we need them.</h3>
         <!-- /wp:heading -->
 
-        <!-- wp:image {"align":"center","id":65,"width":80,"height":80,"sizeSlug":"large","linkDestination":"none","className":"testimonial-carousel-coin"} -->
-        <div class="wp-block-image testimonial-carousel-coin"><figure class="aligncenter size-large is-resized"><img src="http://peakdev.local/wp-content/uploads/2021/05/coin-studocu-1.svg" alt="" class="wp-image-65" width="80" height="80"/></figure></div>
+        <!-- wp:image {"align":"center","width":80,"height":80,"sizeSlug":"large","linkDestination":"none","className":"testimonial-carousel-coin"} -->
+        <div class="wp-block-image testimonial-carousel-coin"><figure class="aligncenter size-large is-resized"><img src="' . esc_url( get_template_directory_uri() ) . '/img/coin-studocu.svg" alt="" width="80" height="80"/></figure></div>
         <!-- /wp:image --></div></div>
         <!-- /wp:group -->
 
-        <!-- wp:group {"className":"testimonial-carousel-item"} -->
-        <div class="wp-block-group testimonial-carousel-item"><div class="wp-block-group__inner-container"><!-- wp:heading {"textAlign":"center","level":3,"className":"testimonial-carousel-quote"} -->
+        <!-- wp:group {"className":"testimonial-carousel-slide slide"} -->
+        <div class="wp-block-group testimonial-carousel-slide slide"><div class="wp-block-group__inner-container"><!-- wp:heading {"textAlign":"center","level":3,"className":"testimonial-carousel-quote"} -->
         <h3 class="has-text-align-center testimonial-carousel-quote">Very involved, analytical and cooperative VC. Great guidance and always a pleasure to work with. Thanks Team Peak.</h3>
         <!-- /wp:heading -->
 
-        <!-- wp:image {"align":"center","id":66,"width":80,"height":80,"sizeSlug":"full","linkDestination":"none","className":"testimonial-carousel-coin"} -->
-        <div class="wp-block-image testimonial-carousel-coin"><figure class="aligncenter size-full is-resized"><img src="http://peakdev.local/wp-content/uploads/2021/05/coin-dyme.svg" alt="" class="wp-image-66" width="80" height="80"/></figure></div>
+        <!-- wp:image {"align":"center","width":80,"height":80,"sizeSlug":"full","linkDestination":"none","className":"testimonial-carousel-coin"} -->
+        <div class="wp-block-image testimonial-carousel-coin"><figure class="aligncenter size-full is-resized"><img src="' . esc_url( get_template_directory_uri() ) . '/img/coin-dyme.svg" alt="" width="80" height="80"/></figure></div>
         <!-- /wp:image --></div></div>
         <!-- /wp:group -->
 
-        <!-- wp:group {"className":"testimonial-carousel-item"} -->
-        <div class="wp-block-group testimonial-carousel-item"><div class="wp-block-group__inner-container"><!-- wp:heading {"textAlign":"center","level":3,"className":"testimonial-carousel-quote"} -->
+        <!-- wp:group {"className":"testimonial-carousel-slide slide"} -->
+        <div class="wp-block-group testimonial-carousel-slide slide"><div class="wp-block-group__inner-container"><!-- wp:heading {"textAlign":"center","level":3,"className":"testimonial-carousel-quote"} -->
         <h3 class="has-text-align-center testimonial-carousel-quote">From the first contact, the closing and the official collaboration, Peak is a great partner They have the knowledge and resources guide the growth phase, without losing sight of the culture</h3>
         <!-- /wp:heading -->
 
-        <!-- wp:image {"align":"center","id":65,"width":80,"height":80,"sizeSlug":"large","linkDestination":"none","className":"testimonial-carousel-coin"} -->
-        <div class="wp-block-image testimonial-carousel-coin"><figure class="aligncenter size-large is-resized"><img src="http://peakdev.local/wp-content/uploads/2021/05/coin-studocu-1.svg" alt="" class="wp-image-65" width="80" height="80"/></figure></div>
+        <!-- wp:image {"align":"center","width":80,"height":80,"sizeSlug":"large","linkDestination":"none","className":"testimonial-carousel-coin"} -->
+        <div class="wp-block-image testimonial-carousel-coin"><figure class="aligncenter size-large is-resized"><img src="' . esc_url( get_template_directory_uri() ) . '/img/coin-studocu.svg" alt="" width="80" height="80"/></figure></div>
         <!-- /wp:image --></div></div>
         <!-- /wp:group --></div></div>
         <!-- /wp:group -->
