@@ -3,7 +3,7 @@ function slider(indent = false){
     let slider = document.querySelector( '.slider .wp-block-group__inner-container' );
     let sliderScrollWidth = slider.scrollWidth;
     let sliderSlides = slider.querySelectorAll('.slide');
-    if (indent && ){
+    if (indent){
       slider.scrollTo( sliderScrollWidth / sliderSlides.length, 0, 'smooth' );
     }
   }

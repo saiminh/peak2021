@@ -56,9 +56,10 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /*!**************************!*\
   !*** ./js/src/slider.js ***!
   \**************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("throw new Error(\"Module parse failed: Unexpected token (6:18)\\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\\n|     let sliderScrollWidth = slider.scrollWidth;\\n|     let sliderSlides = slider.querySelectorAll('.slide');\\n>     if (indent && ){\\n|       slider.scrollTo( sliderScrollWidth / sliderSlides.length, 0, 'smooth' );\\n|     }\");\n\n//# sourceURL=webpack://peak2021/./js/src/slider.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"slider\": () => (/* binding */ slider)\n/* harmony export */ });\nfunction slider(indent = false){\n  if ( document.querySelector( '.slider' ) ){\n    let slider = document.querySelector( '.slider .wp-block-group__inner-container' );\n    let sliderScrollWidth = slider.scrollWidth;\n    let sliderSlides = slider.querySelectorAll('.slide');\n    if (indent){\n      slider.scrollTo( sliderScrollWidth / sliderSlides.length, 0, 'smooth' );\n    }\n  }\n}\n\n\n//# sourceURL=webpack://peak2021/./js/src/slider.js?");
 
 /***/ }),
 
