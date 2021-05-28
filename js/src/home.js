@@ -160,6 +160,7 @@ function homepage(){
   createEmptySegment(hero);
 
   let path = window.location.href;
+  console.log( "This is the Path that's not picked up:" + path );
 
   createCoinSegment(ourTeam, [
     {
