@@ -140,7 +140,7 @@ add_action( 'widgets_init', 'peak2021_widgets_init' );
  * Enqueue scripts and styles.
  */
 function peak2021_scripts() {
-	wp_enqueue_style( 'peak2021-style', get_template_directory_uri() . '/style.min.css', array(), _S_VERSION );
+	wp_enqueue_style( 'peak2021-style', get_template_directory_uri() . '/style.min.css', array(), null );
 	wp_style_add_data( 'peak2021-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'peak2021-main', get_template_directory_uri() . '/js/main.js', array(), null, true );
@@ -374,3 +374,11 @@ function wp_maintenance_mode() {
   }
 }
 add_action('get_header', 'wp_maintenance_mode');
+
+function the_global_var( $variable ) {
+  if ( $variable == 'email' ) {
+    echo 'opportunity@peak.capital';
+  } else {
+    echo 'not found';
+  }
+}

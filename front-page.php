@@ -38,7 +38,7 @@ get_header();
         </div>
         <div class="wp-block-buttons is-content-justification-center">
           <div class="wp-block-button is-style-fill">
-            <a href="./our-team" class="wp-block-button__link">Our Team...</a>
+            <a href="<?php echo get_home_url() ?>/team" class="wp-block-button__link">Our Team...</a>
           </div>
         </div>
       </div>
@@ -60,7 +60,7 @@ get_header();
         </h1>
         <div class="wp-block-buttons is-content-justification-center">
           <div class="wp-block-button is-style-fill">
-            <a href="#" class="wp-block-button__link">Our Focus...</a>
+            <a href="<?php echo get_home_url() ?>/focus" class="wp-block-button__link">Our Focus...</a>
           </div>
         </div>
       </div>
@@ -73,7 +73,7 @@ get_header();
         </h1>
         <div class="wp-block-buttons is-content-justification-center">
           <div class="wp-block-button is-style-fill">
-            <a href="#" class="wp-block-button__link">Contact Us...</a>
+            <a href="mailto: <?php the_global_var('email'); ?>" class="wp-block-button__link">Contact Us...</a>
           </div>
         </div>
       </div>
