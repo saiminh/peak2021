@@ -159,76 +159,78 @@ function homepage(){
 
   createEmptySegment(hero);
 
+  let path = window.location.href;
+
   createCoinSegment(ourTeam, [
     {
-      file: 'wp-content/themes/peak2021/img/home-sprites/ourteam01-220.png', 
+      file: path+'wp-content/themes/peak2021/img/home-sprites/ourteam01-220.png', 
       radius: 110
     },
     {
-      file: 'wp-content/themes/peak2021/img/home-sprites/ourteam02-220.png', 
+      file: path+'wp-content/themes/peak2021/img/home-sprites/ourteam02-220.png', 
       radius: 110
     },
     {
-      file: 'wp-content/themes/peak2021/img/home-sprites/ourteam03-220.png', 
+      file: path+'wp-content/themes/peak2021/img/home-sprites/ourteam03-220.png', 
       radius: 110
     },
     {
-      file: 'wp-content/themes/peak2021/img/home-sprites/ourteam04-160.png', 
+      file: path+'wp-content/themes/peak2021/img/home-sprites/ourteam04-160.png', 
       radius: 80
     },
     {
-      file: 'wp-content/themes/peak2021/img/home-sprites/ourteam04-160.png', 
+      file: path+'wp-content/themes/peak2021/img/home-sprites/ourteam04-160.png', 
       radius: 80
     },
     {
-      file: 'wp-content/themes/peak2021/img/home-sprites/ourteam04-160.png', 
+      file: path+'wp-content/themes/peak2021/img/home-sprites/ourteam04-160.png', 
       radius: 80
     }
   ]);
 
   createCoinSegment(ourFounders, [
     {
-      file: 'wp-content/themes/peak2021/img/home-sprites/ourfounders-Catawiki-220.png', 
+      file: path+'wp-content/themes/peak2021/img/home-sprites/ourfounders-Catawiki-220.png', 
       radius: 110,
       imgSizeFactor: 0.5
     },
     {
-      file: 'wp-content/themes/peak2021/img/home-sprites/ourfounders-Channale-160.png', 
+      file: path+'wp-content/themes/peak2021/img/home-sprites/ourfounders-Channale-160.png', 
       radius: 80,
       imgSizeFactor: 0.5
     },
     {
-      file: 'wp-content/themes/peak2021/img/home-sprites/ourfounders-GraphCMS-220.png', 
+      file: path+'wp-content/themes/peak2021/img/home-sprites/ourfounders-GraphCMS-220.png', 
       radius: 110,
       imgSizeFactor: 0.5
     },
     {
-      file: 'wp-content/themes/peak2021/img/home-sprites/ourfounders-HelloCustomer-160.png', 
+      file: path+'wp-content/themes/peak2021/img/home-sprites/ourfounders-HelloCustomer-160.png', 
       radius: 80,
       imgSizeFactor: 0.5
     },
     {
-      file: 'wp-content/themes/peak2021/img/home-sprites/ourfounders-MediaDistillery-220.png', 
+      file: path+'wp-content/themes/peak2021/img/home-sprites/ourfounders-MediaDistillery-220.png', 
       radius: 110,
       imgSizeFactor: 0.5
     },
     {
-      file: 'wp-content/themes/peak2021/img/home-sprites/ourfounders-OpenSocial-160.png', 
+      file: path+'wp-content/themes/peak2021/img/home-sprites/ourfounders-OpenSocial-160.png', 
       radius: 80,
       imgSizeFactor: 0.5
     },
     {
-      file: 'wp-content/themes/peak2021/img/home-sprites/ourfounders-Stack-220.png', 
+      file: path+'wp-content/themes/peak2021/img/home-sprites/ourfounders-Stack-220.png', 
       radius: 110,
       imgSizeFactor: 0.5
     },
     {
-      file: 'wp-content/themes/peak2021/img/home-sprites/ourfounders-StuDocu-160.png', 
+      file: path+'wp-content/themes/peak2021/img/home-sprites/ourfounders-StuDocu-160.png', 
       radius: 80,
       imgSizeFactor: 0.5
     },
     {
-      file: 'wp-content/themes/peak2021/img/home-sprites/ourfounders-Trengo-220.png', 
+      file: path+'wp-content/themes/peak2021/img/home-sprites/ourfounders-Trengo-220.png', 
       radius: 110,
       imgSizeFactor: 0.5,
       scaleFactor: 0.75
@@ -237,91 +239,91 @@ function homepage(){
 
   createCoinSegment(ourFocus, [
     {
-      file: 'wp-content/themes/peak2021/img/home-sprites/ourfocus01-160.png', 
+      file: path+'wp-content/themes/peak2021/img/home-sprites/ourfocus01-160.png', 
       radius: 80,
       imgSizeFactor: 0.5
     },
     {
-      file: 'wp-content/themes/peak2021/img/home-sprites/ourfocus02-160.png', 
+      file: path+'wp-content/themes/peak2021/img/home-sprites/ourfocus02-160.png', 
       radius: 80,
       imgSizeFactor: 0.5
     },
     {
-      file: 'wp-content/themes/peak2021/img/home-sprites/ourfocus03-220.png', 
+      file: path+'wp-content/themes/peak2021/img/home-sprites/ourfocus03-220.png', 
       radius: 110,
       imgSizeFactor: 0.5
     },
     {
-      file: 'wp-content/themes/peak2021/img/home-sprites/ourfocus04-220.png', 
+      file: path+'wp-content/themes/peak2021/img/home-sprites/ourfocus04-220.png', 
       radius: 110,
       imgSizeFactor: 0.5
     },
     {
-      file: 'wp-content/themes/peak2021/img/home-sprites/ourfocus05-220.png', 
+      file: path+'wp-content/themes/peak2021/img/home-sprites/ourfocus05-220.png', 
       radius: 110,
       imgSizeFactor: 0.5
     },
     {
-      file: 'wp-content/themes/peak2021/img/home-sprites/ourfocus06-220.png', 
+      file: path+'wp-content/themes/peak2021/img/home-sprites/ourfocus06-220.png', 
       radius: 110,
       imgSizeFactor: 0.5
     }
   ]);
   createCoinSegment(contact, [
     {
-      file: 'wp-content/themes/peak2021/img/home-sprites/contactus-01-220.png', 
+      file: path+'wp-content/themes/peak2021/img/home-sprites/contactus-01-220.png', 
       radius: 110,
       imgSizeFactor: 0.5,
     },
     {
-      file: 'wp-content/themes/peak2021/img/home-sprites/contactus-02-160.png', 
+      file: path+'wp-content/themes/peak2021/img/home-sprites/contactus-02-160.png', 
       radius: 80,
       imgSizeFactor: 0.5,
     },
     {
-      file: 'wp-content/themes/peak2021/img/home-sprites/contactus-03-220.png', 
+      file: path+'wp-content/themes/peak2021/img/home-sprites/contactus-03-220.png', 
       radius: 110,
       imgSizeFactor: 0.5,
     },
     {
-      file: 'wp-content/themes/peak2021/img/home-sprites/contactus-04-160.png', 
+      file: path+'wp-content/themes/peak2021/img/home-sprites/contactus-04-160.png', 
       radius: 80,
       imgSizeFactor: 0.5,
     },
     {
-      file: 'wp-content/themes/peak2021/img/home-sprites/contactus-05-220.png', 
+      file: path+'wp-content/themes/peak2021/img/home-sprites/contactus-05-220.png', 
       radius: 110,
       imgSizeFactor: 0.5,
     }
   ]);
   createCoinSegment(content, [
     {
-      file: 'wp-content/themes/peak2021/img/home-sprites/content01-220.png', 
+      file: path+'wp-content/themes/peak2021/img/home-sprites/content01-220.png', 
       radius: 110,
       imgSizeFactor: 0.5
     },
     {
-      file: 'wp-content/themes/peak2021/img/home-sprites/content02-220.png', 
+      file: path+'wp-content/themes/peak2021/img/home-sprites/content02-220.png', 
       radius: 110,
       imgSizeFactor: 0.5
     },
     {
-      file: 'wp-content/themes/peak2021/img/home-sprites/content03-220.png', 
+      file: path+'wp-content/themes/peak2021/img/home-sprites/content03-220.png', 
       radius: 110,
       imgSizeFactor: 0.5
     },
     {
-      file: 'wp-content/themes/peak2021/img/home-sprites/content04-160.png', 
+      file: path+'wp-content/themes/peak2021/img/home-sprites/content04-160.png', 
       radius: 80,
       imgSizeFactor: 0.5
     },
     {
-      file: 'wp-content/themes/peak2021/img/home-sprites/content05-160.png', 
+      file: path+'wp-content/themes/peak2021/img/home-sprites/content05-160.png', 
       radius: 80,
       imgSizeFactor: 0.5
     },
     {
-      file: 'wp-content/themes/peak2021/img/home-sprites/content06-220.png', 
+      file: path+'wp-content/themes/peak2021/img/home-sprites/content06-220.png', 
       radius: 110,
       imgSizeFactor: 0.5
     }
