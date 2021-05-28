@@ -18,6 +18,7 @@ function homepage(){
     document.documentElement.style.setProperty('--vh', `${vh}px`);
   });
 
+  const path = "https://peak.capital/peak2021/";
   const body = document.querySelector('body');
   const hero = document.querySelector('.home-image');
   const ourTeam = document.getElementById('home-copy-segment-our-team');
@@ -158,9 +159,6 @@ function homepage(){
   };
 
   createEmptySegment(hero);
-
-  let path = window.location.href;
-  console.log( "This is the Path that's not picked up:" + path );
 
   createCoinSegment(ourTeam, [
     {
