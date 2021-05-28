@@ -143,7 +143,7 @@ function peak2021_scripts() {
 	wp_enqueue_style( 'peak2021-style', get_template_directory_uri() . '/style.min.css', array(), _S_VERSION );
 	wp_style_add_data( 'peak2021-style', 'rtl', 'replace' );
 
-	wp_enqueue_script( 'peak2021-main', get_template_directory_uri() . '/js/main.js', array(), '2020', true );
+	wp_enqueue_script( 'peak2021-main', get_template_directory_uri() . '/js/main.js', array(), true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
