@@ -38,7 +38,7 @@ get_header();
         </div>
         <div class="wp-block-buttons is-content-justification-center">
           <div class="wp-block-button is-style-fill">
-            <a href="/our-team" class="wp-block-button__link">Our Team...</a>
+            <a href="./our-team" class="wp-block-button__link">Our Team...</a>
           </div>
         </div>
       </div>
@@ -46,7 +46,7 @@ get_header();
         <h1 class="home-copy-segment-title">We dare Europe’s extraordinary founders to realise their visions quicker.</h1>
         <div class="wp-block-buttons is-content-justification-center">
           <div class="wp-block-button is-style-fill">
-            <a href="#" class="wp-block-button__link">Our Founders...</a>
+            <a href="<?php echo get_home_url() ?>/founders" class="wp-block-button__link">Our Founders...</a>
           </div>
         </div>
       </div>
