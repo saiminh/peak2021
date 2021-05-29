@@ -218,10 +218,10 @@ function create_posttype() {
       'public' => true,
       'show_ui' => true,
       'show_in_rest' => true,
-      'has_archive' => 'founders',
+      'has_archive' => 'founders-archive',
     //'rewrite' => array('slug' => 'founders/%exercisetypes%', 'with_front' => false),
       'taxonomies' => array('businessmodel', 'founders-tag'),
-      'supports' => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', 'permalinks', 'featured_image' ),
+      'supports' => array( 'title', 'editor', 'excerpt', 'custom-fields', 'permalinks', 'featured_image' ),
     )
   );
   flush_rewrite_rules(); 
@@ -265,42 +265,42 @@ function create_exercisetypes_hierarchical_taxonomy() {
 /**
  * Add Tags to Exercises
  */
-add_action( 'init', 'create_tag_taxonomies_for_founders', 0 );
-//create two taxonomies, genres and tags for the post type "tag"
-function create_tag_taxonomies_for_founders() 
-{
-  // Add new taxonomy, NOT hierarchical (like tags)
-  $labels = array(
-    'name' => _x( 'Tags', 'taxonomy general name' ),
-    'singular_name' => _x( 'Tag', 'taxonomy singular name' ),
-    'search_items' =>  __( 'Search Tags' ),
-    'popular_items' => __( 'Popular Tags' ),
-    'all_items' => __( 'All Tags' ),
-    'parent_item' => null,
-    'parent_item_colon' => null,
-    'edit_item' => __( 'Edit Tag' ), 
-    'update_item' => __( 'Update Tag' ),
-    'add_new_item' => __( 'Add New Tag' ),
-    'new_item_name' => __( 'New Tag Name' ),
-    'separate_items_with_commas' => __( 'Separate tags with commas' ),
-    'add_or_remove_items' => __( 'Add or remove tags' ),
-    'choose_from_most_used' => __( 'Choose from the most used tags' ),
-    'menu_name' => __( 'Tags' )
-  ); 
+// add_action( 'init', 'create_tag_taxonomies_for_founders', 0 );
+// //create two taxonomies, genres and tags for the post type "tag"
+// function create_tag_taxonomies_for_founders() 
+// {
+//   // Add new taxonomy, NOT hierarchical (like tags)
+//   $labels = array(
+//     'name' => _x( 'Tags', 'taxonomy general name' ),
+//     'singular_name' => _x( 'Tag', 'taxonomy singular name' ),
+//     'search_items' =>  __( 'Search Tags' ),
+//     'popular_items' => __( 'Popular Tags' ),
+//     'all_items' => __( 'All Tags' ),
+//     'parent_item' => null,
+//     'parent_item_colon' => null,
+//     'edit_item' => __( 'Edit Tag' ), 
+//     'update_item' => __( 'Update Tag' ),
+//     'add_new_item' => __( 'Add New Tag' ),
+//     'new_item_name' => __( 'New Tag Name' ),
+//     'separate_items_with_commas' => __( 'Separate tags with commas' ),
+//     'add_or_remove_items' => __( 'Add or remove tags' ),
+//     'choose_from_most_used' => __( 'Choose from the most used tags' ),
+//     'menu_name' => __( 'Tags' )
+//   ); 
 
-  register_taxonomy('founders-tag','founders',array(
-    'hierarchical' => false,
-    'labels' => $labels,
-    'show_ui' => true,
-    'update_count_callback' => '_update_post_term_count',
-    'query_var' => true,
-  'rewrite' => array( 'slug' => 'founders-tag' ),
-  'public' => true,
-  'has_archive' => true,
-  'show_in_rest' => true
-  ));
-  flush_rewrite_rules(); 
-}
+//   register_taxonomy('founders-tag','founders',array(
+//     'hierarchical' => false,
+//     'labels' => $labels,
+//     'show_ui' => true,
+//     'update_count_callback' => '_update_post_term_count',
+//     'query_var' => true,
+//   'rewrite' => array( 'slug' => 'founders-tag' ),
+//   'public' => true,
+//   'has_archive' => true,
+//   'show_in_rest' => true
+//   ));
+//   flush_rewrite_rules(); 
+// }
 
 // Block Patterns.
 require get_template_directory() . '/inc/block-patterns.php';
@@ -367,7 +367,9 @@ function outputbuffer_teammembers(){
 }
 add_shortcode( 'teammembers', 'outputbuffer_teammembers' ); 
 
-
+/*-------------------------------
+   Maintenance Mode
+-------------------------------*/
 function wp_maintenance_mode() {
   if (!current_user_can('edit_themes') || !is_user_logged_in()) {
     wp_die('<h1>Not ready yet!</h1><br />We are still working on our new web presence. Please check back later.');
@@ -375,10 +377,30 @@ function wp_maintenance_mode() {
 }
 add_action('get_header', 'wp_maintenance_mode');
 
+/*-------------------------------
+   Global Variable function 
+-------------------------------*/
 function the_global_var( $variable ) {
   if ( $variable == 'email' ) {
-    echo 'opportunity@peak.capital';
+    echo 'info@peak.capital';
   } else {
     echo 'not found';
+  }
+}
+
+/*-------------------------------
+   ACF images with responsive image
+-------------------------------*/
+function acf_image($image_id,$image_size,$max_width){
+
+  // check the image ID is not blank
+  if($image_id != '') {
+    // set the default src image size
+    $image_src = wp_get_attachment_image_url( $image_id, $image_size );
+    // set the srcset with various image sizes
+    $image_srcset = wp_get_attachment_image_srcset( $image_id, $image_size );
+    // generate the markup for the responsive image
+    echo 'src="'.$image_src.'" srcset="'.$image_srcset.'" sizes="(max-width: '.$max_width.') 100vw, '.$max_width.'"';
+
   }
 }

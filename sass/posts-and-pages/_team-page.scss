@@ -1,0 +1,6 @@
+.teammembers.cards {
+  @include for-tablet-landscape-up {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

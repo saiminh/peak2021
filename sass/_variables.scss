@@ -23,6 +23,9 @@ $color-red: #F91C0E;
 @mixin for-desktop-up {
   @media (min-width: 1200px) { @content; }
 }
+@mixin for-bigger-desktop-up {
+  @media (min-width: 1281px) { @content; }
+}
 @mixin for-big-desktop-up {
   @media (min-width: 1800px) { @content; }
 }

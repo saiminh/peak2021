@@ -1,9 +1,3 @@
-.cards {
-  @include for-tablet-landscape-up {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
 .card {
   margin-right: 1rem;
   margin-left: 1rem;
@@ -24,7 +18,6 @@
   line-height: 1;
   text-align: center;
   margin: 1rem auto .5em auto;
-  max-width: calc(100% - 2em);
 }
 .card-preview .card-subtitle,
 .card-preview-subtitle p {
@@ -33,7 +26,11 @@
   font-weight: 600;
   text-align: center;
   margin: 0 auto .75rem auto;
-  max-width: calc(100% - 2rem);
+  //max-width: calc(100% - 2rem);
+}
+.card-preview-meta {
+  text-align: center;
+  font-size: .75rem;
 }
 .card-preview .ui-plus {
   display: block;
@@ -111,8 +108,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 50%;
-    padding-right: 8.334%;
+    padding-left: calc(41.667% + 2rem);
+    padding-right: 10%;
     padding-bottom: calc(1rem + 50px); //accomodate the arrows
     padding-top: 2rem; //accomodate the arrows
   }
@@ -148,6 +145,16 @@
   display: inline-block;
   margin-right: .25rem;
   margin-top: 0;
+  width: 2rem;
+  height: 2rem;
+  & img, & svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.card-full-content-links p {
+  margin-bottom: 0;
 }
 // -------------------------
 // Navigation of Team members
@@ -191,6 +198,76 @@
   background-image: url('./img/ui-arrow-left.svg');
   @include for-tablet-landscape-up {
     bottom: 1rem;
-    left: 50%;
+    left: calc(41.667% + 2rem);
   }
+}
+// Founder specific cards
+.card-preview .founder-block {
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  padding-top: 100%;
+  position: relative;
+}
+.card-preview .founder-block .founder-coin,
+.card-preview .founder-block .founder-photograph {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  border-radius: 50%;
+  z-index: 1;
+  transform-origin: 50% 50%;
+  & img,
+  & svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+.card-preview .founder-block .founder-coin {
+  z-index: 2;
+}
+.card-full .founder-coin {
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  width: 33.33%;
+  height: auto;
+  top: 0;
+  right: 1rem;  
+  z-index: 2;
+  @include for-tablet-landscape-up {
+    width: 12.5%;
+    position: fixed;
+    right: calc(58.333%);
+  }
+}
+.card-full .founder-coin svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.card-full .founder-photograph {
+  border-radius: 50%;
+  overflow: hidden;
+  width: calc(100vw - 2rem);
+  height: calc(100vw - 2rem);
+  margin: 0 auto;
+  @include for-tablet-landscape-up {
+    width: calc(41.667vw - 6rem);
+    height: calc(41.667vw - 6rem);
+    position: fixed;
+    right: calc(58.333% + 3rem);
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.card-full .founder-photograph img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

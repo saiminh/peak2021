@@ -12,6 +12,12 @@ textarea {
   font-size: 20px;
   font-weight: 600;
   line-height: 1.5;
+  @include for-tablet-landscape-up {
+    font-size: 18px;
+  }
+  @include for-bigger-desktop-up {
+    font-size: 20px;
+  }
 }
 h1,
 h2,
@@ -26,16 +32,23 @@ h6 {
 h2 {
  font-size: 2rem;
  line-height: 1.2; 
- margin: 2em 1em;
- @include for-tablet-landscape-up {
-   margin: 2em auto;
-   max-width: 800px;
- }
 }
 p {
   margin-bottom: 1.5em;
 }
-
+.peak-headline.has-huge-font-size, 
+.peak-headline.has-larger-font-size {
+  font-size: 2rem;
+  @include for-tablet-landscape-up {
+    font-size: 3.25rem;
+  }
+}
+.peak-headline.has-large-font-size {
+  font-size: 1.25rem;
+  @include for-tablet-landscape-up {
+    font-size: 2rem;
+  }
+}
 dfn,
 cite,
 em,

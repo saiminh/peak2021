@@ -1,11 +1,12 @@
 /* Page Header */
 #masthead {
+  position: fixed;
+  top: 0;
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  position: fixed;
-  z-index: 3;
+  z-index: 5;
   padding: 1rem;
 }
 .peak-branding {

@@ -28,7 +28,7 @@ if ( function_exists( 'register_block_pattern' ) ) {
   register_block_pattern(
     'peak2021/team-member',
     array(
-      'title'         => esc_html__( 'Team member', 'peak2021' ),
+      'title'         => esc_html__( 'Peak Team member', 'peak2021' ),
       'categories'    => array( 'peak2021' ),
       'viewportWidth' => 1440,
       'content'       => '
@@ -82,11 +82,83 @@ if ( function_exists( 'register_block_pattern' ) ) {
     )
   );
 
+  // Founder content block
+  register_block_pattern(
+    'peak2021/founder',
+    array(
+      'title'         => esc_html__( 'Peak Founder', 'peak2021' ),
+      'categories'    => array( 'peak2021' ),
+      'viewportWidth' => 1440,
+      'content'       => '
+        <!-- wp:group -->
+        <div class="wp-block-group founder-block"><div class="wp-block-group__inner-container">
+        
+        <!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"founder-coin"} -->
+        <figure class="wp-block-image size-full founder-coin"><img src="http://peakdev.local/wp-content/uploads/2021/05/Frame-35.svg" alt=""/></figure>
+        <!-- /wp:image -->
+
+        <!-- wp:image {""sizeSlug":"full","linkDestination":"none","className":"founder-photograph"} -->
+        <figure class="wp-block-image size-full founder-photograph"><img src="http://peakdev.local/wp-content/uploads/2021/05/founderfoto.jpg" alt="founder photograph" /></figure>
+        <!-- /wp:image -->
+
+        <!-- wp:more -->
+        <!--more-->
+        <!-- /wp:more -->
+
+        <!-- wp:heading {"className":"card-full-content-title"} -->
+        <h2 class="card-full-content-title">Bram ten Hove (CTO) &amp; Taco Potze (CEO)</h2>
+        <!-- /wp:heading -->
+    
+        <!-- wp:heading {"className":"card-subtitle"} -->
+        <h2 class="card-subtitle">OpenSocial Founders</h2>
+        <!-- /wp:heading -->
+    
+        <!-- wp:paragraph -->
+        <p><strong>“A pro-privacy, anti-monopoly and open web that inspires trusted connections and collaboration.”</strong></p>
+        <!-- /wp:paragraph -->
+    
+        <!-- wp:paragraph -->
+        <p>Open Social is a top-tier SaaS company based in Amsterdam and Enschede, The Netherlands. Open Social is specialized in online community and membership management solutions. They have mastered the art of sharing, serving some of the biggest international NGOs as clients, including the UN, Greenpeace and Pachamama Alliance, and having won several international awards.</p>
+        <!-- /wp:paragraph -->
+    
+        <!-- wp:columns {"className":"card-full-content-links"} -->
+        <div class="wp-block-columns card-full-content-links"><!-- wp:column -->
+        <div class="wp-block-column"><!-- wp:heading {"level":3,"className":"card-full-content-link-title"} -->
+        <h3 class="card-full-content-link-title">Other Investors—</h3>
+        <!-- /wp:heading -->
+    
+        <!-- wp:paragraph -->
+        <p>Point 9 Capital</p>
+        <!-- /wp:paragraph -->
+    
+        <!-- wp:paragraph -->
+        <p>Lowercarbon Capital</p>
+        <!-- /wp:paragraph --></div>
+        <!-- /wp:column -->
+    
+        <!-- wp:column -->
+        <div class="wp-block-column"><!-- wp:heading {"level":3,"className":"card-full-content-link-title"} -->
+        <h3 class="card-full-content-link-title">Links—</h3>
+        <!-- /wp:heading -->
+    
+        <!-- wp:paragraph -->
+        <p><a href="https://www.getopensocial.com/about-us/#vacancies">Jobs at OpenSocial</a></p>
+        <!-- /wp:paragraph -->
+    
+        <!-- wp:paragraph -->
+        <p><a href="https://www.getopensocial.com/">opensocial.com</a></p>
+        <!-- /wp:paragraph --></div>
+        <!-- /wp:column --></div>
+        <!-- /wp:columns --></div></div>
+        <!-- /wp:group -->',
+    )
+  );
+
   //Testimonial Carousel
   register_block_pattern(
     'peak2021/testimonial-carousel',
     array(
-      'title'         => esc_html__( 'Testimonial Carousel', 'peak2021' ),
+      'title'         => esc_html__( 'Peak Testimonial Carousel', 'peak2021' ),
       'categories'    => array( 'peak2021' ),
       'viewportWidth' => 1440,
       'content'       => '
@@ -126,4 +198,16 @@ if ( function_exists( 'register_block_pattern' ) ) {
     )
   );  
 
+  register_block_pattern(
+    'peak2021/peak-headline',
+    array(
+      'title'         => esc_html__( 'Peak Headline', 'peak2021' ),
+      'categories'    => array( 'peak2021' ),
+      'viewportWidth' => 1440,
+      'content'       => '
+        <!-- wp:heading {"textAlign":"center","className":"peak-headline"} -->
+        <h2 class="has-text-align-center peak-headline">We’re based in Amsterdam but we operate Europe-wide.<br>We approach VC life with a mix of Gut Instinct and Deep Data.<br>/<br>Meet PEAK.</h2>
+        <!-- /wp:heading -->',
+    )
+  );
 }

@@ -29,7 +29,7 @@
       1018 XA Amsterdam <br>
       Netherlands <br>
       <a href="tel:+31 85 001 4343">+31 85 001 4343</a><br>
-      <a href="mailto: info@peak.capital">info@peak.capital</a>
+      <a href="mailto:<?php the_global_var('email'); ?>"><?php the_global_var('email'); ?></a>
 		</div><!-- .site-info -->
     <div class="site-footer-site-mail">
       Mail: <br>

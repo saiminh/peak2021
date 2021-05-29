@@ -27,6 +27,19 @@ strong {
   font-weight: 700;
 }
 
+@mixin blocklabel($blocklabelname) {
+  content: $blocklabelname;
+  font-size: 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  color: #FFF;
+  padding: 2px;
+  border-radius: 0 0 3px 0;
+  z-index: 4;
+}
+
 .slider {
   border: 1px solid #CCC;
   padding: 1rem;
@@ -61,4 +74,39 @@ strong {
       border-radius: 0 0 3px 0;
     }
   }
+}
+
+.founder-photograph,
+.founder-coin {
+  width: 250px;
+  height: 250px;
+  float: left;
+  margin-right: 1rem;
+  & > div:first-child {    
+    height: 250px!important;
+  }
+  & img, & svg {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  & figcaption {
+    display: none;
+  }
+}
+.founder-photograph:before{
+  @include blocklabel('Founder Photo');
+}
+.founder-coin:before{
+  @include blocklabel('Founder Coin');
+}
+.founder-photograph + div {
+  clear: both;
+}
+.card-full-content-coin figcaption{
+  display: none;
+}
+.card-full-content-links p {
+  margin: 0;
 }
