@@ -14,10 +14,17 @@
 
 get_header();
 ?>
-
+<?php if ( !is_singular( ) ) : ?>
+  <h1 class="peak-headline ">
+    Here we share our latest ideas on entrepreneurship and our events
+  </h1>
+  <nav class="peak-media-subnav">
+    <a class="wp-block-button__link has-brand-yellow-background-color" href="#">Media</a>
+    <a class="wp-block-button__link has-brand-pink-background-color" href="#">Events</a>
+  </nav>
+<? endif; ?>
 	<main id="primary" class="site-main">
-
-		<?php
+		<?php     
 		if ( have_posts() ) :
 
 			/* Start the Loop */
