@@ -108,6 +108,9 @@
   border-radius: 50%;
   margin: 0;
 }
+.peak-residence-item-image figcaption {
+  display: none;
+}
 .peak-residence-item-image img {
   width: 100%;
   height: 100%;
@@ -141,7 +144,7 @@
   @include parentblocklabel('Peak in the News');
 }
 .peak-in-the-news-item::before {
-  @include parentblocklabel('Newsarticle')
+  @include parentblocklabel('Newsarticle');
 }
 .peak-in-the-news-item-coin figcaption {
   display: none;

@@ -54,7 +54,7 @@
   height: 100%;
   overflow-y: scroll;
   background-color: $color-bg;
-  z-index: 4;
+  z-index: 6;
   padding: 1rem;
   @include for-tablet-landscape-up {
     padding: 0;
