@@ -13,10 +13,125 @@
        url("./fonts/Lazzer-Bold.woff") format("woff");
 }
 
+@mixin blocklabel($blocklabelname) {
+  content: $blocklabelname;
+  font-size: 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  color: #FFF;
+  padding: 2px 5px;
+  border-radius: 0 0 3px 0;
+  z-index: 4;
+}
+
+@mixin parentblocklabel($parentblocklabelname) {
+  content: $parentblocklabelname;
+  font-size: 12px;
+  line-height: 1;
+  position: absolute;
+  top: -18px;
+  right: 0;
+  background-color: #000;
+  color: #FFF;
+  padding: 3px 5px;
+  border-radius: 3px 3px 0 0;
+  z-index: 4;
+  font-weight: 700;
+}
+
+//Global 
+
 @import "variables";
 @import "base";
+.is-root-container {
+  border: 4px solid #EEE;
+}
+.wp-block-group {
+  border: 1px solid #000;
+  width: calc(100% - 10px);
+}
+
+
+//Components
 @import "components/buttons";
 @import "components/cards";
+@import "components/four-ts";
+.peak-4t-columns .peak-4t-t1,
+.peak-4t-columns .peak-4t-t2,
+.peak-4t-columns .peak-4t-t3,
+.peak-4t-columns .peak-4t-t4
+{
+  font-size: .8em;
+  margin: 0 .5rem 0 0 !important;
+}
+
+.peak-4t-block {
+  border: 1px solid #000;
+  &::before {
+    @include parentblocklabel('Peak 4T Block');
+  }
+}
+
+// In Residence
+
+.peak-residence-block {
+  background-color: $color-cyan;
+  padding: 3rem 0;
+}
+.peak-residence-block .wp-block-group__inner-container .peak-headline:first-child {
+  margin-top: 0;
+}
+.peak-residence-items > .wp-block-group__inner-container {
+  display: flex;
+  justify-content: flex-start;
+  //gap: 1rem;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  @include for-tablet-landscape-up{
+    justify-content: center;
+    
+  }
+}
+.peak-residence-item {
+  padding: 1rem;
+  flex-basis: 75%;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  @include for-tablet-landscape-up {
+    flex-basis: 20%;
+  }
+}
+.peak-residence-item-image {
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0;
+}
+.peak-residence-item-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+// ---------------------
+// FAQ
+// ---------------------
+.peak-faq-block {
+  border: 1px solid #000;
+  &::before {
+    @include parentblocklabel('Peak FAQs Block');
+  }
+}
+.peak-faq {
+  border: 1px solid #DDD;
+  border-radius: 3px;
+  margin: 2px 4px;
+  padding: 5px;
+  &::before {
+    @include blocklabel('FAQ Question');
+  }
+}
 
 .wp-block-quote.teammember-full-content-quote {
   border-left: none;
@@ -27,52 +142,26 @@ strong {
   font-weight: 700;
 }
 
-@mixin blocklabel($blocklabelname) {
-  content: $blocklabelname;
-  font-size: 12px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #000;
-  color: #FFF;
-  padding: 2px;
-  border-radius: 0 0 3px 0;
-  z-index: 4;
-}
-
 .slider {
-  border: 1px solid #CCC;
+  background-color: #EEE;
+  border-radius: 3px;
   padding: 1rem;
+  &::before {
+    @include parentblocklabel('Testimonial Slider');
+  }
+}
+.slider h2, 
+.slider h3 {
+  font-size: 20px;
+}
+.slider .slide {
+  border: 2px solid #000;
+  background-color: #FFF;
+  border-radius: 5px;
+  padding: 1rem;
+  position: relative;
   &::before{
-    content: 'Slider';
-    font-size: 12px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #000;
-    color: #FFF;
-    padding: 2px;
-    border-radius: 0 0 3px 0;
-  }
-  & h2, & h3 {
-    font-size: 20px;
-  }
-  .slide {
-    border: 2px solid #000;
-    border-radius: 5px;
-    padding: 1rem;
-    position: relative;
-    &::before{
-      content: 'Slide';
-      font-size: 12px;
-      position: absolute;
-      top: 0;
-      left: 0;
-      background-color: #000;
-      color: #FFF;
-      padding: 2px;
-      border-radius: 0 0 3px 0;
-    }
+    @include blocklabel('Slide');
   }
 }
 
@@ -109,4 +198,36 @@ strong {
 }
 .card-full-content-links p {
   margin: 0;
+}
+
+.peak-page-header-heroimg {
+  margin-top: 0;
+}
+.peak-page-header-heroimg figcaption {
+  display: none;
+}
+.peak-page-header-heroimg:before {
+  @include blocklabel('Peak Hero Image');
+}
+.wp-block.peak-page-head,
+.wp-block.peak-page-header-heroimg {
+  max-width: 100%;
+  margin-top: 0;
+}
+.post-hero img,
+.peak-page-header-heroimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  display: block;
+}
+.peak-headline:before {
+  @include blocklabel("Peak Headline");
+}
+.peak-page-head {
+  border: 1px solid #000;
+  &:before {
+    @include parentblocklabel("Peak Page Header")
+  }
 }

@@ -404,3 +404,49 @@ function acf_image($image_id,$image_size,$max_width){
 
   }
 }
+
+/*-------------------------------
+* Put the Peak Colors in the editor
+-------------------------------*/
+add_theme_support( 'editor-color-palette', array(
+  array(
+    'name'  => __( 'Peak Background' ),
+    'slug'  => 'brand-bg',
+    'color'	=> '#FFFFFF',
+  ),
+  array(
+    'name'  => __( 'Peak Black' ),
+    'slug'  => 'brand-black',
+    'color'	=> '#000000',
+  ),
+  array(
+    'name'  => __( 'Peak Blue' ),
+    'slug'  => 'brand-blue',
+    'color'	=> '#000EDC',
+  ),
+  array(
+    'name'  => __( 'Peak Pink' ),
+    'slug'  => 'brand-pink',
+    'color' => '#FF00FF',
+  ),
+  array(
+    'name'  => __( 'Peak Green' ),
+    'slug'  => 'brand-green',
+    'color' => '#31FF3F',
+  ),
+  array(
+    'name'  => __( 'Peak Cyan' ),
+    'slug'  => 'brand-cyan',
+    'color' => '#00FFFF',
+  ),
+  array(
+    'name'  => __( 'Peak Yellow' ),
+    'slug'  => 'brand-yellow',
+    'color' => '#FFC600',
+  ),
+  array(
+    'name'  => __( 'Peak Red' ),
+    'slug'  => 'brand-yellow',
+    'color' => '#F91C0E',
+  ),
+) );

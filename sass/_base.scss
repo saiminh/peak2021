@@ -33,8 +33,15 @@ h2 {
  font-size: 2rem;
  line-height: 1.2; 
 }
+h3 {
+  margin-bottom: .25rem;
+}
 p {
-  margin-bottom: 1.5em;
+  margin: 0 0 1rem 0;
+}
+.peak-headline {
+  font-size: 2rem;
+  line-height: 1.2;
 }
 .peak-headline.has-huge-font-size, 
 .peak-headline.has-larger-font-size {
@@ -46,7 +53,7 @@ p {
 .peak-headline.has-large-font-size {
   font-size: 1.25rem;
   @include for-tablet-landscape-up {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
 dfn,

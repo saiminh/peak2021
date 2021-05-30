@@ -1,0 +1,53 @@
+.peak-4t-columns {
+  padding: 0 .5rem;
+}
+.peak-4t-columns .peak-4t-t1, 
+.peak-4t-columns .peak-4t-t2, 
+.peak-4t-columns .peak-4t-t3, 
+.peak-4t-columns .peak-4t-t4 {
+  background-color: $color-yellow;
+  padding: 1rem;
+  margin: 0 .5rem 1rem .5rem;
+  position: relative;
+  &:before {
+    content: '01';
+    font-size: .9rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+}
+.peak-4t-columns .peak-4t-t2 {
+  background-color: $color-pink;
+  &:before {
+    content: '02';
+  }
+}
+.peak-4t-columns .peak-4t-t3 {
+  background-color: $color-cyan;
+  &:before {
+    content: '03';
+  }
+}
+.peak-4t-columns .peak-4t-t4 {
+  background-color: $color-green;
+  &:before {
+    content: '04';
+  }
+}
+.peak-4t-columns p {
+  line-height: 1.05;
+}
+.peak-4t-columns .wp-block-column *:first-child{
+  margin-top: 0;
+}
+.peak-4t-columns .has-small-font-size {
+  font-size: .7rem;
+  margin-bottom: 0.5rem;
+}
+.peak-4t-columns .has-medium-font-size {
+  font-size: 1.2rem;
+}
+.peak-4t-columns .has-small-font-size + .has-medium-font-size {
+ margin-bottom: 2.5rem;
+}

@@ -1,0 +1,42 @@
+.peak-faq-block {
+  max-width: 33rem;
+  margin: 0 auto;
+  @include for-tablet-landscape-up {
+    max-width: 84%;
+  }
+}
+.peak-faq-question {
+  font-size: 1.25rem;
+  border-top: 2px solid $color-font;
+  line-height: 2;
+  margin: 0;
+  position: relative;
+}
+.peak-faq:last-child {
+  border-bottom: 2px solid $color-font;
+}
+.peak-faq-question::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25px;
+  height: 100%;
+  background-image: url('./img/faq-chevron.svg');
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform-origin: 50% 50%;
+  transform: scaleY( 1 );
+  transition: .3s transform ease-in-out;
+}
+.faq-toggled .peak-faq-question::after {
+  transform: scaleY( -1);
+}
+
+.peak-faq-answer {
+  display: none;
+}
+.faq-toggled .peak-faq-answer {
+  display: block;
+}

@@ -1,10 +1,13 @@
-.post-hero img {
+.peak-page-header-heroimg {
+  margin-top: 0;
+}
+.post-hero img,
+.peak-page-header-heroimg img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
-
 .peak-headline {
   margin: 2em 1em;
    @include for-tablet-landscape-up {

@@ -1,4 +1,5 @@
 import "./navigation.js";
+import "./faq.js";
 import { homepage } from "./home.js";
 import { peakCardsNav } from "./peak-cards-nav.js";
 import { slider } from "./slider.js";

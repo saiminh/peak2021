@@ -93,6 +93,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "components/buttons";
 @import "components/cards";
 @import "components/slider";
+@import "components/four-ts";
+@import "components/faqs";
+@import "components/inresidence";
 @import "components/footer";
 
 /* Posts and pages
@@ -117,7 +120,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 .page-content,
 .entry-content,
 .entry-summary {
-  margin: 1.5em 0 0;
+  margin: 0;
 }
 
 .page-links {

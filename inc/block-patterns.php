@@ -56,11 +56,11 @@ if ( function_exists( 'register_block_pattern' ) ) {
           <!-- /wp:heading -->
 
           <!-- wp:image {"id":66,"sizeSlug":"full","linkDestination":"none","className":"card-full-content-coin"} -->
-          <figure class="wp-block-image size-full card-full-content-coin"><img src="' . esc_url( get_template_directory_uri() ) . '/assets/images/roses-tremieres-hollyhocks-1884.jpg" src="' . esc_url( get_template_directory_uri() ) . '/coin-dyme.svg" alt="" class="wp-image-66"/></figure>
+          <figure class="wp-block-image size-full card-full-content-coin"><img src="' . esc_url( get_template_directory_uri() ) . '/img/example-coin.svg" alt="" class="wp-image-66"/></figure>
           <!-- /wp:image -->
 
           <!-- wp:image {"id":65,"sizeSlug":"large","linkDestination":"none","className":"card-full-content-coin"} -->
-          <figure class="wp-block-image size-large card-full-content-coin"><img src="' . esc_url( get_template_directory_uri() ) . '/coin-studocu.svg" alt="" class="wp-image-65"/></figure>
+          <figure class="wp-block-image size-large card-full-content-coin"><img src="' . esc_url( get_template_directory_uri() ) . '/img/example-coin.svg" alt="" class="wp-image-65"/></figure>
           <!-- /wp:image --></div>
           <!-- /wp:column -->
 
@@ -70,11 +70,11 @@ if ( function_exists( 'register_block_pattern' ) ) {
           <!-- /wp:heading -->
 
           <!-- wp:image {"id":63,"sizeSlug":"large","linkDestination":"custom","className":"card-full-content-coin"} -->
-          <figure class="wp-block-image size-large card-full-content-coin"><a href="https://twitter.com"><img src="' . esc_url( get_template_directory_uri() ) . '/icon-twitter.svg" alt="" class="wp-image-63"/></a></figure>
+          <figure class="wp-block-image size-large card-full-content-coin"><a href="https://twitter.com"><img src="' . esc_url( get_template_directory_uri() ) . '/img/icon-twitter.svg" alt="" class="wp-image-63"/></a></figure>
           <!-- /wp:image -->
 
           <!-- wp:image {"id":61,"sizeSlug":"large","linkDestination":"custom","className":"card-full-content-coin"} -->
-          <figure class="wp-block-image size-large card-full-content-coin"><a href="https://linkedin.com"><img src="' . esc_url( get_template_directory_uri() ) . '/icon-linkedin.svg" alt="" class="wp-image-61"/></a></figure>
+          <figure class="wp-block-image size-large card-full-content-coin"><a href="https://linkedin.com"><img src="' . esc_url( get_template_directory_uri() ) . '/img/icon-linkedin.svg" alt="" class="wp-image-61"/></a></figure>
           <!-- /wp:image --></div>
           <!-- /wp:column --></div>
           <!-- /wp:columns --></div></div>
@@ -94,11 +94,11 @@ if ( function_exists( 'register_block_pattern' ) ) {
         <div class="wp-block-group founder-block"><div class="wp-block-group__inner-container">
         
         <!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"founder-coin"} -->
-        <figure class="wp-block-image size-full founder-coin"><img src="http://peakdev.local/wp-content/uploads/2021/05/Frame-35.svg" alt=""/></figure>
+        <figure class="wp-block-image size-full founder-coin"><img src="' . esc_url( get_template_directory_uri() ) . '/img/example-coin.svg" alt=""/></figure>
         <!-- /wp:image -->
 
         <!-- wp:image {""sizeSlug":"full","linkDestination":"none","className":"founder-photograph"} -->
-        <figure class="wp-block-image size-full founder-photograph"><img src="http://peakdev.local/wp-content/uploads/2021/05/founderfoto.jpg" alt="founder photograph" /></figure>
+        <figure class="wp-block-image size-full founder-photograph"><img src="https://via.placeholder.com/728x90.png?text=Placeholder+Image" alt="founder photograph" /></figure>
         <!-- /wp:image -->
 
         <!-- wp:more -->
@@ -164,13 +164,16 @@ if ( function_exists( 'register_block_pattern' ) ) {
       'content'       => '
         <!-- wp:group {"className":"testimonial-carousel slider"} -->
         <div class="wp-block-group testimonial-carousel slider"><div class="wp-block-group__inner-container">
+
         <!-- wp:group {"className":"testimonial-carousel-slide slide"} -->
-        <div class="wp-block-group testimonial-carousel-slide slide"><div class="wp-block-group__inner-container"><!-- wp:heading {"textAlign":"center","level":3,"className":"testimonial-carousel-quote"} -->
+        <div class="wp-block-group testimonial-carousel-slide slide"><div class="wp-block-group__inner-container">
+        
+        <!-- wp:heading {"textAlign":"center","level":3,"className":"testimonial-carousel-quote"} -->
         <h3 class="has-text-align-center testimonial-carousel-quote">Peak Capital is very hands on and reliable, with a strong network of LP\'s. The partners invest a lot of their time to help us grow and are available when we need them.</h3>
         <!-- /wp:heading -->
 
         <!-- wp:image {"align":"center","width":80,"height":80,"sizeSlug":"large","linkDestination":"none","className":"testimonial-carousel-coin"} -->
-        <div class="wp-block-image testimonial-carousel-coin"><figure class="aligncenter size-large is-resized"><img src="' . esc_url( get_template_directory_uri() ) . '/img/coin-studocu.svg" alt="" width="80" height="80"/></figure></div>
+        <div class="wp-block-image testimonial-carousel-coin"><figure class="aligncenter size-large is-resized"><img src="' . esc_url( get_template_directory_uri() ) . '/img/example-coin.svg" alt="" width="80" height="80"/></figure></div>
         <!-- /wp:image --></div></div>
         <!-- /wp:group -->
 
@@ -180,7 +183,7 @@ if ( function_exists( 'register_block_pattern' ) ) {
         <!-- /wp:heading -->
 
         <!-- wp:image {"align":"center","width":80,"height":80,"sizeSlug":"full","linkDestination":"none","className":"testimonial-carousel-coin"} -->
-        <div class="wp-block-image testimonial-carousel-coin"><figure class="aligncenter size-full is-resized"><img src="' . esc_url( get_template_directory_uri() ) . '/img/coin-dyme.svg" alt="" width="80" height="80"/></figure></div>
+        <div class="wp-block-image testimonial-carousel-coin"><figure class="aligncenter size-full is-resized"><img src="' . esc_url( get_template_directory_uri() ) . '/img/example-coin.svg" alt="" width="80" height="80"/></figure></div>
         <!-- /wp:image --></div></div>
         <!-- /wp:group -->
 
@@ -190,7 +193,7 @@ if ( function_exists( 'register_block_pattern' ) ) {
         <!-- /wp:heading -->
 
         <!-- wp:image {"align":"center","width":80,"height":80,"sizeSlug":"large","linkDestination":"none","className":"testimonial-carousel-coin"} -->
-        <div class="wp-block-image testimonial-carousel-coin"><figure class="aligncenter size-large is-resized"><img src="' . esc_url( get_template_directory_uri() ) . '/img/coin-studocu.svg" alt="" width="80" height="80"/></figure></div>
+        <div class="wp-block-image testimonial-carousel-coin"><figure class="aligncenter size-large is-resized"><img src="' . esc_url( get_template_directory_uri() ) . '/img/example-coin.svg" alt="" width="80" height="80"/></figure></div>
         <!-- /wp:image --></div></div>
         <!-- /wp:group --></div></div>
         <!-- /wp:group -->
@@ -210,4 +213,241 @@ if ( function_exists( 'register_block_pattern' ) ) {
         <!-- /wp:heading -->',
     )
   );
+
+  register_block_pattern( 
+    'peak2021/peak-page-header',
+    array(
+      'title'         => esc_html__( 'Peak Page Header', 'peak2021' ),
+      'categories'    => array( 'peak2021' ),
+      'viewportWidth' => 1440,
+      'content'       => '
+        <!-- wp:group {"className":"peak-page-head"} -->
+        <div class="wp-block-group peak-page-head"><div class="wp-block-group__inner-container">
+        
+        <!-- wp:image {"id":37,"sizeSlug":"large","linkDestination":"none","className":"peak-page-header-heroimg"} -->
+        <figure class="wp-block-image size-large peak-page-header-heroimg"><img src="https://via.placeholder.com/1024x395.png?text=Oh+No!+Look+at+me,+I+am+hideous!+Please!+Replace+me+with+something+beautiful!" alt=""/></figure>
+        <!-- /wp:image -->
+
+        <!-- wp:heading {"textAlign":"center","className":"peak-headline","fontSize":"huge"} -->
+        <h2 class="has-text-align-center peak-headline has-huge-font-size">We fiercely back exceptional founders that will change millions of lives for the better.</h2>
+        <!-- /wp:heading -->
+        
+        </div></div>
+        <!-- /wp:group -->',
+    )
+  );
+
+  register_block_pattern( 
+    'peak2021/peak-4T',
+    array(
+      'title'         => esc_html__( 'Peak 4Ts', 'peak2021' ),
+      'categories'    => array( 'peak2021' ),
+      'viewportWidth' => 1440,
+      'content'       => '
+        <!-- wp:group {"className":"peak-4t-block"} -->
+        <div class="wp-block-group peak-4t-block"><div class="wp-block-group__inner-container">
+        
+        <!-- wp:heading {"textAlign":"center","className":"peak-headline"} -->
+        <h2 class="has-text-align-center peak-headline">Are you a team with multiple founders and ready to scale?<br><br>Our 4T’s guide who we partner with:</h2>
+        <!-- /wp:heading -->
+
+        <!-- wp:columns {"className":"peak-4t-columns"} -->
+        <div class="wp-block-columns peak-4t-columns"><!-- wp:column {"className":"peak-4t-t1"} -->
+        <div class="wp-block-column peak-4t-t1"><!-- wp:heading -->
+        <h2>Team*</h2>
+        <!-- /wp:heading -->
+
+        <!-- wp:paragraph {"fontSize":"small"} -->
+        <p class="has-small-font-size">We look for: </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph {"fontSize":"medium"} -->
+        <p class="has-medium-font-size"><strong>Multiple co-founders,<br>Strong execution, Tech expertise</strong></p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph {"fontSize":"small"} -->
+        <p class="has-small-font-size">We tend to avoid:</p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph {"fontSize":"medium"} -->
+        <p class="has-medium-font-size"><strong>Start-ups without<br>their own tech.</strong></p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph {"fontSize":"small"} -->
+        <p class="has-small-font-size">* Most important</p>
+        <!-- /wp:paragraph --></div>
+        <!-- /wp:column -->
+
+        <!-- wp:column {"className":"peak-4t-t2"} -->
+        <div class="wp-block-column peak-4t-t2"><!-- wp:heading -->
+        <h2>Traction</h2>
+        <!-- /wp:heading -->
+
+        <!-- wp:paragraph {"fontSize":"small"} -->
+        <p class="has-small-font-size">We look for: </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph {"fontSize":"medium"} -->
+        <p class="has-medium-font-size"><strong>Strong added value,<br>Large market size, Beating competitors</strong></p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph {"fontSize":"small"} -->
+        <p class="has-small-font-size">We tend to avoid:</p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph {"fontSize":"medium"} -->
+        <p class="has-medium-font-size"><strong>Start-ups that<br>are not yet live.</strong></p>
+        <!-- /wp:paragraph --></div>
+        <!-- /wp:column -->
+
+        <!-- wp:column {"className":"peak-4t-t3"} -->
+        <div class="wp-block-column peak-4t-t3"><!-- wp:heading -->
+        <h2>Thesis</h2>
+        <!-- /wp:heading -->
+
+        <!-- wp:paragraph {"fontSize":"small"} -->
+        <p class="has-small-font-size">We look for: </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph {"fontSize":"medium"} -->
+        <p class="has-medium-font-size"><strong>Team ready to scale,<br>Proof of concept,<br>Proof of traction</strong></p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph {"fontSize":"small"} -->
+        <p class="has-small-font-size">We tend to avoid:</p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph {"fontSize":"medium"} -->
+        <p class="has-medium-font-size"><strong>Start-ups with<br>small markets.</strong></p>
+        <!-- /wp:paragraph --></div>
+        <!-- /wp:column -->
+
+        <!-- wp:column {"className":"peak-4t-t4"} -->
+        <div class="wp-block-column peak-4t-t4"><!-- wp:heading -->
+        <h2>Timing</h2>
+        <!-- /wp:heading -->
+
+        <!-- wp:paragraph {"fontSize":"small"} -->
+        <p class="has-small-font-size">We look for: </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph {"fontSize":"medium"} -->
+        <p class="has-medium-font-size"><strong>Team ready to scale,<br>Proof of concept,<br>Proof of traction</strong></p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph {"fontSize":"small"} -->
+        <p class="has-small-font-size">We tend to avoid:</p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph {"fontSize":"medium"} -->
+        <p class="has-medium-font-size"><strong>Start-ups with<br>only one founder.</strong></p>
+        <!-- /wp:paragraph --></div>
+        <!-- /wp:column --></div>
+        <!-- /wp:columns --></div></div>
+        <!-- /wp:group -->',
+    )
+  );
+  register_block_pattern( 
+    'peak2021/peak-faqs',
+    array(
+      'title'         => esc_html__( 'Peak FAQs', 'peak2021' ),
+      'categories'    => array( 'peak2021' ),
+      'viewportWidth' => 1440,
+      'content'       => '
+        <!-- wp:group {"className":"peak-faq-block"} -->
+        <div class="wp-block-group peak-faq-block"><div class="wp-block-group__inner-container"><!-- wp:heading {"textAlign":"center","className":"peak-headline"} -->
+        <h2 class="has-text-align-center peak-headline">Anything unclear? <br>Check our FAQs below...</h2>
+        <!-- /wp:heading -->
+      
+        <!-- wp:group {"className":"peak-faq"} -->
+        <div class="wp-block-group peak-faq"><div class="wp-block-group__inner-container"><!-- wp:heading {"className":"peak-faq-question"} -->
+        <h2 class="peak-faq-question">Your Team</h2>
+        <!-- /wp:heading -->
+      
+        <!-- wp:group {"className":"peak-faq-answer"} -->
+        <div class="wp-block-group peak-faq-answer"><div class="wp-block-group__inner-container"><!-- wp:paragraph -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <!-- /wp:paragraph --></div></div>
+        <!-- /wp:group --></div></div>
+        <!-- /wp:group -->
+      
+        <!-- wp:group {"className":"peak-faq"} -->
+        <div class="wp-block-group peak-faq"><div class="wp-block-group__inner-container"><!-- wp:heading {"className":"peak-faq-question"} -->
+        <h2 class="peak-faq-question">Problem and solution</h2>
+        <!-- /wp:heading -->
+      
+        <!-- wp:group {"className":"peak-faq-answer"} -->
+        <div class="wp-block-group peak-faq-answer"><div class="wp-block-group__inner-container"><!-- wp:paragraph -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <!-- /wp:paragraph --></div></div>
+        <!-- /wp:group --></div></div>
+        <!-- /wp:group -->
+      
+        <!-- wp:group {"className":"peak-faq"} -->
+        <div class="wp-block-group peak-faq"><div class="wp-block-group__inner-container"><!-- wp:heading {"className":"peak-faq-question"} -->
+        <h2 class="peak-faq-question">Product</h2>
+        <!-- /wp:heading -->
+      
+        <!-- wp:group {"className":"peak-faq-answer"} -->
+        <div class="wp-block-group peak-faq-answer"><div class="wp-block-group__inner-container"><!-- wp:paragraph -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <!-- /wp:paragraph --></div></div>
+        <!-- /wp:group --></div></div>
+        <!-- /wp:group --></div></div>
+        <!-- /wp:group -->',
+    )
+  );
+  register_block_pattern( 
+    'peak2021/peak-residence',
+    array(
+      'title'         => esc_html__( 'Peak in Residence', 'peak2021' ),
+      'categories'    => array( 'peak2021' ),
+      'viewportWidth' => 1440,
+      'content'       => '
+        <!-- wp:group {"className":"peak-residence-block"} -->
+        <div class="wp-block-group peak-residence-block"><div class="wp-block-group__inner-container"><!-- wp:heading {"textAlign":"center","className":"peak-headline"} -->
+        <h2 class="has-text-align-center peak-headline">Our Entrepreneurs in Residence.<br>Founders with the scars to prove it.</h2>
+        <!-- /wp:heading -->
+      
+        <!-- wp:group {"className":"peak-residence-items"} -->
+        <div class="wp-block-group peak-residence-items"><div class="wp-block-group__inner-container"><!-- wp:group {"className":"peak-residence-item"} -->
+        <div class="wp-block-group peak-residence-item"><div class="wp-block-group__inner-container"><!-- wp:image {"sizeSlug":"large","className":"peak-residence-item-image"} -->
+        <figure class="wp-block-image size-large peak-residence-item-image"><img src="https://via.placeholder.com/300png?text=I+am+a+resident " alt=""/></figure>
+        <!-- /wp:image -->
+      
+        <!-- wp:heading {"level":3} -->
+        <h3>Dennis Goedgebuure</h3>
+        <!-- /wp:heading -->
+      
+        <!-- wp:paragraph -->
+        <p>Recently at Paypal, Venmos Fanatics and AirBnB</p>
+        <!-- /wp:paragraph --></div></div>
+        <!-- /wp:group -->
+      
+        <!-- wp:group {"className":"peak-residence-item"} -->
+        <div class="wp-block-group peak-residence-item"><div class="wp-block-group__inner-container"><!-- wp:image {"sizeSlug":"large","className":"peak-residence-item-image"} -->
+        <figure class="wp-block-image size-large peak-residence-item-image"><img src="https://via.placeholder.com/300png?text=I+am+a+resident " alt=""/></figure>
+        <!-- /wp:image -->
+      
+        <!-- wp:heading {"level":3} -->
+        <h3>Dennis Goedgebuure</h3>
+        <!-- /wp:heading -->
+      
+        <!-- wp:paragraph -->
+        <p>Recently at Paypal, Venmos Fanatics and AirBnB</p>
+        <!-- /wp:paragraph --></div></div>
+        <!-- /wp:group -->
+      
+        <!-- wp:group {"className":"peak-residence-item"} -->
+        <div class="wp-block-group peak-residence-item"><div class="wp-block-group__inner-container"><!-- wp:buttons -->
+        <div class="wp-block-buttons"><!-- wp:button {"className":"peak-residence-item-button"} -->
+        <div class="wp-block-button peak-residence-item-button"><a class="wp-block-button__link" href="mailto:contact@peak.capital">Up for it?<br>Get in touch.</a></div>
+        <!-- /wp:button --></div>
+        <!-- /wp:buttons --></div></div>
+        <!-- /wp:group --></div></div>
+        <!-- /wp:group --></div></div>
+        <!-- /wp:group -->',
+    )
+  );
+
 }

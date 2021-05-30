@@ -1,6 +1,7 @@
 .card {
   margin-right: 1rem;
   margin-left: 1rem;
+  margin-bottom: 1rem;
   @include for-tablet-landscape-up {
     flex-basis: calc(25% - 1rem);
     margin-left: 0;

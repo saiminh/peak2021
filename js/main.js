@@ -9,6 +9,16 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./js/src/faq.js":
+/*!***********************!*\
+  !*** ./js/src/faq.js ***!
+  \***********************/
+/***/ (() => {
+
+eval("let allFAQs = document.querySelectorAll('.peak-faq');\nfor ( let i = 0; i < allFAQs.length; i++ ) {\n  allFAQs[i].querySelector( '.peak-faq-question' ).addEventListener( 'click', () => {\n    allFAQs[i].classList.toggle('faq-toggled');\n  } )\n}\n\n//# sourceURL=webpack://peak2021/./js/src/faq.js?");
+
+/***/ }),
+
 /***/ "./js/src/founders-coins.js":
 /*!**********************************!*\
   !*** ./js/src/founders-coins.js ***!
@@ -38,7 +48,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _navigation_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./navigation.js */ \"./js/src/navigation.js\");\n/* harmony import */ var _navigation_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_navigation_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _home_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home.js */ \"./js/src/home.js\");\n/* harmony import */ var _peak_cards_nav_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./peak-cards-nav.js */ \"./js/src/peak-cards-nav.js\");\n/* harmony import */ var _slider_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./slider.js */ \"./js/src/slider.js\");\n/* harmony import */ var _founders_coins_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./founders-coins.js */ \"./js/src/founders-coins.js\");\n\n\n\n\n\n\n  // Homepage script only runs on Homepage (Duh)\n  if ( document.querySelector('.peak-homepage') ){\n    (0,_home_js__WEBPACK_IMPORTED_MODULE_1__.homepage)();\n  };\n  if (document.querySelector('.card')) {\n    (0,_peak_cards_nav_js__WEBPACK_IMPORTED_MODULE_2__.peakCardsNav)();\n  };\n  if (document.querySelector('.testimonial-carousel')) {\n    (0,_slider_js__WEBPACK_IMPORTED_MODULE_3__.slider)(true);\n  }\n  if (document.querySelector('.founders')) {\n    (0,_founders_coins_js__WEBPACK_IMPORTED_MODULE_4__.foundersPage)();\n  }\n\n//# sourceURL=webpack://peak2021/./js/src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _navigation_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./navigation.js */ \"./js/src/navigation.js\");\n/* harmony import */ var _navigation_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_navigation_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _faq_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./faq.js */ \"./js/src/faq.js\");\n/* harmony import */ var _faq_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_faq_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _home_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./home.js */ \"./js/src/home.js\");\n/* harmony import */ var _peak_cards_nav_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./peak-cards-nav.js */ \"./js/src/peak-cards-nav.js\");\n/* harmony import */ var _slider_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./slider.js */ \"./js/src/slider.js\");\n/* harmony import */ var _founders_coins_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./founders-coins.js */ \"./js/src/founders-coins.js\");\n\n\n\n\n\n\n\n  // Homepage script only runs on Homepage (Duh)\n  if ( document.querySelector('.peak-homepage') ){\n    (0,_home_js__WEBPACK_IMPORTED_MODULE_2__.homepage)();\n  };\n  if (document.querySelector('.card')) {\n    (0,_peak_cards_nav_js__WEBPACK_IMPORTED_MODULE_3__.peakCardsNav)();\n  };\n  if (document.querySelector('.testimonial-carousel')) {\n    (0,_slider_js__WEBPACK_IMPORTED_MODULE_4__.slider)(true);\n  }\n  if (document.querySelector('.founders')) {\n    (0,_founders_coins_js__WEBPACK_IMPORTED_MODULE_5__.foundersPage)();\n  }\n\n//# sourceURL=webpack://peak2021/./js/src/index.js?");
 
 /***/ }),
 
