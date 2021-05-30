@@ -140,7 +140,7 @@ add_action( 'widgets_init', 'peak2021_widgets_init' );
  * Enqueue scripts and styles.
  */
 function peak2021_scripts() {
-	wp_enqueue_style( 'peak2021-style', get_template_directory_uri() . '/style.min.css', array(), '1.123' );
+	wp_enqueue_style( 'peak2021-style', get_template_directory_uri() . '/style.min.css', array(), '1.1234' );
 	wp_style_add_data( 'peak2021-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'peak2021-main', get_template_directory_uri() . '/js/main.js', array(), null, true );
