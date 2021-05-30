@@ -133,6 +133,27 @@
   }
 }
 
+// ---------------------
+// In the News
+// ---------------------
+@import "components/in-the-news";
+.peak-in-the-news-block::before {
+  @include parentblocklabel('Peak in the News');
+}
+.peak-in-the-news-item::before {
+  @include parentblocklabel('Newsarticle')
+}
+.peak-in-the-news-item-coin figcaption {
+  display: none;
+}
+.peak-in-the-news-item-coin {
+  right: 0;
+}
+.peak-in-the-news-item-coin img {
+  position: relative;
+}
+
+
 .wp-block-quote.teammember-full-content-quote {
   border-left: none;
 }

@@ -1,5 +1,9 @@
 .peak-page-header-heroimg {
   margin-top: 0;
+  height: 71vw;
+  @include for-tablet-landscape-up {
+    height: 38vw;
+  }
 }
 .post-hero img,
 .peak-page-header-heroimg img {

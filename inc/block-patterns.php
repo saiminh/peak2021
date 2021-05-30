@@ -449,5 +449,67 @@ if ( function_exists( 'register_block_pattern' ) ) {
         <!-- /wp:group -->',
     )
   );
+  register_block_pattern( 
+    'peak2021/peak-in-the-news',
+    array(
+      'title'         => esc_html__( 'Peak in the News', 'peak2021' ),
+      'categories'    => array( 'peak2021' ),
+      'viewportWidth' => 1440,
+      'content'       => '
+        <!-- wp:group {"className":"peak-in-the-news-block"} -->
+        <div class="wp-block-group peak-in-the-news-block"><div class="wp-block-group__inner-container"><!-- wp:heading {"textAlign":"center","className":"peak-headline","fontSize":"huge"} -->
+        <h2 class="has-text-align-center peak-headline has-huge-font-size">We challenge and equip founders to thrive far beyond their boundaries.</h2>
+        <!-- /wp:heading -->
+      
+        <!-- wp:heading {"textAlign":"center","className":"peak-headline","fontSize":"large"} -->
+        <h2 class="has-text-align-center peak-headline has-large-font-size">Our founders are making the news</h2>
+        <!-- /wp:heading -->
+      
+        <!-- wp:group {"className":"peak-in-the-news-items"} -->
+        <div class="wp-block-group peak-in-the-news-items"><div class="wp-block-group__inner-container"><!-- wp:group {"className":"peak-in-the-news-item"} -->
+        <div class="wp-block-group peak-in-the-news-item"><div class="wp-block-group__inner-container"><!-- wp:heading {"className":"peak-in-the-news-item-title"} -->
+        <h2 class="peak-in-the-news-item-title">Utrecht-based Trengo, a shared inbox startup, raises €1.75 million to expand in Europe</h2>
+        <!-- /wp:heading -->
+      
+        <!-- wp:paragraph {"className":"peak-in-the-news-item-link"} -->
+        <p class="peak-in-the-news-item-link"><a href="https://peak.capital">Read article</a></p>
+        <!-- /wp:paragraph -->
+      
+        <!-- wp:image {"id":147,"sizeSlug":"large","linkDestination":"none","className":"peak-in-the-news-item-coin"} -->
+        <figure class="wp-block-image size-large peak-in-the-news-item-coin"><img src="http://peakdev.local/wp-content/uploads/2021/05/Frame-4.svg" alt="" class="wp-image-147"/></figure>
+        <!-- /wp:image --></div></div>
+        <!-- /wp:group -->
+      
+        <!-- wp:group {"className":"peak-in-the-news-item"} -->
+        <div class="wp-block-group peak-in-the-news-item"><div class="wp-block-group__inner-container"><!-- wp:heading {"className":"peak-in-the-news-item-title"} -->
+        <h2 class="peak-in-the-news-item-title">Utrecht-based Trengo, a shared inbox startup, raises €1.75 million to expand in Europe</h2>
+        <!-- /wp:heading -->
+      
+        <!-- wp:paragraph {"className":"peak-in-the-news-item-link"} -->
+        <p class="peak-in-the-news-item-link"><a href="https://peak.capital">Read article</a></p>
+        <!-- /wp:paragraph -->
+      
+        <!-- wp:image {"id":147,"sizeSlug":"large","linkDestination":"none","className":"peak-in-the-news-item-coin"} -->
+        <figure class="wp-block-image size-large peak-in-the-news-item-coin"><img src="http://peakdev.local/wp-content/uploads/2021/05/Frame-4.svg" alt="" class="wp-image-147"/></figure>
+        <!-- /wp:image --></div></div>
+        <!-- /wp:group -->
+      
+        <!-- wp:group {"className":"peak-in-the-news-item"} -->
+        <div class="wp-block-group peak-in-the-news-item"><div class="wp-block-group__inner-container"><!-- wp:heading {"className":"peak-in-the-news-item-title"} -->
+        <h2 class="peak-in-the-news-item-title">Utrecht-based Trengo, a shared inbox startup, raises €1.75 million to expand in Europe</h2>
+        <!-- /wp:heading -->
+      
+        <!-- wp:paragraph {"className":"peak-in-the-news-item-link"} -->
+        <p class="peak-in-the-news-item-link"><a href="https://peak.capital">Read article</a></p>
+        <!-- /wp:paragraph -->
+      
+        <!-- wp:image {"id":147,"sizeSlug":"large","linkDestination":"none","className":"peak-in-the-news-item-coin"} -->
+        <figure class="wp-block-image size-large peak-in-the-news-item-coin"><img src="http://peakdev.local/wp-content/uploads/2021/05/Frame-4.svg" alt="" class="wp-image-147"/></figure>
+        <!-- /wp:image --></div></div>
+        <!-- /wp:group --></div></div>
+        <!-- /wp:group --></div></div>
+        <!-- /wp:group -->',
+    )
+  );
 
 }

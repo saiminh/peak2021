@@ -46,6 +46,7 @@ p {
 .peak-headline.has-huge-font-size, 
 .peak-headline.has-larger-font-size {
   font-size: 2rem;
+  max-width: 18em;
   @include for-tablet-landscape-up {
     font-size: 3.25rem;
   }
