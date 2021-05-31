@@ -225,7 +225,7 @@ if ( function_exists( 'register_block_pattern' ) ) {
         <div class="wp-block-group peak-page-head"><div class="wp-block-group__inner-container">
         
         <!-- wp:image {"id":37,"sizeSlug":"large","linkDestination":"none","className":"peak-page-header-heroimg"} -->
-        <figure class="wp-block-image size-large peak-page-header-heroimg"><img src="https://via.placeholder.com/1024x395.png?text=Oh+No!+Look+at+me,+I+am+hideous!+Please!+Replace+me+with+something+beautiful!" alt=""/></figure>
+        <figure class="wp-block-image size-full peak-page-header-heroimg"><img src="https://via.placeholder.com/1024x395.png?text=Oh+No!+Look+at+me,+I+am+hideous!+Please!+Replace+me+with+something+beautiful!" alt=""/></figure>
         <!-- /wp:image -->
 
         <!-- wp:heading {"textAlign":"center","className":"peak-headline","fontSize":"huge"} -->

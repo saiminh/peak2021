@@ -9,7 +9,7 @@
 
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '0.1.136' );
+	define( '_S_VERSION', '0.1.137' );
 }
 
 if ( ! function_exists( 'peak2021_setup' ) ) :
@@ -436,3 +436,28 @@ function mytheme_admin_bar_render() {
     $wp_admin_bar->remove_menu('comments');
 }
 add_action( 'wp_before_admin_bar_render', 'mytheme_admin_bar_render' );
+
+//------------------------
+// Responsive image sizes
+//------------------------
+
+function custom_responsive_image_sizes($sizes, $size) {
+  $width = $size[0];
+  // blog posts
+  if ( is_singular( 'post' ) ) {
+    // half width images - medium size
+    if ( $width === 600 ) {
+      return '(min-width: 768px) 322px, (min-width: 576px) 255px, calc( (100vw - 30px) / 2)';
+    }
+    // full width images - large size
+    if ( $width === 1024 ) {
+      return '(min-width: 768px) 642px, (min-width: 576px) 510px, calc(100vw - 30px)';
+    }
+    // default to return if condition is not met
+    return '(max-width: ' . $width . 'px) 100vw, ' . $width . 'px';
+  }
+  
+  // default to return if condition is not met
+  return '(max-width: ' . $width . 'px) 100vw, ' . $width . 'px';
+}
+add_filter('wp_calculate_image_sizes', 'custom_responsive_image_sizes', 10 , 2);
