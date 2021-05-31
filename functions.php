@@ -261,46 +261,6 @@ function create_exercisetypes_hierarchical_taxonomy() {
   }
   //hook into the init action and call create_exercisetypes_hierarchical_taxonomy when it fires
   add_action( 'init', 'create_exercisetypes_hierarchical_taxonomy', 0 );
-  
-/**
- * Add Tags to Exercises
- */
-// add_action( 'init', 'create_tag_taxonomies_for_founders', 0 );
-// //create two taxonomies, genres and tags for the post type "tag"
-// function create_tag_taxonomies_for_founders() 
-// {
-//   // Add new taxonomy, NOT hierarchical (like tags)
-//   $labels = array(
-//     'name' => _x( 'Tags', 'taxonomy general name' ),
-//     'singular_name' => _x( 'Tag', 'taxonomy singular name' ),
-//     'search_items' =>  __( 'Search Tags' ),
-//     'popular_items' => __( 'Popular Tags' ),
-//     'all_items' => __( 'All Tags' ),
-//     'parent_item' => null,
-//     'parent_item_colon' => null,
-//     'edit_item' => __( 'Edit Tag' ), 
-//     'update_item' => __( 'Update Tag' ),
-//     'add_new_item' => __( 'Add New Tag' ),
-//     'new_item_name' => __( 'New Tag Name' ),
-//     'separate_items_with_commas' => __( 'Separate tags with commas' ),
-//     'add_or_remove_items' => __( 'Add or remove tags' ),
-//     'choose_from_most_used' => __( 'Choose from the most used tags' ),
-//     'menu_name' => __( 'Tags' )
-//   ); 
-
-//   register_taxonomy('founders-tag','founders',array(
-//     'hierarchical' => false,
-//     'labels' => $labels,
-//     'show_ui' => true,
-//     'update_count_callback' => '_update_post_term_count',
-//     'query_var' => true,
-//   'rewrite' => array( 'slug' => 'founders-tag' ),
-//   'public' => true,
-//   'has_archive' => true,
-//   'show_in_rest' => true
-//   ));
-//   flush_rewrite_rules(); 
-// }
 
 // Block Patterns.
 require get_template_directory() . '/inc/block-patterns.php';
@@ -373,10 +333,33 @@ add_shortcode( 'teammembers', 'outputbuffer_teammembers' );
 -------------------------------*/
 function wp_maintenance_mode() {
   if (!current_user_can('edit_themes') || !is_user_logged_in()) {
-    wp_die('<h1>Not ready yet!</h1><br />We are still working on our new web presence. Please check back later.');
+    wp_die('
+      <svg class="peak-logo-svg" width="97" height="97" viewBox="0 0 97 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M0.0585937 48.5198C0.0585937 21.7549 21.7549 0.0585938 48.5198 0.0585938C75.2837 0.0585938 96.981 21.7558 96.981 48.5198C96.981 75.2837 75.2847 96.981 48.5198 96.981C21.7549 96.981 0.0585937 75.2847 0.0585937 48.5198ZM14.6452 51.671H17.9561C23.3879 51.671 26.7573 49.0281 26.7573 44.6703C26.7573 40.3136 23.3879 37.6707 17.9561 37.6707H10.0264L10.0264 59.3971H14.6452V51.671ZM33.8066 41.7665H43.6819V37.6716H29.1879V59.3981H43.6819V55.3023H33.8066V50.3642H43.0723V46.2684H33.8066V41.7665ZM62.1715 57.654L62.8512 59.3962L67.8789 59.3962L59.1936 37.6707H54.2866L45.5731 59.3962H50.5687L51.149 57.9072C51.1968 57.7874 51.2464 57.6686 51.3048 57.5547C52.4169 55.3851 54.4716 53.9994 56.7211 53.9994C58.9093 53.9994 60.8948 55.2828 62.0332 57.3521C62.0858 57.4495 62.1325 57.5508 62.1715 57.654ZM74.2817 51.9232L77.4816 48.6649L83.4743 59.3991H89.3785L81.0593 45.0589L88.3891 37.6415H82.5716L74.2817 45.9314V37.6415H69.6571V59.3981H74.2817V51.9232ZM17.9574 41.7651H14.6465V47.5748H17.9574C20.5711 47.5748 22.024 46.529 22.024 44.67C22.024 42.811 20.572 41.7651 17.9574 41.7651ZM54.2316 50.0132C55.035 49.8019 55.8706 49.6909 56.7226 49.6909C57.5689 49.6909 58.3956 49.798 59.1893 50.0015L56.7246 43.6553L54.2316 50.0132Z" fill="black"/>
+      </svg>
+      <h1>Not ready yet!</h1><br />We are still working on our new web presence. Please check back later.
+    ');
   }
 }
 add_action('get_header', 'wp_maintenance_mode');
+
+/*-------------------------------
+   Login Screen
+-------------------------------*/
+function my_login_logo() { ?>
+  <style type="text/css">
+    #login h1 a, .login h1 a {
+      background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/img/peak-logo.svg);
+      height:65px;
+      width:320px;
+      background-size: auto 100%;
+      background-repeat: no-repeat;
+      padding-bottom: 30px;
+    }
+  </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'my_login_logo' );
+
 
 /*-------------------------------
    Global Variable function 
