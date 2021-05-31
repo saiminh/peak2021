@@ -36,6 +36,10 @@ body.page-template-page-events {
   padding: 1rem;
   grid-row-end: span 10;
   margin: 0 1rem .5rem 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   @include for-tablet-landscape-up {
     margin: .25rem;
   }
@@ -67,6 +71,12 @@ body.page-template-page-events {
 .blog-post-tile .entry-title {
   line-height: 1.05;
   margin-top: 0.5rem;
+}
+.blog-post-tile .entry-footer .cat-links a {
+  pointer-events: none;
+}
+.blog-post-tile .entry-footer .tags-links {
+  display: none;
 }
 // Tile fake masonry grid
 @include for-tablet-landscape-up {

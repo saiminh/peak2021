@@ -9,7 +9,7 @@
 if ( get_field('tile-bg-color') || get_field('featured_image_type') ){
   $postTileOptions = 'blog-post-tile '.get_field('featured_image_type').' has-brand-'.get_field('tile-bg-color').'-background-color';
 } else {
-  $postTileOptions = '';
+  $postTileOptions = 'blog-post-tile bg-img has-brand-pink-background-color';
 };
 ?>
 
