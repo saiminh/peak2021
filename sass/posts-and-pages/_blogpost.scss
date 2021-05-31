@@ -29,4 +29,25 @@ body.single-post {
   & .entry-footer {
     display: none;
   }
+  & .entry-meta {
+    text-align: center;
+    line-height: 1;
+    margin: 3rem auto;
+  }
+  & .posted-on {
+    font-size: .7rem;
+    display: block;
+    & a {
+      pointer-events: none;
+      text-decoration: none;
+    }
+  }
+  & .byline {
+    font-size: 1.2rem;
+    display: block;
+    & a {
+      pointer-events: none;
+      text-decoration: none;
+    }
+  }
 }

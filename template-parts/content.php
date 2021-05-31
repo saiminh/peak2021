@@ -23,10 +23,11 @@ if ( get_field('tile-bg-color') || get_field('featured_image_type') ){
   <?php if ( 'post' === get_post_type() ) :
     ?>
     <div class="entry-meta">
-      <?php if ( is_singular() ) {
-        peak2021_posted_on();
+      <?php 
         peak2021_posted_by();
-      } ?>
+        echo '<span class="meta-divider">•</span>';
+        peak2021_posted_on();
+      ?>
     </div><!-- .entry-meta -->
   <?php endif; ?>
   <div class="entry-content">
