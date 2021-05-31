@@ -15,6 +15,7 @@ if ( get_field('tile-bg-color') ){
 
 <?php if ( is_singular() ) : ?>
 
+<?php peak2021_post_thumbnail(); ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
     <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
@@ -28,7 +29,6 @@ if ( get_field('tile-bg-color') ){
       } ?>
     </div><!-- .entry-meta -->
   <?php endif; ?>
-  <?php peak2021_post_thumbnail(); ?>
   <div class="entry-content">
     <?php
     the_content(
@@ -56,7 +56,6 @@ if ( get_field('tile-bg-color') ){
   </div><!-- .entry-content -->
 
 <?php else : //not singular ?>
-  
 
   <article id="post-<?php the_ID(); ?>" <?php post_class( $postTileColor ); ?>>
   <div class="blog-tile-image">
