@@ -167,27 +167,33 @@ function homepage(){
   createCoinSegment(ourTeam, [
     {
       file: nohashpath+'wp-content/themes/peak2021/img/home-sprites/ourteam01-220.png', 
-      radius: 110
+      radius: 110,
+      imgSizeFactor: 0.5
     },
     {
       file: nohashpath+'wp-content/themes/peak2021/img/home-sprites/ourteam02-220.png', 
-      radius: 110
+      radius: 110,
+      imgSizeFactor: 0.5
     },
     {
       file: nohashpath+'wp-content/themes/peak2021/img/home-sprites/ourteam03-220.png', 
-      radius: 110
+      radius: 110,
+      imgSizeFactor: 0.5
     },
     {
       file: nohashpath+'wp-content/themes/peak2021/img/home-sprites/ourteam04-160.png', 
-      radius: 80
+      radius: 80,
+      imgSizeFactor: 0.5
     },
     {
       file: nohashpath+'wp-content/themes/peak2021/img/home-sprites/ourteam04-160.png', 
-      radius: 80
+      radius: 80,
+      imgSizeFactor: 0.5
     },
     {
       file: nohashpath+'wp-content/themes/peak2021/img/home-sprites/ourteam04-160.png', 
-      radius: 80
+      radius: 80,
+      imgSizeFactor: 0.5
     }
   ]);
 
