@@ -16,9 +16,6 @@ function foundersPage(){
       coinFlip.reverse();
     } )
   }
-  gsap.to( '.founder-exit .founder-coin::after', {
-    rotationZ: 360, duration: 4, repeat: -1
-  } )
   
   let founders = document.querySelector( '.founders' );
   let saasBtn = document.querySelector( '.founder-filter-saas' );
