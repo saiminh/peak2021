@@ -511,5 +511,27 @@ if ( function_exists( 'register_block_pattern' ) ) {
         <!-- /wp:group -->',
     )
   );
+  register_block_pattern( 
+    'peak2021/peak-event',
+    array(
+      'title'         => esc_html__( 'Peak event', 'peak2021' ),
+      'categories'    => array( 'peak2021' ),
+      'viewportWidth' => 1440,
+      'content'       => 
+        '<!-- wp:group {"className":"peak-event"} -->
+        <div class="wp-block-group peak-event"><div class="wp-block-group__inner-container"><!-- wp:paragraph {"className":"peak-event-date"} -->
+        <p class="peak-event-date">29 April</p>
+        <!-- /wp:paragraph -->
+      
+        <!-- wp:paragraph {"className":"peak-event-name"} -->
+        <p class="peak-event-name"><a href="http://startplayz.com">STARTPLATZ Demo Day</a></p>
+        <!-- /wp:paragraph -->
+      
+        <!-- wp:paragraph {"className":"peak-event-country"} -->
+        <p class="peak-event-country">Country</p>
+        <!-- /wp:paragraph --></div></div>
+        <!-- /wp:group -->',
+    )
+  );
 
 }

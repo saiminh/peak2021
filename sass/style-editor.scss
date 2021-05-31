@@ -156,6 +156,33 @@
   position: relative;
 }
 
+// ---------------------
+// Events
+// ---------------------
+.peak-event {
+  width: calc(100% - 2rem);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.peak-event::before {
+  @include blocklabel('Event');
+}
+.peak-event > .wp-block-group__inner-container {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid $color-font;
+}
+.peak-event-date {
+  flex-basis: 25%;
+}
+.peak-event-name {
+  flex-basis: 50%;
+}
+.peak-event-country {
+  flex-basis: 25%;
+  text-align: right;
+}
 
 .wp-block-quote.teammember-full-content-quote {
   border-left: none;

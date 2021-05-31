@@ -9,7 +9,7 @@
 
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '1.0.0' );
+	define( '_S_VERSION', '0.1.11' );
 }
 
 if ( ! function_exists( 'peak2021_setup' ) ) :
@@ -140,10 +140,10 @@ add_action( 'widgets_init', 'peak2021_widgets_init' );
  * Enqueue scripts and styles.
  */
 function peak2021_scripts() {
-	wp_enqueue_style( 'peak2021-style', get_template_directory_uri() . '/style.min.css', array(), '0.1' );
+	wp_enqueue_style( 'peak2021-style', get_template_directory_uri() . '/style.min.css', array(), _S_VERSION );
 	wp_style_add_data( 'peak2021-style', 'rtl', 'replace' );
 
-	wp_enqueue_script( 'peak2021-main', get_template_directory_uri() . '/js/main.js', array(), null, true );
+	wp_enqueue_script( 'peak2021-main', get_template_directory_uri() . '/js/main.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

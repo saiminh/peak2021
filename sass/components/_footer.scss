@@ -35,3 +35,10 @@
   padding: 0;
   list-style: none;
 }
+.blog .site-footer-social,
+.single-post .site-footer-social,
+.page-template-page-events .site-footer-social {
+  & path {
+    fill: $color-bg;
+  }
+}

@@ -1,6 +1,8 @@
 <?php
 /**
- * The template for displaying "Our Team"
+ * 
+ * * Template Name: Founders page
+ * The template for displaying "Founders"
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages

@@ -104,16 +104,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 @import "posts-and-pages/founders-page";
 @import "posts-and-pages/team-page";
-@import "posts-and-pages/blog";
+@import "posts-and-pages/blog-and-events";
 @import "posts-and-pages/blogpost";
 
 .sticky {
   display: block;
-}
-
-.post,
-.page {
-  margin: 0;
 }
 
 .updated:not(.published) {

@@ -1,8 +1,8 @@
 <?php
 /**
  * 
- * * Template Name: Team page
- * The template for displaying "Our Team"
+ * * Template Name: Events page
+ * The template for displaying "Events"
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -16,7 +16,13 @@
 
 get_header();
 ?>
-
+  <h1 class="peak-headline ">
+    Here we share our latest ideas on entrepreneurship and our events
+  </h1>
+  <nav class="peak-media-subnav">
+    <a class="peak-media-subnav-button wp-block-button__link has-brand-yellow-background-color disabled" href="<?php echo home_url(); ?>/blog">Media</a>
+    <a class="peak-media-subnav-button wp-block-button__link has-brand-pink-background-color" href="#">Events</a>
+  </nav>
 	<main id="primary" class="site-main">
 
 		<?php

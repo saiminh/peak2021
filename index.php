@@ -19,8 +19,8 @@ get_header();
     Here we share our latest ideas on entrepreneurship and our events
   </h1>
   <nav class="peak-media-subnav">
-    <a class="wp-block-button__link has-brand-yellow-background-color" href="#">Media</a>
-    <a class="wp-block-button__link has-brand-pink-background-color" href="#">Events</a>
+    <a class="peak-media-subnav-button wp-block-button__link has-brand-yellow-background-color" href="#">Media</a>
+    <a class="peak-media-subnav-button wp-block-button__link has-brand-pink-background-color disabled" href="<?php echo home_url(); ?>/events">Events</a>
   </nav>
 <? endif; ?>
 	<main id="primary" class="site-main">

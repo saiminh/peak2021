@@ -6,10 +6,10 @@
  *
  * @package peak2021
  */
-if ( get_field('tile-bg-color') ){
-  $postTileColor = 'blog-post-tile has-brand-'.get_field('tile-bg-color').'-background-color';
+if ( get_field('tile-bg-color') || get_field('featured_image_type') ){
+  $postTileOptions = 'blog-post-tile '.get_field('featured_image_type').' has-brand-'.get_field('tile-bg-color').'-background-color';
 } else {
-  $postTileColor = '';
+  $postTileOptions = '';
 };
 ?>
 
@@ -57,12 +57,19 @@ if ( get_field('tile-bg-color') ){
 
 <?php else : //not singular ?>
 
-  <article id="post-<?php the_ID(); ?>" <?php post_class( $postTileColor ); ?>>
-  <div class="blog-tile-image">
-    <?php peak2021_post_thumbnail(); ?>
-  </div>  
+  <article id="post-<?php the_ID(); ?>" <?php post_class( $postTileOptions ); ?>>
+  <?php 
+    if ( get_field('featured_image_type') == "bg-img" ) {
+      echo '<div class="blog-tile-image">';
+      peak2021_post_thumbnail(); 
+      echo '</div>';
+    }
+  ?>
 	<header class="entry-header">
 		<?php the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' ); ?>
+    <?php if ( get_field('tile_icon') ) {
+      echo '<img src="'.get_field('tile_icon').'" />';
+    }; ?>
 	</header><!-- .entry-header -->
   
 <?php endif; ?>
