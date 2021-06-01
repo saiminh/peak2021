@@ -9,7 +9,7 @@
 
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '0.1.138' );
+	define( '_S_VERSION', '0.1.139' );
 }
 
 if ( ! function_exists( 'peak2021_setup' ) ) :
@@ -273,7 +273,7 @@ function display_teammembers() {
       $args = array(  
         'post_type' => 'teammember',
         'post_status' => 'publish',
-        'posts_per_page' => 8, 
+        'posts_per_page' => -1, 
         //'orderby’ => 'title', 
         //'order’ => 'ASC', 
       );
@@ -285,7 +285,7 @@ function display_teammembers() {
         echo '<div class="card">
           <div class="card-preview">
             <div class="card-preview-image">';
-              the_post_thumbnail( 'full' );
+              the_post_thumbnail( 'large' );
             echo '</div>
             <div class="card-preview-text">
               <h3 class="card-preview-title">';
@@ -441,23 +441,39 @@ add_action( 'wp_before_admin_bar_render', 'mytheme_admin_bar_render' );
 // Responsive image sizes
 //------------------------
 
-function custom_responsive_image_sizes($sizes, $size) {
-  $width = $size[0];
-  // blog posts
-  if ( is_singular( 'post' ) ) {
-    // half width images - medium size
-    if ( $width === 600 ) {
-      return '(min-width: 768px) 322px, (min-width: 576px) 255px, calc( (100vw - 30px) / 2)';
-    }
-    // full width images - large size
-    if ( $width === 1024 ) {
-      return '(min-width: 768px) 642px, (min-width: 576px) 510px, calc(100vw - 30px)';
-    }
-    // default to return if condition is not met
-    return '(max-width: ' . $width . 'px) 100vw, ' . $width . 'px';
-  }
+// function custom_responsive_image_sizes($sizes, $size) {
+//   $width = $size[0];
+//   // blog posts
+//   if ( is_singular( 'post' ) ) {
+//     // half width images - medium size
+//     if ( $width === 600 ) {
+//       return '(min-width: 768px) 322px, (min-width: 576px) 255px, calc( (100vw - 30px) / 2)';
+//     }
+//     // full width images - large size
+//     if ( $width === 1024 ) {
+//       return '(min-width: 768px) 642px, (min-width: 576px) 510px, calc(100vw - 30px)';
+//     }
+//     // default to return if condition is not met
+//     return '(max-width: ' . $width . 'px) 100vw, ' . $width . 'px';
+//   }
   
-  // default to return if condition is not met
-  return '(max-width: ' . $width . 'px) 100vw, ' . $width . 'px';
+//   // default to return if condition is not met
+//   return '(max-width: ' . $width . 'px) 100vw, ' . $width . 'px';
+// }
+// add_filter('wp_calculate_image_sizes', 'custom_responsive_image_sizes', 10 , 2);
+
+function custom_declare_custom_image_responsive_sizes($attr, $attachment, $size) {
+  // Full width header images
+  if ( is_page_template( 'page-team.php' )) {
+    if ($size === 'large') {
+      $attr['sizes'] = '(min-width: 769px) 25vw, 100vw';
+    }
+  }
+  else if ( is_page_template( 'page-founders.php' )) {
+    if ($size) {
+      $attr['sizes'] = '(min-width: 769px) 50vw, calc(100vw - 2rem)';
+    }
+  }
+  return $attr;
 }
-add_filter('wp_calculate_image_sizes', 'custom_responsive_image_sizes', 10 , 2);
+add_filter('wp_get_attachment_image_attributes', 'custom_declare_custom_image_responsive_sizes', 10 , 3);

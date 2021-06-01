@@ -97,8 +97,8 @@ if ( function_exists( 'register_block_pattern' ) ) {
         <figure class="wp-block-image size-full founder-coin"><img src="' . esc_url( get_template_directory_uri() ) . '/img/example-coin.svg" alt=""/></figure>
         <!-- /wp:image -->
 
-        <!-- wp:image {""sizeSlug":"full","linkDestination":"none","className":"founder-photograph"} -->
-        <figure class="wp-block-image size-full founder-photograph"><img src="https://via.placeholder.com/728x90.png?text=Placeholder+Image" alt="founder photograph" /></figure>
+        <!-- wp:image {""sizeSlug":"large","linkDestination":"none","className":"founder-photograph"} -->
+        <figure class="wp-block-image size-large founder-photograph"><img src="https://via.placeholder.com/728x90.png?text=Placeholder+Image" alt="founder photograph" /></figure>
         <!-- /wp:image -->
 
         <!-- wp:more -->
