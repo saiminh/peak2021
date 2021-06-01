@@ -466,8 +466,16 @@ if ( function_exists( 'register_block_pattern' ) ) {
         <!-- /wp:heading -->
       
         <!-- wp:group {"className":"peak-in-the-news-items"} -->
-        <div class="wp-block-group peak-in-the-news-items"><div class="wp-block-group__inner-container"><!-- wp:group {"className":"peak-in-the-news-item"} -->
-        <div class="wp-block-group peak-in-the-news-item"><div class="wp-block-group__inner-container"><!-- wp:heading {"className":"peak-in-the-news-item-title"} -->
+        <div class="wp-block-group peak-in-the-news-items"><div class="wp-block-group__inner-container">
+        
+        <!-- wp:group {"className":"peak-in-the-news-item"} -->
+        <div class="wp-block-group peak-in-the-news-item"><div class="wp-block-group__inner-container">
+        
+        <!-- wp:paragraph {"className":"peak-in-the-news-item-publication"} -->
+        <p class="peak-in-the-news-item-publication">Forbes</p>
+        <!-- /wp:paragraph -->
+        
+        <!-- wp:heading {"className":"peak-in-the-news-item-title"} -->
         <h2 class="peak-in-the-news-item-title">Utrecht-based Trengo, a shared inbox startup, raises €1.75 million to expand in Europe</h2>
         <!-- /wp:heading -->
       
@@ -476,12 +484,18 @@ if ( function_exists( 'register_block_pattern' ) ) {
         <!-- /wp:paragraph -->
       
         <!-- wp:image {"id":147,"sizeSlug":"large","linkDestination":"none","className":"peak-in-the-news-item-coin"} -->
-        <figure class="wp-block-image size-large peak-in-the-news-item-coin"><img src="http://peakdev.local/wp-content/uploads/2021/05/Frame-4.svg" alt="" class="wp-image-147"/></figure>
+        <figure class="wp-block-image size-large peak-in-the-news-item-coin"><img src="' . esc_url( get_template_directory_uri() ) . '/img/example-coin.svg" alt="founder logo" class="wp-image-147"/></figure>
         <!-- /wp:image --></div></div>
         <!-- /wp:group -->
       
         <!-- wp:group {"className":"peak-in-the-news-item"} -->
-        <div class="wp-block-group peak-in-the-news-item"><div class="wp-block-group__inner-container"><!-- wp:heading {"className":"peak-in-the-news-item-title"} -->
+        <div class="wp-block-group peak-in-the-news-item"><div class="wp-block-group__inner-container">
+        
+        <!-- wp:paragraph {"className":"peak-in-the-news-item-publication"} -->
+        <p class="peak-in-the-news-item-publication">Forbes</p>
+        <!-- /wp:paragraph -->
+        
+        <!-- wp:heading {"className":"peak-in-the-news-item-title"} -->
         <h2 class="peak-in-the-news-item-title">Utrecht-based Trengo, a shared inbox startup, raises €1.75 million to expand in Europe</h2>
         <!-- /wp:heading -->
       
@@ -490,12 +504,18 @@ if ( function_exists( 'register_block_pattern' ) ) {
         <!-- /wp:paragraph -->
       
         <!-- wp:image {"id":147,"sizeSlug":"large","linkDestination":"none","className":"peak-in-the-news-item-coin"} -->
-        <figure class="wp-block-image size-large peak-in-the-news-item-coin"><img src="http://peakdev.local/wp-content/uploads/2021/05/Frame-4.svg" alt="" class="wp-image-147"/></figure>
+        <figure class="wp-block-image size-large peak-in-the-news-item-coin"><img src="' . esc_url( get_template_directory_uri() ) . '/img/example-coin.svg" alt="founder logo" class="wp-image-147"/></figure>
         <!-- /wp:image --></div></div>
         <!-- /wp:group -->
       
         <!-- wp:group {"className":"peak-in-the-news-item"} -->
-        <div class="wp-block-group peak-in-the-news-item"><div class="wp-block-group__inner-container"><!-- wp:heading {"className":"peak-in-the-news-item-title"} -->
+        <div class="wp-block-group peak-in-the-news-item"><div class="wp-block-group__inner-container">
+        
+        <!-- wp:paragraph {"className":"peak-in-the-news-item-publication"} -->
+        <p class="peak-in-the-news-item-publication">Forbes</p>
+        <!-- /wp:paragraph -->  
+        
+        <!-- wp:heading {"className":"peak-in-the-news-item-title"} -->
         <h2 class="peak-in-the-news-item-title">Utrecht-based Trengo, a shared inbox startup, raises €1.75 million to expand in Europe</h2>
         <!-- /wp:heading -->
       
@@ -504,7 +524,7 @@ if ( function_exists( 'register_block_pattern' ) ) {
         <!-- /wp:paragraph -->
       
         <!-- wp:image {"id":147,"sizeSlug":"large","linkDestination":"none","className":"peak-in-the-news-item-coin"} -->
-        <figure class="wp-block-image size-large peak-in-the-news-item-coin"><img src="http://peakdev.local/wp-content/uploads/2021/05/Frame-4.svg" alt="" class="wp-image-147"/></figure>
+        <figure class="wp-block-image size-large peak-in-the-news-item-coin"><img src="' . esc_url( get_template_directory_uri() ) . '/img/example-coin.svg" alt="founder logo" class="wp-image-147"/></figure>
         <!-- /wp:image --></div></div>
         <!-- /wp:group --></div></div>
         <!-- /wp:group --></div></div>
