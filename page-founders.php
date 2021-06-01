@@ -29,7 +29,7 @@ get_header();
         $args = array(  
           'post_type' => 'founders',
           'post_status' => 'publish',
-          'posts_per_page' => 8, 
+          'posts_per_page' => -1, 
           //'orderby’ => 'title', 
           //'order’ => 'ASC', 
         );
@@ -58,10 +58,7 @@ get_header();
         } else {
           echo '<div class="card '.$terms_slug_str.'">';
         }; 
-          echo '<div class="card-preview">            
-            <div class="card-preview-image">';
-                the_post_thumbnail( "full" );
-            echo '</div>';
+          echo '<div class="card-preview">';
               the_content('', true); 
               echo '<h3 class="card-preview-title">';
                 print the_title(); 
