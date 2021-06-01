@@ -10,6 +10,7 @@
 .founders .card {
   flex-basis: calc(50% - 2rem);
   margin: 1rem;
+  overflow: hidden;
   @include for-tablet-landscape-up {
     flex-basis: calc(20% - 2rem);
     &:nth-child(5n+2),
@@ -40,6 +41,9 @@
 .founders .card-preview-title {
   margin: 1rem auto .25em auto;
   font-size: 1rem;
+  @include for-tablet-landscape-up {
+    font-size: 1.5vw;
+  }
 }
 .founder-filters {
   margin: 5rem auto 1rem auto;
