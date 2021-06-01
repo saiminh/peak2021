@@ -1,11 +1,33 @@
 .peak-residence-block {
-  background-color: $color-cyan;
+  background-color: $color-font;
+  color: $color-bg;
   padding: 3rem 0;
 }
 .peak-residence-block .wp-block-group__inner-container .peak-headline:first-child {
   margin-top: 0;
 }
-.peak-residence-items > .wp-block-group__inner-container {
+.peak-residence-block > .wp-block-group__inner-container {
+  @include for-tablet-landscape-up{
+    display: flex;
+  }
+}
+.peak-residence-block > .wp-block-group__inner-container .peak-headline {
+  @include for-tablet-landscape-up{
+    flex-basis: 33.3%;
+    flex-shrink: 0;
+    text-align: left;
+    align-self: center;
+    padding-left: 1rem;
+  }
+}
+.peak-residence-items {
+  @include for-tablet-landscape-up{
+    flex-basis: 66.6%;
+    flex-grow: 0;
+    overflow: hidden; 
+  }
+}
+.peak-residence-items > .wp-block-group__inner-container { 
   display: flex;
   justify-content: flex-start;
   //gap: 1rem;
@@ -21,7 +43,7 @@
   scroll-snap-align: start;
   margin: 0 auto;
   @include for-tablet-landscape-up {
-    flex-basis: 22%;
+    flex-basis: 40%;
   }
 }
 .peak-residence-item h3,
