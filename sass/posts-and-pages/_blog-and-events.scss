@@ -47,6 +47,9 @@ body.page-template-page-events {
     margin: .25rem;
   }
 }
+.blog-post-tile.white-font {
+  color: $color-bg;
+}
 .blog-post-tile.bg-img {
   position: relative;
   & > * {
@@ -72,6 +75,7 @@ body.page-template-page-events {
   color: inherit;
 }
 .blog-post-tile .entry-title {
+  font-size: 1.5rem;
   line-height: 1.05;
   margin-top: 0.5rem;
 }
