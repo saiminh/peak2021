@@ -4,3 +4,10 @@
     flex-wrap: wrap;
   }
 }
+.team-header-coin > div,
+.team-header-coin > div > svg {
+  position: absolute;
+  left: 50%;
+  top: 8rem;
+  transform: translate(-50%, -50%);
+}
