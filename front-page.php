@@ -73,7 +73,7 @@ get_header();
         </h1>
         <div class="wp-block-buttons is-content-justification-center">
           <div class="wp-block-button is-style-fill">
-            <a href="mailto: <?php the_global_var('email'); ?>" class="wp-block-button__link">Contact Us...</a>
+            <a href="<?php echo get_home_url() ?>/focus#contact-us" class="wp-block-button__link">Contact Us...</a>
           </div>
         </div>
       </div>
@@ -86,7 +86,7 @@ get_header();
         </h1>
         <div class="wp-block-buttons is-content-justification-center">
           <div class="wp-block-button is-style-fill">
-            <a href="/content" class="wp-block-button__link">Content...</a>
+            <a href="<?php echo get_home_url() ?>/blog" class="wp-block-button__link">Content...</a>
           </div>
         </div>
       </div>
@@ -104,7 +104,7 @@ get_header();
             <a class="textlink-yellow" href="<?php the_global_var('medium'); ?>">Medium</a><br>
             <a class="textlink-blue" href="<?php the_global_var('twitter'); ?>">Twitter</a><br>
             <a class="textlink-green" href="<?php the_global_var('linkedin'); ?>">LinkedIn</a><br>
-            <a class="textlink-green" href="<?php the_global_var('fundright'); ?>">Fundright</a><br>
+            <!-- <a class="textlink-green" href="<?php  //the_global_var('fundright'); ?>">Fundright</a><br> -->
             •<br>
             Privacy Policy
           </p>
