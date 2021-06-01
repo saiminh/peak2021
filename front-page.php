@@ -91,19 +91,22 @@ get_header();
         </div>
       </div>
       <div class="home-copy-segment" id="home-copy-segment-staytuned">
-        <p>We're gearing up to launch our brand new website. Stay tuned.</p>
-        <p>In the meantime find out more here:</p>
+        <p>PEAK, Capital C</p>
+        <p>Weesperplein 4b <br> 
+          1018 XA Amsterdam <br> 
+          Netherlands</p>
         <p>
-          <a class="textlink-green" href="https://www.linkedin.com/company/peak-capital/">About Peak</a><br>
-          <a class="textlink-pink" href="https://www.crunchbase.com/organization/peak-capital">Our Founders</a><br>
-          <a class="textlink-cyan" href="https://peak.capital/blog/">Peak content</a><br>
-          <a class="textlink-yellow" href="https://peakcapitalvc.typeform.com/to/wREuKa">Get in touch</a><br>
+          <a class="textlink-red" href="tel:+31850014343">+31 85 001 4343</a><br>
+          <a class="textlink-pink" href="mailto:<?php the_global_var('email'); ?>"><?php the_global_var('email'); ?></a>
         </p>
         <div class="home-staytuned-contact">
           <p> 
-            <a class="textlink-red" href="tel:+31850014343">+31 85 001 4343</a><br>
-            <a class="textlink-pink" href="mailto:opportunity@peak.capital">opportunity@peak.capital</a><br>
-            <a class="textlink-green" href="https://g.page/capitalcamsterdam?share">Peak HQ</a>
+            <a class="textlink-yellow" href="<?php the_global_var('medium'); ?>">Medium</a><br>
+            <a class="textlink-blue" href="<?php the_global_var('twitter'); ?>">Twitter</a><br>
+            <a class="textlink-green" href="<?php the_global_var('linkedin'); ?>">LinkedIn</a><br>
+            <a class="textlink-green" href="<?php the_global_var('fundright'); ?>">Fundright</a><br>
+            •<br>
+            Privacy Policy
           </p>
         </div>
         <div class="home-staytuned-copyright">

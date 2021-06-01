@@ -40,13 +40,13 @@
     </div>
     <div class="site-footer-social">
           Follow Peak on: <br>
-        <a href="https://www.linkedin.com/company/peak-capital" target="_blank">
+        <a href="<?php the_global_var('linkedin'); ?>" target="_blank">
           <?php get_template_part( 'inc/inline', 'footer-social-icons-linkedin.svg' ); ?>
         </a>
-        <a href="https://www.linkedin.com/company/peak-capital" target="_blank">
+        <a href="<?php the_global_var('instagram'); ?>" target="_blank">
           <?php get_template_part( 'inc/inline', 'footer-social-icons-instagram.svg' ); ?>
         </a>
-        <a href="https://www.linkedin.com/company/peak-capital" target="_blank">
+        <a href="<?php the_global_var('medium'); ?>" target="_blank">
           <?php get_template_part( 'inc/inline', 'footer-social-icons-circles.svg' ); ?>
         </a>
     </div>

@@ -6,6 +6,9 @@ body.page-template-page-events {
   & .peak-logo-svg path {
     fill: $color-bg;
   }
+  & .ui-hamburger line {
+    stroke: $color-bg;
+  }
   & .main-navigation a {
     color: $color-bg;
   }

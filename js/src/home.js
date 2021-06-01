@@ -94,10 +94,22 @@ function homepage(){
     function reset(){
       if ( bodies ) {
         for (var i = 2; i < bodies.length; i++){
-          Matter.Body.applyForce( bodies[i], {x: canvasWidth/2, y: canvasHeight}, {x : 0, y: -1 });
+          Matter.Body.applyForce( bodies[i], {x: canvasWidth/2, y: canvasHeight}, {x : 0, y: -(canvasHeight/canvasWidth) });
         }
       }
     }
+
+    // window.addEventListener('load', () => {
+    //   function pushLeft(){
+    //     if ( bodies ) {
+    //       for (var i = 2; i < bodies.length; i++){
+    //         Matter.Body.applyForce( bodies[i], {x: canvasWidth/2, y: canvasHeight}, {x : 1, y: -.1 });
+    //       }
+    //     }
+    //   };
+    //   window.setTimeout(pushLeft(), 1000);
+    // } );
+      
         
     let canvasWidth = document.querySelector('.home-copy-segment').offsetWidth;
     let canvasHeight = document.querySelector('.home-copy-segment').offsetHeight;
@@ -136,7 +148,8 @@ function homepage(){
       // create coins
       bodies.push( 
         Bodies.circle( randy(100,canvasWidth-100), randy(0, canvasHeight/4), scaledWidth/2 * scaleFactor, { 
-          density: 0.001 * ( canvasHeight / canvasWidth ),
+          // density: 0.001 * ( canvasHeight / canvasWidth ),
+          // mass: 10,
           render: { 
             sprite: { 
               texture: images[i].file,
@@ -171,6 +184,11 @@ function homepage(){
       imgSizeFactor: 0.5
     },
     {
+      file: nohashpath+'wp-content/themes/peak2021/img/home-sprites/ourteam04-160.png', 
+      radius: 80,
+      imgSizeFactor: 0.5
+    },
+    {
       file: nohashpath+'wp-content/themes/peak2021/img/home-sprites/ourteam02-220.png', 
       radius: 110,
       imgSizeFactor: 0.5
@@ -181,17 +199,12 @@ function homepage(){
       imgSizeFactor: 0.5
     },
     {
-      file: nohashpath+'wp-content/themes/peak2021/img/home-sprites/ourteam04-160.png', 
+      file: nohashpath+'wp-content/themes/peak2021/img/home-sprites/ourteam05-160.png', 
       radius: 80,
       imgSizeFactor: 0.5
     },
     {
-      file: nohashpath+'wp-content/themes/peak2021/img/home-sprites/ourteam04-160.png', 
-      radius: 80,
-      imgSizeFactor: 0.5
-    },
-    {
-      file: nohashpath+'wp-content/themes/peak2021/img/home-sprites/ourteam04-160.png', 
+      file: nohashpath+'wp-content/themes/peak2021/img/home-sprites/ourteam06-160.png', 
       radius: 80,
       imgSizeFactor: 0.5
     }

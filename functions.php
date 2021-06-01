@@ -367,7 +367,18 @@ add_action( 'login_enqueue_scripts', 'my_login_logo' );
 function the_global_var( $variable ) {
   if ( $variable == 'email' ) {
     echo 'info@peak.capital';
-  } else {
+  } else if ( $variable == 'twitter' ) {
+    echo 'twitter';
+  } else if ( $variable == 'medium' ) {
+    echo 'medium';
+  } else if ( $variable == 'linkedin' ) {
+    echo 'https://www.linkedin.com/company/peak-capital';
+  } else if ( $variable == 'fundright' ) {
+    echo 'fundright';
+  } else if ( $variable == 'instagram' ) {
+    echo 'instagram';
+  }
+   else {
     echo 'not found';
   }
 }
