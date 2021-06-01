@@ -164,40 +164,36 @@ if ( function_exists( 'register_block_pattern' ) ) {
       'content'       => '
         <!-- wp:group {"className":"testimonial-carousel slider"} -->
         <div class="wp-block-group testimonial-carousel slider"><div class="wp-block-group__inner-container">
-
         <!-- wp:group {"className":"testimonial-carousel-slide slide"} -->
         <div class="wp-block-group testimonial-carousel-slide slide"><div class="wp-block-group__inner-container">
-        
         <!-- wp:heading {"level":3,"className":"testimonial-carousel-quote"} -->
         <h3 class="testimonial-carousel-quote">Peak Capital is very hands on and reliable, with a strong network of LP\'s. The partners invest a lot of their time to help us grow and are available when we need them.</h3>
         <!-- /wp:heading -->
-
+  
         <!-- wp:image {"width":80,"height":80,"sizeSlug":"large","linkDestination":"none","className":"testimonial-carousel-coin"} -->
-        <div class="wp-block-image testimonial-carousel-coin"><figure class="size-large is-resized"><img src="' . esc_url( get_template_directory_uri() ) . '/img/example-coin.svg" alt="" width="80" height="80"/></figure></div>
+        <figure class="wp-block-image size-large is-resized testimonial-carousel-coin"><img src="' . esc_url( get_template_directory_uri() ) . '/img/example-coin.svg" alt="" width="80" height="80"/></figure>
         <!-- /wp:image --></div></div>
         <!-- /wp:group -->
-
+  
         <!-- wp:group {"className":"testimonial-carousel-slide slide"} -->
         <div class="wp-block-group testimonial-carousel-slide slide"><div class="wp-block-group__inner-container">
-        
         <!-- wp:heading {"level":3,"className":"testimonial-carousel-quote"} -->
         <h3 class="testimonial-carousel-quote">Very involved, analytical and cooperative VC. Great guidance and always a pleasure to work with. Thanks Team Peak.</h3>
         <!-- /wp:heading -->
-
+  
         <!-- wp:image {"width":80,"height":80,"sizeSlug":"full","linkDestination":"none","className":"testimonial-carousel-coin"} -->
-        <div class="wp-block-image testimonial-carousel-coin"><figure class="size-full is-resized"><img src="' . esc_url( get_template_directory_uri() ) . '/img/example-coin.svg" alt="" width="80" height="80"/></figure></div>
+        <figure class="wp-block-image size-full is-resized testimonial-carousel-coin"><img src="' . esc_url( get_template_directory_uri() ) . '/img/example-coin.svg" alt="" width="80" height="80"/></figure>
         <!-- /wp:image --></div></div>
         <!-- /wp:group -->
-
+  
         <!-- wp:group {"className":"testimonial-carousel-slide slide"} -->
         <div class="wp-block-group testimonial-carousel-slide slide"><div class="wp-block-group__inner-container">
-        
         <!-- wp:heading {"level":3,"className":"testimonial-carousel-quote"} -->
         <h3 class="testimonial-carousel-quote">From the first contact, the closing and the official collaboration, Peak is a great partner They have the knowledge and resources guide the growth phase, without losing sight of the culture</h3>
         <!-- /wp:heading -->
-
+  
         <!-- wp:image {"width":80,"height":80,"sizeSlug":"large","linkDestination":"none","className":"testimonial-carousel-coin"} -->
-        <div class="wp-block-image testimonial-carousel-coin"><figure class="size-large is-resized"><img src="' . esc_url( get_template_directory_uri() ) . '/img/example-coin.svg" alt="" width="80" height="80"/></figure></div>
+        <figure class="wp-block-image size-large is-resized testimonial-carousel-coin"><img src="' . esc_url( get_template_directory_uri() ) . '/img/example-coin.svg" alt="" width="80" height="80"/></figure>
         <!-- /wp:image --></div></div>
         <!-- /wp:group --></div></div>
         <!-- /wp:group -->
