@@ -1,6 +1,7 @@
 import gsap from "gsap/gsap-core";
 
 function teamCoin(){
+
   gsap.to(".team-header-coin-ring", {
     rotationZ: 360,
     duration: 10,

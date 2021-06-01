@@ -26,7 +26,7 @@ function homeIntro(){
     transformOrigin: "50% 50%",
   } )
   .set( '.peak-homepage', { 
-    x: 2500 
+    xPercent: 100,
   } )
   .addLabel('coinIn', '0')
   .to( '.logo-clone' , {
@@ -55,7 +55,7 @@ function homeIntro(){
     duration: 1
   }, 'pageIn' )
   .to( '.peak-homepage', {
-    x: 0, duration: 1, ease: 'circ.out'
+    xPercent: 0, duration: 1, ease: 'circ.out'
   }, 'pageIn')
   .fromTo( '.home-image .post-thumbnail', {
     transformOrigin: "50% 50%",

@@ -9,8 +9,10 @@ import { teamCoin } from "./team-coins.js";
 
   // Homepage script only runs on Homepage (Duh)
   if ( document.querySelector('.peak-homepage') ){
-    homeIntro();
-    homepage();
+    window.addEventListener('load', () => {
+      homepage();
+      homeIntro();
+    })
   };
   if (document.querySelector('.card')) {
     peakCardsNav();

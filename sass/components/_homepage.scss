@@ -168,30 +168,42 @@ body.home.currentSegment_home-copy-segment-staytuned {
   // height: 100%;
   z-index: 1;
 }
-#home-copy-segment-our-team .wp-block-button__link:hover,
+#home-copy-segment-contact .wp-block-button__link ,
+#home-copy-segment-content .wp-block-button__link ,
+#home-copy-segment-our-focus .wp-block-button__link ,
+#home-copy-segment-our-founders .wp-block-button__link ,
 #home-copy-segment-our-team .wp-block-button__link {
-  background-color: $color-pink;
+  color: $color-font;
+  transition: .3s all ease-in-out;
+}
+#home-copy-segment-contact .wp-block-button__link:hover ,
+#home-copy-segment-content .wp-block-button__link:hover ,
+#home-copy-segment-our-focus .wp-block-button__link:hover ,
+#home-copy-segment-our-founders .wp-block-button__link:hover ,
+#home-copy-segment-our-team .wp-block-button__link:hover {
+  background-color: $color-bg;
   color: $color-font;
 }
-#home-copy-segment-our-founders .wp-block-button__link:hover,
+// #home-copy-segment-our-team .wp-block-button__link:hover,
+#home-copy-segment-our-team .wp-block-button__link {
+  background-color: $color-pink;
+}
+// #home-copy-segment-our-founders .wp-block-button__link:hover,
 #home-copy-segment-our-founders .wp-block-button__link {
   background-color: $color-blue;
   color: $color-bg;
 }
-#home-copy-segment-our-focus .wp-block-button__link:hover,
+// #home-copy-segment-our-focus .wp-block-button__link:hover,
 #home-copy-segment-our-focus .wp-block-button__link {
   background-color: $color-green;
-  color: $color-font;
 }
-#home-copy-segment-content .wp-block-button__link:hover,
-#home-copy-segment-content .wp-block-button__link {
-  background-color: $color-yellow;
-  color: $color-font;
-}
-#home-copy-segment-contact .wp-block-button__link:hover,
+// #home-copy-segment-contact .wp-block-button__link:hover,
 #home-copy-segment-contact .wp-block-button__link {
+  background-color: $color-yellow;
+}
+// #home-copy-segment-content .wp-block-button__link:hover,
+#home-copy-segment-content .wp-block-button__link {
   background-color: $color-red;
-  color: $color-font;
 }
 .home-image {
   display: flex;
