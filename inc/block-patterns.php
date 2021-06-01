@@ -168,8 +168,8 @@ if ( function_exists( 'register_block_pattern' ) ) {
         <!-- wp:group {"className":"testimonial-carousel-slide slide"} -->
         <div class="wp-block-group testimonial-carousel-slide slide"><div class="wp-block-group__inner-container">
         
-        <!-- wp:heading {"textAlign":"center","level":3,"className":"testimonial-carousel-quote"} -->
-        <h3 class="has-text-align-center testimonial-carousel-quote">Peak Capital is very hands on and reliable, with a strong network of LP\'s. The partners invest a lot of their time to help us grow and are available when we need them.</h3>
+        <!-- wp:heading {"level":3,"className":"testimonial-carousel-quote"} -->
+        <h3 class="testimonial-carousel-quote">Peak Capital is very hands on and reliable, with a strong network of LP\'s. The partners invest a lot of their time to help us grow and are available when we need them.</h3>
         <!-- /wp:heading -->
 
         <!-- wp:image {"align":"center","width":80,"height":80,"sizeSlug":"large","linkDestination":"none","className":"testimonial-carousel-coin"} -->
@@ -178,8 +178,10 @@ if ( function_exists( 'register_block_pattern' ) ) {
         <!-- /wp:group -->
 
         <!-- wp:group {"className":"testimonial-carousel-slide slide"} -->
-        <div class="wp-block-group testimonial-carousel-slide slide"><div class="wp-block-group__inner-container"><!-- wp:heading {"textAlign":"center","level":3,"className":"testimonial-carousel-quote"} -->
-        <h3 class="has-text-align-center testimonial-carousel-quote">Very involved, analytical and cooperative VC. Great guidance and always a pleasure to work with. Thanks Team Peak.</h3>
+        <div class="wp-block-group testimonial-carousel-slide slide"><div class="wp-block-group__inner-container">
+        
+        <!-- wp:heading {"level":3,"className":"testimonial-carousel-quote"} -->
+        <h3 class="testimonial-carousel-quote">Very involved, analytical and cooperative VC. Great guidance and always a pleasure to work with. Thanks Team Peak.</h3>
         <!-- /wp:heading -->
 
         <!-- wp:image {"align":"center","width":80,"height":80,"sizeSlug":"full","linkDestination":"none","className":"testimonial-carousel-coin"} -->
@@ -188,8 +190,10 @@ if ( function_exists( 'register_block_pattern' ) ) {
         <!-- /wp:group -->
 
         <!-- wp:group {"className":"testimonial-carousel-slide slide"} -->
-        <div class="wp-block-group testimonial-carousel-slide slide"><div class="wp-block-group__inner-container"><!-- wp:heading {"textAlign":"center","level":3,"className":"testimonial-carousel-quote"} -->
-        <h3 class="has-text-align-center testimonial-carousel-quote">From the first contact, the closing and the official collaboration, Peak is a great partner They have the knowledge and resources guide the growth phase, without losing sight of the culture</h3>
+        <div class="wp-block-group testimonial-carousel-slide slide"><div class="wp-block-group__inner-container">
+        
+        <!-- wp:heading {"level":3,"className":"testimonial-carousel-quote"} -->
+        <h3 class="testimonial-carousel-quote">From the first contact, the closing and the official collaboration, Peak is a great partner They have the knowledge and resources guide the growth phase, without losing sight of the culture</h3>
         <!-- /wp:heading -->
 
         <!-- wp:image {"align":"center","width":80,"height":80,"sizeSlug":"large","linkDestination":"none","className":"testimonial-carousel-coin"} -->

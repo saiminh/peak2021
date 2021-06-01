@@ -5,6 +5,7 @@ import { homeIntro } from "./home-intro.js";
 import { peakCardsNav } from "./peak-cards-nav.js";
 import { slider } from "./slider.js";
 import { foundersPage } from "./founders-coins.js";
+import { teamCoin } from "./team-coins.js";
 
   // Homepage script only runs on Homepage (Duh)
   if ( document.querySelector('.peak-homepage') ){
@@ -19,4 +20,7 @@ import { foundersPage } from "./founders-coins.js";
   }
   if (document.querySelector('.founders')) {
     foundersPage();
+  }
+  if (document.querySelector('.team-header-coin')) {
+    teamCoin();
   }

@@ -368,13 +368,15 @@ function the_global_var( $variable ) {
   if ( $variable == 'email' ) {
     echo 'info@peak.capital';
   } else if ( $variable == 'twitter' ) {
-    echo 'twitter';
+    echo 'https://twitter.com/peakcapitalvc?lang=en';
   } else if ( $variable == 'medium' ) {
-    echo 'medium';
+    echo 'https://medium.com/peak-capital';
   } else if ( $variable == 'linkedin' ) {
     echo 'https://www.linkedin.com/company/peak-capital';
   } else if ( $variable == 'fundright' ) {
     echo 'fundright';
+  } else if ( $variable == 'crunchbase' ) {
+    echo 'https://www.crunchbase.com/organization/peak-capital';
   } else if ( $variable == 'instagram' ) {
     echo 'instagram';
   }
