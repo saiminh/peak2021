@@ -1,0 +1,12 @@
+.peak-typeform-container {
+  background-color: $color-font;
+  color: $color-bg;
+}
+.peak-typeform-container .wp-block-group__inner-container {
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: 1200px;
+}
+.peak-typeform-container .wp-block-typeform-embed-plugin {
+  height: 90vh!important;
+}

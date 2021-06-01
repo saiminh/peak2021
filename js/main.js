@@ -91,7 +91,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"slider\": () => (/* binding */ slider)\n/* harmony export */ });\nfunction slider(indent = false){\n  if ( document.querySelector( '.slider' ) ){\n    let slider = document.querySelector( '.slider .wp-block-group__inner-container' );\n    let sliderScrollWidth = slider.scrollWidth;\n    let sliderSlides = slider.querySelectorAll('.slide');\n    if (indent){\n      slider.scrollTo( sliderScrollWidth / sliderSlides.length, 0, 'smooth' );\n    }\n  }\n}\n\n\n//# sourceURL=webpack://peak2021/./js/src/slider.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"slider\": () => (/* binding */ slider)\n/* harmony export */ });\nfunction slider(indent = false){\n  if ( document.querySelector( '.slider' ) ){\n    let slider = document.querySelector( '.slider .wp-block-group__inner-container' );\n    let sliderScrollWidth = slider.scrollWidth;\n    let sliderSlides = slider.querySelectorAll('.slide');\n    if (indent){\n      slider.scrollTo( (sliderScrollWidth / sliderSlides.length) * 0.5, 0, 'smooth' );\n    }\n  }\n}\n\n\n//# sourceURL=webpack://peak2021/./js/src/slider.js?");
 
 /***/ }),
 

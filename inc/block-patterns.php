@@ -553,5 +553,22 @@ if ( function_exists( 'register_block_pattern' ) ) {
         <!-- /wp:group -->',
     )
   );
-
+  register_block_pattern( 
+    'peak2021/peak-typeform-embed',
+    array(
+      'title'         => esc_html__( 'Peak typeform', 'peak2021' ),
+      'categories'    => array( 'peak2021' ),
+      'viewportWidth' => 1440,
+      'content'       => 
+        '<!-- wp:group {"className":"peak-typeform-container"} -->
+        <div id="contact-us" class="wp-block-group peak-typeform-container"><div class="wp-block-group__inner-container"><!-- wp:heading {"textAlign":"center","className":"peak-headline"} -->
+        <h2 class="has-text-align-center peak-headline">Contact us</h2>
+        <!-- /wp:heading -->
+      
+        <!-- wp:typeform/embed-plugin {"url":"https://peakcapitalvc.typeform.com/to/wREuKa","formId":"wREuKa"} -->
+        <div data-tf-opacity="100" data-tf-medium="embed-wordpress" data-tf-widget="wREuKa" style="height:500px;width:100%" id="widget" class="wp-block-typeform-embed-plugin"></div>
+        <!-- /wp:typeform/embed-plugin --></div></div>
+        <!-- /wp:group -->',
+    )
+  );
 }

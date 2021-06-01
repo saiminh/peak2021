@@ -4,7 +4,7 @@ function slider(indent = false){
     let sliderScrollWidth = slider.scrollWidth;
     let sliderSlides = slider.querySelectorAll('.slide');
     if (indent){
-      slider.scrollTo( sliderScrollWidth / sliderSlides.length, 0, 'smooth' );
+      slider.scrollTo( (sliderScrollWidth / sliderSlides.length) * 0.5, 0, 'smooth' );
     }
   }
 }

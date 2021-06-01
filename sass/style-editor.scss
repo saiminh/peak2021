@@ -57,6 +57,16 @@
 //Components
 @import "components/buttons";
 @import "components/cards";
+@import "components/typeform-embed";
+.peak-typeform-container::before {
+  @include parentblocklabel('Typeform Embed');
+}
+.peak-typeform-container .typeform-editor{
+  background-color: $color-bg;
+  color: $color-font;
+  padding: 1rem;
+}
+
 @import "components/four-ts";
 .peak-4t-columns .peak-4t-t1,
 .peak-4t-columns .peak-4t-t2,
