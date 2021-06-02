@@ -12,6 +12,18 @@
 }
 .card-preview-image {
   display: inline-block;
+  @include for-tablet-landscape-up {
+    overflow: hidden;
+    height: 30vw;
+  }
+}
+.card-preview-image img{
+  display: block;
+  @include for-tablet-landscape-up {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 .card-preview-title {
   font-size: 1.25rem;

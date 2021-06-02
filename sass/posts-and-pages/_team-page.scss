@@ -2,7 +2,12 @@
   @include for-tablet-landscape-up {
     display: flex;
     flex-wrap: wrap;
+    gap: 1rem;
+    padding-left: 1rem;
   }
+}
+.teammembers.cards .card {
+  margin: 0;
 }
 .team-header-coin-block {
   position: relative;
