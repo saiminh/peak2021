@@ -4,11 +4,11 @@
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: 100%;
-  background-image: url('./img/example-coin.svg');
+  background-image: url('./img/footer-bg-mobile.svg');
   @include for-tablet-landscape-up {
     font-size: 1rem;
     padding-bottom: 9rem;
-    background-image: url('./img/footer-bg-desktop.svg');
+    background-image: url('./img/footer-bg-desktop-nopeaklogo.svg');
   }
 }
 .site-footer-columns {
