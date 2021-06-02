@@ -74,6 +74,7 @@ if ( get_field('tile-bg-color') || get_field('featured_image_type') ){
   ?>
 	<header class="entry-header">
 		<?php the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' ); ?>
+    <?php peak2021_posted_by(); ?>
     <?php if ( get_field('tile_icon') ) {
       echo '<img src="'.get_field('tile_icon').'" />';
     }; ?>
