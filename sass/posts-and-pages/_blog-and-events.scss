@@ -84,7 +84,8 @@ body.page-template-page-events {
   margin-top: 0.5rem;
 }
 .blog-post-tile .byline{
-  display: block;
+  pointer-events: none;
+  display: none;
   margin-bottom: 2rem;
   margin-top: -1rem;
 }
