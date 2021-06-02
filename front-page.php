@@ -12,8 +12,8 @@ get_header();
 
 	<main id="primary" class="site-main peak-homepage">
     <nav class="home-segment-nav">
-      <a class="home-segment-nav-link" href="#home-copy-segment-our-team">1</a>
-      <a class="home-segment-nav-link" href="#home-copy-segment-our-founders">2</a>
+      <a class="home-segment-nav-link" href="#home-copy-segment-our-founders">1</a>
+      <a class="home-segment-nav-link" href="#home-copy-segment-our-team">2</a>
       <a class="home-segment-nav-link" href="#home-copy-segment-our-focus">3</a>
       <a class="home-segment-nav-link" href="#home-copy-segment-contact">4</a>
       <a class="home-segment-nav-link" href="#home-copy-segment-content">5</a>
@@ -31,6 +31,17 @@ get_header();
           SaaS — Marketplaces — Platforms 
         </div>      
       </div>
+
+      <div class="home-copy-segment" id="home-copy-segment-our-founders">
+        <h1 class="home-copy-segment-title">Hoi we’re Peak</h1>
+        <h1 class="home-copy-segment-title">We dare Europe’s extraordinary founders to realise their visions quicker.</h1>
+        <div class="wp-block-buttons is-content-justification-center">
+          <div class="wp-block-button is-style-fill">
+            <a href="<?php echo get_home_url() ?>/founders" class="wp-block-button__link">Our Founders...</a>
+          </div>
+        </div>
+      </div>
+
       <div class="home-copy-segment" id="home-copy-segment-our-team">
         <div>
           <h1 class="home-copy-segment-title">Hoi, we’re PEAK. </h1>
@@ -42,14 +53,7 @@ get_header();
           </div>
         </div>
       </div>
-      <div class="home-copy-segment" id="home-copy-segment-our-founders">
-        <h1 class="home-copy-segment-title">We dare Europe’s extraordinary founders to realise their visions quicker.</h1>
-        <div class="wp-block-buttons is-content-justification-center">
-          <div class="wp-block-button is-style-fill">
-            <a href="<?php echo get_home_url() ?>/founders" class="wp-block-button__link">Our Founders...</a>
-          </div>
-        </div>
-      </div>
+      
       <div class="home-copy-segment" id="home-copy-segment-our-focus">
         <h1 class="home-copy-segment-title">
           €250k—€2.5M<br> 
@@ -105,12 +109,12 @@ get_header();
             <a class="textlink-blue" href="<?php the_global_var('twitter'); ?>">Twitter</a><br>
             <a class="textlink-green" href="<?php the_global_var('linkedin'); ?>">LinkedIn</a><br>
             <!-- <a class="textlink-green" href="<?php  //the_global_var('fundright'); ?>">Fundright</a><br> -->
-            •<br>
-            Privacy Policy
+            <!-- •<br>
+            Privacy Policy -->
           </p>
         </div>
         <div class="home-staytuned-copyright">
-          <p>(C) PEAK 2021</p>
+          <p>© PEAK 2021</p>
         </div>
       </div>
     </div>

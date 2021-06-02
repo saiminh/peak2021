@@ -100,11 +100,11 @@ body.home.currentSegment_home-copy-segment-staytuned {
 }
 .home-segment-nav-link:first-child:hover::after,
 .home-segment-nav-link:first-child.active::after {
-  background-color: $color-pink;
+  background-color: $color-blue;
 }
 .home-segment-nav-link:nth-child(2):hover::after,
 .home-segment-nav-link:nth-child(2).active::after {
-  background-color: $color-blue;
+  background-color: $color-pink;
 }
 .home-segment-nav-link:nth-child(3):hover::after,
 .home-segment-nav-link:nth-child(3).active::after{
