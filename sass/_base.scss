@@ -206,6 +206,13 @@ a:active {
   color: $color-red;
 }
 
+/* Those pesky button backgrounds
+--------------------------------------------- */
+.replaced-svg rect[width="250"][height = "250"][fill="white"] {
+  fill: none;
+  fill: transparent;
+}
+
 /* Forms
 --------------------------------------------- */
 button,
