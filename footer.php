@@ -23,6 +23,18 @@
           );
         ?>
       </div>
+      <div class="site-footer-column site-footer-social">
+          <header>Follow Peak on:</header>
+          <a href="<?php the_global_var('crunchbase'); ?>" target="_blank">
+            <?php get_template_part( 'inc/inline', 'footer-social-icons-crunchbase.svg' ); ?>
+          </a>
+          <a href="<?php the_global_var('linkedin'); ?>" target="_blank">
+            <?php get_template_part( 'inc/inline', 'footer-social-icons-linkedin.svg' ); ?>
+          </a>
+          <a href="<?php the_global_var('medium'); ?>" target="_blank">
+            <?php get_template_part( 'inc/inline', 'footer-social-icons-circles.svg' ); ?>
+          </a>
+      </div>
       <div class="site-footer-column site-footer-site-info">
         <p>PEAK <br> 
         Capital C </p>
@@ -33,24 +45,13 @@
         <a href="mailto:<?php the_global_var('email'); ?>"><?php the_global_var('email'); ?></a></p>
       </div><!-- .site-info -->
       <div class="site-footer-column site-footer-site-mail">
-        Mail: <br>
-        T.a.v Stefan Bary <br>
+        <p>Mail: </p>
+        <p>T.a.v Stefan Bary <br>
         Eerste Jacob van Campenstraat 46-1 <br>
         1072 BG <br> 
         Amsterdam
       </div>
-      <div class="site-footer-column site-footer-social">
-          <header>Follow Peak on:</header>
-          <a href="<?php the_global_var('linkedin'); ?>" target="_blank">
-            <?php get_template_part( 'inc/inline', 'footer-social-icons-linkedin.svg' ); ?>
-          </a>
-          <a href="<?php the_global_var('instagram'); ?>" target="_blank">
-            <?php get_template_part( 'inc/inline', 'footer-social-icons-instagram.svg' ); ?>
-          </a>
-          <a href="<?php the_global_var('medium'); ?>" target="_blank">
-            <?php get_template_part( 'inc/inline', 'footer-social-icons-circles.svg' ); ?>
-          </a>
-      </div>
+      
     </div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->

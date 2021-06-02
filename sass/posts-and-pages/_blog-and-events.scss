@@ -25,9 +25,6 @@ body.page-template-page-events {
   min-width: 150px;
   padding: .66em 2em .5em 2em;
 }
-.peak-media-subnav-button.disabled {
-  opacity: .3;
-}
 .blog .site-main {
   @include for-tablet-landscape-up {
     display: grid;

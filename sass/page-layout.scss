@@ -20,3 +20,9 @@
      max-width: 20em;
    }
 }
+.page .entry-content .peak-headline:first-child {
+  margin-top: 7rem;
+  @include for-tablet-landscape-up {
+    margin-top: 9rem;
+  }
+}

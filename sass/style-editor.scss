@@ -133,7 +133,7 @@
 .peak-faq-block {
   border: 1px solid #000;
   &::before {
-    @include parentblocklabel('Peak FAQs Block');
+    @include parentblocklabel('Peak FAQs (hidden)');
   }
 }
 .peak-faq {

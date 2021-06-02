@@ -110,7 +110,9 @@ big {
 body {
   background: #fff;
 }
-
+p:empty {
+  display: none;
+}
 hr {
   background-color: #ccc;
   border: 0;
