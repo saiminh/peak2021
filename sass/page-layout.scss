@@ -14,14 +14,14 @@
 }
 .peak-headline {
   text-align: center;
-  margin: 2em 1em;
+  margin: 2rem 1em;
    @include for-tablet-landscape-up {
      margin: 2em auto;
      max-width: 20em;
    }
 }
-.page .entry-content .peak-headline:first-child {
-  margin-top: 7rem;
+.page-template-page-team .entry-content .peak-headline:first-child {
+  margin-top: 6rem;
   @include for-tablet-landscape-up {
     margin-top: 9rem;
   }

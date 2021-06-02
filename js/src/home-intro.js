@@ -12,8 +12,8 @@ function homeIntro(){
   const origLogoSize = source.querySelector('.peak-logo-svg').outerWidth;
   let tlIntro = gsap.timeline({ paused: false });
   tlIntro.set('.logo-clone', {
-    width: 400,
-    height: 400,
+    width: 300,
+    height: 300,
     x: window.outerWidth/2,
     y: window.innerHeight/2,    
     xPercent: -50,

@@ -2,7 +2,16 @@ body.blog,
 body.page-template-page-events {
   background-color: $color-font;
   color: $color-bg;
-  padding-top: 6rem;
+  padding-top: 4rem;
+  @include for-tablet-landscape-up {
+    padding-top: 6rem;
+  }
+  .peak-headline {
+    font-size: 1.5rem;
+    @include for-tablet-landscape-up {
+      font-size: 2rem;
+    }
+  }
   & .peak-logo-svg-letters {
     fill: $color-font;
   }
