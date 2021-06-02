@@ -21,7 +21,8 @@ body .has-brand-blue-background-color {
   color: $color-bg;
 }
 $color-yellow: #FFC600;
-body .has-brand-yellow-background-color {
+body .has-brand-yellow-background-color,
+body .has-brand-yellow-background-color:visited {
   background-color: $color-yellow;
 }
 $color-red: #F91C0E;
