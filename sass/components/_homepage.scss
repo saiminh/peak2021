@@ -22,11 +22,9 @@ body.home .peak-branding {
   transform: scale(1);
   transition: all .3s ease-in-out;
 }
-// body.home #masthead {
-//   width: auto;
-// }
-body.home .peak-branding path {
-  // fill: #000000;
+body.home .peak-branding circle,
+body.home .peak-branding path,
+body.home .peak-branding polygon {
   transition: all .3s ease-in-out;
 }
 body.home.currentSegment_home-copy-segment-our-team,
@@ -36,21 +34,26 @@ body.home.currentSegment_home-copy-segment-contact,
 body.home.currentSegment_home-copy-segment-content,
 body.home.currentSegment_home-copy-segment-staytuned {
   & .peak-branding {
-    // transform: scale(.75);
     @include for-tablet-landscape-up {
       transform: none;
     }
   }
-  & .peak-branding path {
+  & .peak-branding .peak-logo-svg-circle {
     fill: #FFFFFF;
     @include for-tablet-landscape-up {
       fill: #000000;
     }
   }
-  & .ui-hamburger line {
-    stroke: #FFFFFF;
+  & .peak-branding .peak-logo-svg-letters {
+    fill: #000000;
     @include for-tablet-landscape-up {
-      stroke: #000000;
+      fill: #FFFFFF;
+    }
+  }
+  & .ui-hamburger line {
+    stroke: #FFFFFF!important;
+    @include for-tablet-landscape-up {
+      stroke: #000000!important;
     }
   }
 }

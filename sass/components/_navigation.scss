@@ -32,10 +32,16 @@
     transform: rotateZ(1440deg);
   }
 }
-.main-nav-toggled .peak-branding svg path {
+.main-nav-toggled .peak-branding .peak-logo-svg-circle {
   fill: $color-bg;
   @include for-tablet-landscape-up {
     fill: $color-font;
+  }
+}
+.main-nav-toggled .peak-branding .peak-logo-svg-letters {
+  fill: $color-font;
+  @include for-tablet-landscape-up {
+    fill: $color-bg;
   }
 }
 /* Navigation

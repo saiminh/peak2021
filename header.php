@@ -27,7 +27,7 @@
 	<header id="masthead" class="site-header">
 		<div class="peak-branding">
       <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-        <?php echo get_template_part( 'inc/inline', 'peak_logo.svg' ) ?>
+        <?php echo get_template_part( 'inc/inline', 'peak-logo-whitefont.svg' ) ?>
       </a>
 		</div><!-- .site-branding -->
 
