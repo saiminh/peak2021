@@ -44,8 +44,7 @@ get_header();
 
       <div class="home-copy-segment" id="home-copy-segment-our-team">
         <div>
-          <h1 class="home-copy-segment-title">Hoi, we’re PEAK. </h1>
-          <h1 class="home-copy-segment-title">The early-stage VC fully backed by entrepreneurs.</h1>
+          <h1 class="home-copy-segment-title">We’re the early-stage VC fully backed by entrepreneurs.</h1>
         </div>
         <div class="wp-block-buttons is-content-justification-center">
           <div class="wp-block-button is-style-fill">
@@ -73,7 +72,7 @@ get_header();
           Share your vision with us.
         </h1>
         <h1 class="home-copy-segment-title">
-          We might be the partners  you’ve been looking for.
+          We might be the partners you’ve been looking for.
         </h1>
         <div class="wp-block-buttons is-content-justification-center">
           <div class="wp-block-button is-style-fill">

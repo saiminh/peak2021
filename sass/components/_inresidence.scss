@@ -79,5 +79,9 @@
     border-radius: 50%;
     min-width: 0;
     line-height: 1.2;
+    &:hover {
+      background-color: $color-bg;
+      color: $color-font;
+    }
   }
 }
