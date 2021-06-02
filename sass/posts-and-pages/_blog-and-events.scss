@@ -24,6 +24,10 @@ body.page-template-page-events {
   font-size: .75rem;
   min-width: 150px;
   padding: .66em 2em .5em 2em;
+  &:hover {
+    background-color: $color-bg;
+    color: $color-font;
+  }
 }
 .blog .site-main {
   @include for-tablet-landscape-up {

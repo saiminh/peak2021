@@ -45,9 +45,8 @@
         <a href="mailto:<?php the_global_var('email'); ?>"><?php the_global_var('email'); ?></a></p>
       </div><!-- .site-info -->
       <div class="site-footer-column site-footer-site-mail">
-        <p>Mail: </p>
-        <p>T.a.v Stefan Bary <br>
-        Eerste Jacob van Campenstraat 46-1 <br>
+        <p>Mail:</p>
+        <p>Eerste Jacob van Campenstraat 46-1 <br>
         1072 BG <br> 
         Amsterdam
       </div>

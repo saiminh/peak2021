@@ -65,6 +65,12 @@
   & path {
     fill: $color-bg;
   }
+  & .icon-crunchbase path[fill="black"]{
+    fill: $color-bg;
+  }
+  & .icon-crunchbase path[fill="white"]{
+    fill: $color-font;
+  }
 }
 .site-footer-social a {
   padding: .25rem;
