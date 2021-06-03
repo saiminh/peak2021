@@ -7,10 +7,10 @@ function foundersPage(){
     let thisCoin = allCoins[i].querySelector( '.founder-coin' );
     let thisPhoto = allCoins[i].querySelector( '.founder-photograph' );
     let coinFlip = gsap.timeline( { paused: true } )
-      .to( thisCoin, { rotationY: 90, duration: .666, ease: "power4.inOut" })
-      .from( thisPhoto, { rotationY: -90, duration: .666, ease: "power4.inOut" }, .666) ;
+      .to( thisCoin, { rotationY: 90, scale: .9, duration: .666, ease: "power4.inOut" })
+      .from( thisPhoto, { rotationY: -90, scale: .9, duration: .666, ease: "power4.inOut" }, .666) ;
     allCoins[i].addEventListener( 'mouseover', () => {
-      coinFlip.play().timeScale( 2.5 );
+      coinFlip.play().timeScale( 2 );
     } )
     allCoins[i].addEventListener( 'mouseleave', () => {
       coinFlip.reverse();

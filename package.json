@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack --mode=development --watch & sass ./sass/style.scss:style.min.css --watch --style compressed & sass ./sass/style-editor.scss:style-editor.min.css --watch --style compressed"
+    "start": "webpack --mode=development --watch & sass ./sass/style.scss:style.min.css --watch --style compressed & sass ./sass/style-editor.scss:style-editor.min.css --watch --style compressed",
+    "prod": "webpack --mode=production && sass ./sass/style.scss:style.min.css --style compressed && sass ./sass/style-editor.scss:style-editor.min.css --style compressed"
   },
   "keywords": [],
   "author": "",
