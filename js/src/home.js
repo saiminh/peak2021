@@ -94,7 +94,7 @@ function homepage(){
     function reset(){
       if ( bodies ) {
         for (var i = 2; i < bodies.length; i++){
-          Matter.Body.applyForce( bodies[i], {x: canvasWidth/2, y: canvasHeight}, {x : 0, y: -(canvasHeight/canvasWidth) });
+          Matter.Body.applyForce( bodies[i], {x: canvasWidth/2, y: canvasHeight}, {x : 0, y: -1 });
         }
       }
     }
@@ -148,8 +148,8 @@ function homepage(){
       // create coins
       bodies.push( 
         Bodies.circle( randy(100,canvasWidth-100), randy(0, canvasHeight/4), scaledWidth/2 * scaleFactor, { 
-          // density: 0.001 * ( canvasHeight / canvasWidth ),
-          // mass: 10,
+          // density: .001 * ( trueimgWidth / 220 ),
+          mass: randy(20, 30),
           render: { 
             sprite: { 
               texture: images[i].file,

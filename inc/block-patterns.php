@@ -404,49 +404,65 @@ if ( function_exists( 'register_block_pattern' ) ) {
       'categories'    => array( 'peak2021' ),
       'viewportWidth' => 1440,
       'content'       => '
-        <!-- wp:group {"className":"peak-residence-block"} -->
-        <div class="wp-block-group peak-residence-block"><div class="wp-block-group__inner-container"><!-- wp:heading {"textAlign":"center","className":"peak-headline"} -->
-        <h2 class="has-text-align-center peak-headline">Our Entrepreneurs in Residence.<br>Founders with the scars to prove it.</h2>
-        <!-- /wp:heading -->
-      
-        <!-- wp:group {"className":"peak-residence-items"} -->
-        <div class="wp-block-group peak-residence-items"><div class="wp-block-group__inner-container"><!-- wp:group {"className":"peak-residence-item"} -->
-        <div class="wp-block-group peak-residence-item"><div class="wp-block-group__inner-container"><!-- wp:image {"sizeSlug":"large","className":"peak-residence-item-image"} -->
-        <figure class="wp-block-image size-large peak-residence-item-image"><img src="https://via.placeholder.com/300png?text=I+am+a+resident " alt=""/></figure>
-        <!-- /wp:image -->
-      
-        <!-- wp:heading {"level":3} -->
-        <h3>Dennis Goedgebuure</h3>
-        <!-- /wp:heading -->
-      
-        <!-- wp:paragraph -->
-        <p>Recently at Paypal, Venmos Fanatics and AirBnB</p>
-        <!-- /wp:paragraph --></div></div>
-        <!-- /wp:group -->
-      
-        <!-- wp:group {"className":"peak-residence-item"} -->
-        <div class="wp-block-group peak-residence-item"><div class="wp-block-group__inner-container"><!-- wp:image {"sizeSlug":"large","className":"peak-residence-item-image"} -->
-        <figure class="wp-block-image size-large peak-residence-item-image"><img src="https://via.placeholder.com/300png?text=I+am+a+resident " alt=""/></figure>
-        <!-- /wp:image -->
-      
-        <!-- wp:heading {"level":3} -->
-        <h3>Dennis Goedgebuure</h3>
-        <!-- /wp:heading -->
-      
-        <!-- wp:paragraph -->
-        <p>Recently at Paypal, Venmos Fanatics and AirBnB</p>
-        <!-- /wp:paragraph --></div></div>
-        <!-- /wp:group -->
-      
-        <!-- wp:group {"className":"peak-residence-item"} -->
-        <div class="wp-block-group peak-residence-item"><div class="wp-block-group__inner-container"><!-- wp:buttons -->
-        <div class="wp-block-buttons"><!-- wp:button {"className":"peak-residence-item-button"} -->
-        <div class="wp-block-button peak-residence-item-button"><a class="wp-block-button__link" href="mailto:contact@peak.capital">Up for it?<br>Get in touch.</a></div>
-        <!-- /wp:button --></div>
-        <!-- /wp:buttons --></div></div>
-        <!-- /wp:group --></div></div>
-        <!-- /wp:group --></div></div>
-        <!-- /wp:group -->',
+      <!-- wp:group {"className":"peak-residence-block"} -->
+      <div class="wp-block-group peak-residence-block"><div class="wp-block-group__inner-container"><!-- wp:group {"className":"peak-residence-items"} -->
+      <div class="wp-block-group peak-residence-items"><div class="wp-block-group__inner-container"><!-- wp:group {"className":"peak-residence-item"} -->
+      <div class="wp-block-group peak-residence-item"><div class="wp-block-group__inner-container"><!-- wp:heading {"className":"peak-headline"} -->
+      <h2 class="peak-headline">Our Entrepreneurs in Residence.<br>Founders with the scars to prove it.</h2>
+      <!-- /wp:heading --></div></div>
+      <!-- /wp:group -->
+  
+      <!-- wp:group {"className":"peak-residence-item"} -->
+      <div class="wp-block-group peak-residence-item"><div class="wp-block-group__inner-container"><!-- wp:image {"sizeSlug":"large","className":"peak-residence-item-image"} -->
+      <figure class="wp-block-image size-large peak-residence-item-image"><img src="https://via.placeholder.com/300png?text=I+am+a+resident " alt=""/></figure>
+      <!-- /wp:image -->
+  
+      <!-- wp:heading {"level":3} -->
+      <h3>Dennis Goedgebuure</h3>
+      <!-- /wp:heading -->
+  
+      <!-- wp:paragraph -->
+      <p>Recently at Paypal, Venmos Fanatics and AirBnB</p>
+      <!-- /wp:paragraph --></div></div>
+      <!-- /wp:group -->
+  
+      <!-- wp:group {"className":"peak-residence-item"} -->
+      <div class="wp-block-group peak-residence-item"><div class="wp-block-group__inner-container"><!-- wp:image {"sizeSlug":"large","className":"peak-residence-item-image"} -->
+      <figure class="wp-block-image size-large peak-residence-item-image"><img src="https://via.placeholder.com/300png?text=I+am+a+resident " alt=""/></figure>
+      <!-- /wp:image -->
+  
+      <!-- wp:heading {"level":3} -->
+      <h3>Dennis Goedgebuure</h3>
+      <!-- /wp:heading -->
+  
+      <!-- wp:paragraph -->
+      <p>Recently at Paypal, Venmos Fanatics and AirBnB</p>
+      <!-- /wp:paragraph --></div></div>
+      <!-- /wp:group -->
+  
+      <!-- wp:group {"className":"peak-residence-item"} -->
+      <div class="wp-block-group peak-residence-item"><div class="wp-block-group__inner-container"><!-- wp:image {"sizeSlug":"large","className":"peak-residence-item-image"} -->
+      <figure class="wp-block-image size-large peak-residence-item-image"><img src="https://via.placeholder.com/300png?text=I+am+a+resident " alt=""/></figure>
+      <!-- /wp:image -->
+  
+      <!-- wp:heading {"level":3} -->
+      <h3>Dennis Goedgebuure</h3>
+      <!-- /wp:heading -->
+  
+      <!-- wp:paragraph -->
+      <p>Recently at Paypal, Venmos Fanatics and AirBnB</p>
+      <!-- /wp:paragraph --></div></div>
+      <!-- /wp:group -->
+  
+      <!-- wp:group {"className":"peak-residence-item"} -->
+      <div class="wp-block-group peak-residence-item"><div class="wp-block-group__inner-container"><!-- wp:buttons -->
+      <div class="wp-block-buttons"><!-- wp:button {"className":"peak-residence-item-button"} -->
+      <div class="wp-block-button peak-residence-item-button"><a class="wp-block-button__link" href="mailto:contact@peak.capital">Up for it?<br>Get in touch.</a></div>
+      <!-- /wp:button --></div>
+      <!-- /wp:buttons --></div></div>
+      <!-- /wp:group --></div></div>
+      <!-- /wp:group --></div></div>
+      <!-- /wp:group -->',
     )
   );
   register_block_pattern( 

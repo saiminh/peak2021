@@ -66,9 +66,6 @@ get_header();
               <div class="card-preview-meta">            
                 <span class="card-preview-meta-year">';            
                   the_field('year');
-                echo '</span> —
-                <span class="card-preview-meta">';
-                  the_field('amount');
                 echo '</span>
               </div>                         
           </div>'; ?>
@@ -76,14 +73,14 @@ get_header();
             echo '<div class="card-full">';
               echo get_template_part( 'inc/inline', 'peak_logo.svg' );           
             echo '<div class="card-full-content">
-              <div class="card-full-meta">            
-                <span class="card-full-meta-year">';            
-                  the_field('year');
-                echo '</span>,
-                <span class="card-full-meta">';
-                  the_field('amount');
-                echo '</span>,
-                <span class="card-full-meta-category">';
+              <div class="card-full-meta">';     
+                if ( get_field('year') ) {
+                  echo '<span class="card-full-meta-year">'.the_field('year').'</span>, ';
+                };                          
+                if ( get_field('amount') ) {
+                  echo '<span class="card-full-meta-amount">'.the_field('amount').'</span>, ';
+                };
+                echo '<span class="card-full-meta-category">';
                   echo $terms_name_str; 
                 echo '</span>
               </div>';  

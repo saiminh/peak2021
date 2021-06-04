@@ -33,7 +33,6 @@ get_header();
       </div>
 
       <div class="home-copy-segment" id="home-copy-segment-our-founders">
-        <h1 class="home-copy-segment-title">Hoi we’re Peak</h1>
         <h1 class="home-copy-segment-title">We dare Europe’s extraordinary founders to realise their visions quicker.</h1>
         <div class="wp-block-buttons is-content-justification-center">
           <div class="wp-block-button is-style-fill">
@@ -55,7 +54,7 @@ get_header();
       
       <div class="home-copy-segment" id="home-copy-segment-our-focus">
         <h1 class="home-copy-segment-title">
-          €250k—€2.5M<br> 
+          €250k—€4M*<br> 
           SaaS<br> 
           Marketplace<br> 
           Platforms<br> 
@@ -66,6 +65,7 @@ get_header();
             <a href="<?php echo get_home_url() ?>/focus" class="wp-block-button__link">Our Focus...</a>
           </div>
         </div>
+        <small>*initial ticket size</small>
       </div>
       <div class="home-copy-segment" id="home-copy-segment-contact">
         <h1 class="home-copy-segment-title">

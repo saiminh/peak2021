@@ -11,6 +11,7 @@
   flex-grow: 0;
   flex-shrink: 0;
   scroll-snap-align: center;
+  display: flex;
   @include for-tablet-landscape-up {
     flex-basis: calc( 33.333% );
   }

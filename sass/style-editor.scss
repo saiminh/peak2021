@@ -87,8 +87,9 @@
 // In Residence
 
 .peak-residence-block {
-  background-color: $color-cyan;
+  background-color: $color-font;
   padding: 3rem 0;
+  color: $color-bg;
 }
 .peak-residence-block .wp-block-group__inner-container .peak-headline:first-child {
   margin-top: 0;

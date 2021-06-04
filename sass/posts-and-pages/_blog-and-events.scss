@@ -6,7 +6,7 @@ body.page-template-page-events {
   @include for-tablet-landscape-up {
     padding-top: 6rem;
   }
-  .peak-headline {
+  & .peak-headline {
     font-size: 1.5rem;
     @include for-tablet-landscape-up {
       font-size: 2rem;
@@ -164,6 +164,9 @@ body.page-template-page-events {
 }
 
 //Peak Events
+body.page-template-page-events .entry-content {
+  margin-bottom: 4rem;
+}
 .peak-event {
   border-bottom: 2px solid $color-bg;
   width: calc(100% - 2rem);

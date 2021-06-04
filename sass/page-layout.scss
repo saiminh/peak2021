@@ -14,13 +14,14 @@
 }
 .peak-headline {
   text-align: center;
-  margin: 2rem 1em;
+  margin: 2rem auto;
+  padding: 0 1em;
    @include for-tablet-landscape-up {
-     margin: 2em auto;
      max-width: 20em;
    }
 }
-.page-template-page-team .entry-content .peak-headline:first-child {
+.page-template-page-team .entry-content > .peak-headline:first-child, 
+.page-template-default .entry-content > .peak-page-head:first-child > .wp-block-group__inner-container .peak-headline:first-child {
   margin-top: 6rem;
   @include for-tablet-landscape-up {
     margin-top: 9rem;
