@@ -9,7 +9,7 @@
 
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '1.0.32.1' );
+	define( '_S_VERSION', '1.0.32.2' );
 }
 
 if ( ! function_exists( 'peak2021_setup' ) ) :

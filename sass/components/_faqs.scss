@@ -1,16 +1,18 @@
 .peak-faq-block {
   max-width: 33rem;
   margin: 0 auto;
+  padding: 0 1rem;
   @include for-tablet-landscape-up {
     max-width: 84%;
   }
 }
 .peak-faq-question {
   font-size: 1.25rem;
-  border-top: 2px solid $color-font;
-  line-height: 2;
+  border-top: 2px solid #000;
+  line-height: 1.1;
   margin: 0;
   position: relative;
+  padding: .5rem 2rem .5rem 0;
 }
 .peak-faq:last-child {
   border-bottom: 2px solid $color-font;
@@ -35,7 +37,11 @@
 }
 
 .peak-faq-answer {
+  padding: 0 2rem 0 0;
   display: none;
+}
+.peak-faq-answer p {
+  margin-bottom: .5rem;
 }
 .faq-toggled .peak-faq-answer {
   display: block;
