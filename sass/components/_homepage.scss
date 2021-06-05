@@ -233,7 +233,6 @@ body.home.currentSegment_home-copy-segment-staytuned {
   scroll-snap-align: start;
   padding: 1em;
   margin-left: 0;
-  gap: 1.5rem;
   z-index: 2;
   background-color: $color-bg;
   color: $color-font;
@@ -249,7 +248,7 @@ body.home.currentSegment_home-copy-segment-staytuned {
 .home-image .post-thumbnail {
   width: 80vw;
   height: 80vw;
-  margin: 0 auto;
+  margin: 0 auto 1.5rem auto;
   overflow: hidden;
   border-radius: 50%;
   @include for-tablet-landscape-up {
