@@ -1,5 +1,5 @@
 .teammembers.cards {
-  @include for-tablet-landscape-up {
+  @include for-tablet-portrait-up {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
@@ -7,9 +7,13 @@
   }
 }
 .teammembers.cards .card {
-  @include for-tablet-landscape-up {
+  @include for-tablet-portrait-up {
     margin-left: 0;
     margin-right: 0;
+    flex-basis: calc( 50% - 1rem );
+  }
+  @include for-tablet-landscape-up {
+    flex-basis: calc( 25% - 1rem );
   }
 }
 .team-header-coin-block {
