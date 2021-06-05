@@ -34,9 +34,15 @@
           <a href="<?php the_global_var('medium'); ?>" target="_blank">
             <?php get_template_part( 'inc/inline', 'footer-social-icons-circles.svg' ); ?>
           </a>
+          <a href="<?php the_global_var('youtube'); ?>" target="_blank">
+            <?php get_template_part( 'inc/inline', 'footer-social-icons-youtube.svg' ); ?>
+          </a>
+          <a href="<?php the_global_var('twitter'); ?>" target="_blank">
+            <?php get_template_part( 'inc/inline', 'footer-social-icons-twitter.svg' ); ?>
+          </a>
       </div>
       <div class="site-footer-column site-footer-site-info">
-        <p>PEAK <br> 
+        <p>Peak <br> 
         Capital C </p>
         <p>Weesperplein 4b <br>
         1018 XA Amsterdam <br>
