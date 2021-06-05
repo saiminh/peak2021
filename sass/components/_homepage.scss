@@ -138,8 +138,8 @@ body.home.currentSegment_home-copy-segment-staytuned {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 4rem;
-  padding-bottom: 0;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   scroll-snap-align: start;
   scroll-behavior: smooth;
   --webkit-scroll-behavior: smooth;
@@ -154,13 +154,17 @@ body.home.currentSegment_home-copy-segment-staytuned {
 }
 #home-copy-segment-our-founders {
   justify-content: flex-start;
-  padding-top: 3rem;
+  padding-top: 6rem;
+  @include for-tablet-landscape-up {
+    padding-top: 3rem;
+  }
 }
 .home-copy-segment > * {
   position: relative;
   z-index: 1;
 }
 .home-copy-segment small {
+  display: block;
   text-align: center;
 }
 .home-copy-segment-title {

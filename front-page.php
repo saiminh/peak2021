@@ -33,7 +33,7 @@ get_header();
       </div>
 
       <div class="home-copy-segment" id="home-copy-segment-our-founders">
-        <h1 class="home-copy-segment-title">We dare Europe’s extraordinary founders to realise their visions quicker.</h1>
+        <h1 class="home-copy-segment-title">We dare Europe’s extraordinary founders to realise their visions&nbsp;quicker.</h1>
         <div class="wp-block-buttons is-content-justification-center">
           <div class="wp-block-button is-style-fill">
             <a href="<?php echo get_home_url() ?>/founders" class="wp-block-button__link">Our Founders...</a>
@@ -43,7 +43,7 @@ get_header();
 
       <div class="home-copy-segment" id="home-copy-segment-our-team">
         <div>
-          <h1 class="home-copy-segment-title">We’re the early-stage VC fully backed by entrepreneurs.</h1>
+          <h1 class="home-copy-segment-title">We’re the early-stage VC fully backed by&nbsp;entrepreneurs.</h1>
         </div>
         <div class="wp-block-buttons is-content-justification-center">
           <div class="wp-block-button is-style-fill">
@@ -69,10 +69,10 @@ get_header();
       </div>
       <div class="home-copy-segment" id="home-copy-segment-contact">
         <h1 class="home-copy-segment-title">
-          Share your vision with us.
+          Share your vision with&nbsp;us.
         </h1>
         <h1 class="home-copy-segment-title">
-          We might be the partners you’ve been looking for.
+          We might be the partners you’ve been looking&nbsp;for.
         </h1>
         <div class="wp-block-buttons is-content-justification-center">
           <div class="wp-block-button is-style-fill">
@@ -82,10 +82,10 @@ get_header();
       </div>
       <div class="home-copy-segment" id="home-copy-segment-content">
         <h1 class="home-copy-segment-title">
-          As founders ourselves, we’ve taken the hits.
+          As founders ourselves, we’ve taken the&nbsp;hits.
         </h1>
         <h1 class="home-copy-segment-title">
-          Let us help you learn from them.
+          Let us help you learn from&nbsp;them.
         </h1>
         <div class="wp-block-buttons is-content-justification-center">
           <div class="wp-block-button is-style-fill">
@@ -94,7 +94,7 @@ get_header();
         </div>
       </div>
       <div class="home-copy-segment" id="home-copy-segment-staytuned">
-        <p>PEAK, Capital C</p>
+        <p>Peak, Capital C</p>
         <p>Weesperplein 4b <br> 
           1018 XA Amsterdam <br> 
           Netherlands</p>
@@ -113,7 +113,7 @@ get_header();
           </p>
         </div>
         <div class="home-staytuned-copyright">
-          <p>© PEAK 2021</p>
+          <small>© Peak 2021</small>
         </div>
       </div>
     </div>

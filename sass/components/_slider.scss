@@ -17,19 +17,22 @@
   }
 }
 .slide {
-  flex-basis: 100%;
+  flex-basis: 85%;
   flex-shrink: 0;
-  scroll-snap-align: center;
+  scroll-snap-align: start;
   align-self: stretch;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 0 0 0 1rem;
   display: flex;
   flex-direction: column;
   overflow: visible;
   @include for-tablet-landscape-up {
+    scroll-snap-align: center;
     flex-basis: 41vw;
     padding: 0 4.15vw ;
   }
+}
+.slide:last-child {
+  padding-right: 1rem;
 }
 .testimonial-carousel-quote {
   font-size: 1.25rem;
