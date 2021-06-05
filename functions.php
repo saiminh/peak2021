@@ -9,7 +9,7 @@
 
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '1.0.32.3' );
+	define( '_S_VERSION', '1.0.32.4' );
 }
 
 if ( ! function_exists( 'peak2021_setup' ) ) :
@@ -373,6 +373,8 @@ function the_global_var( $variable ) {
     echo 'https://medium.com/peak-capital';
   } else if ( $variable == 'linkedin' ) {
     echo 'https://www.linkedin.com/company/peak-capital';
+  } else if ( $variable == 'youtube' ) {
+    echo 'https://www.youtube.com/channel/UCuapubZr_LILWT8uxlWsreQ';
   } else if ( $variable == 'fundright' ) {
     echo 'fundright';
   } else if ( $variable == 'crunchbase' ) {
