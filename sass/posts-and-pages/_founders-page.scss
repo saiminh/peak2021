@@ -51,7 +51,7 @@
   display: flex;
   flex-wrap: wrap;
   position: sticky;
-  top: 4rem;
+  top: 5rem;
   transition: .3s all ease-out;
   z-index: 5;
   @include for-tablet-landscape-up {
@@ -65,7 +65,7 @@
   display: none;
 }
 .nav-hidden .founder-filters {
-  top: 4rem;
+  top: 5rem;
   @include for-tablet-landscape-up {
     top: 2.4rem;
   }
