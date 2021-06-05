@@ -46,6 +46,22 @@
 }
 /* Navigation
 --------------------------------------------- */
+#site-navigation {
+  @include for-tablet-landscape-up {
+    transition: .3s all ease-out;
+    transform: translateY(0);
+    background-color: #FFF;
+    padding: 0 1rem;
+    border-radius: 36px;
+  }
+}
+.nav-hidden #site-navigation {
+  @include for-tablet-landscape-up {
+    transform: translateY(-200%);
+  }
+}
+
+
 .main-navigation {
   display: block;
   position: relative;

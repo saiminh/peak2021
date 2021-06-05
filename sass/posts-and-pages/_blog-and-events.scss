@@ -24,6 +24,11 @@ body.page-template-page-events {
   & .main-navigation a {
     color: $color-bg;
   }
+  & #site-navigation {
+    @include for-tablet-landscape-up {
+      background-color: #000;
+    }
+  }
 }
 .peak-media-subnav {
   text-align: center;

@@ -97,4 +97,19 @@
 			menuItem.classList.toggle( 'focus' );
 		}
 	}
+  var prevScrollpos = window.pageYOffset;
+  let parentElement = document.body;
+  window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      if ( parentElement.classList.contains( 'nav-hidden' ) ) {
+        parentElement.classList.remove( 'nav-hidden' );
+      }
+    } else {
+      if ( !parentElement.classList.contains( 'nav-hidden' ) ) {
+        parentElement.classList.add( 'nav-hidden' );
+      }
+    }
+    prevScrollpos = currentScrollPos;
+  }
 }() );

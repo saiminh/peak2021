@@ -14,6 +14,11 @@ body.single-post {
   & .main-navigation a {
     color: $color-bg;
   }
+  & #site-navigation {
+    @include for-tablet-landscape-up {
+      background-color: #000;
+    }
+  }
   & .post-hero {
     margin: 3rem auto;
     width: calc(100% - 2rem);

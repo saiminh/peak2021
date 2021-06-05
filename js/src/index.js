@@ -19,10 +19,10 @@ import { teamCoin } from "./team-coins.js";
   };
   if (document.querySelector('.testimonial-carousel')) {
     slider(true);
-  }
+  };
   if (document.querySelector('.founders')) {
     foundersPage();
-  }
+  };
   if (document.querySelector('.team-header-coin')) {
     teamCoin();
-  }
+  };

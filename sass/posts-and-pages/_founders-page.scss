@@ -51,11 +51,23 @@
   display: flex;
   flex-wrap: wrap;
   position: sticky;
-  top: 5rem;
+  top: 4rem;
+  transition: .3s all ease-out;
   z-index: 5;
   @include for-tablet-landscape-up {
+    top: 6rem;
     margin: 9rem auto 2rem auto;
     justify-content: center;
+  }
+}
+.main-nav-toggled .founder-filters {
+  z-index: 4;
+  display: none;
+}
+.nav-hidden .founder-filters {
+  top: 4rem;
+  @include for-tablet-landscape-up {
+    top: 2.4rem;
   }
 }
 .founder-filter,
@@ -71,7 +83,6 @@
   height: 50px;
   font-weight: 700;
   font-size: .75rem;
-  min-width: 150px;
   flex-basis: 50%;
   // transition: .3s all ease-in-out;
   @include for-tablet-landscape-up {
