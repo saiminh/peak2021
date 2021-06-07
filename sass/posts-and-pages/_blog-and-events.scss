@@ -25,7 +25,7 @@ body.page-template-page-events {
     color: $color-bg;
   }
   & #site-navigation {
-    @include for-tablet-landscape-up {
+    @include for-tablet-portrait-up {
       background-color: #000;
     }
   }

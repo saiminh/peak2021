@@ -24,7 +24,7 @@
         ?>
       </div>
       <div class="site-footer-column site-footer-social">
-          <header>Follow Peak on:</header>
+          <header>Follow Us On:</header>
           <a href="<?php the_global_var('crunchbase'); ?>" target="_blank">
             <?php get_template_part( 'inc/inline', 'footer-social-icons-crunchbase.svg' ); ?>
           </a>

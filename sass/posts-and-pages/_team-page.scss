@@ -10,7 +10,7 @@
   @include for-tablet-portrait-up {
     margin-left: 0;
     margin-right: 0;
-    flex-basis: calc( 50% - 1rem );
+    flex-basis: calc( 25% - 1rem );
   }
   @include for-tablet-landscape-up {
     flex-basis: calc( 25% - 1rem );

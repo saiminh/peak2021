@@ -13,7 +13,7 @@
   position: relative;
   z-index: 6;
   height: 50px;
-  @include for-tablet-landscape-up {
+  @include for-tablet-portrait-up {
     height: 100px;
   }
 }
@@ -34,20 +34,20 @@
 }
 .main-nav-toggled .peak-branding .peak-logo-svg-circle {
   fill: $color-bg;
-  @include for-tablet-landscape-up {
+  @include for-tablet-portrait-up {
     fill: $color-font;
   }
 }
 .main-nav-toggled .peak-branding .peak-logo-svg-letters {
   fill: $color-font;
-  @include for-tablet-landscape-up {
+  @include for-tablet-portrait-up {
     fill: $color-bg;
   }
 }
 /* Navigation
 --------------------------------------------- */
 #site-navigation {
-  @include for-tablet-landscape-up {
+  @include for-tablet-portrait-up {
     transition: .3s all ease-out;
     transform: translateY(0);
     background-color: #FFF;
@@ -56,12 +56,10 @@
   }
 }
 .nav-hidden #site-navigation {
-  @include for-tablet-landscape-up {
+  @include for-tablet-portrait-up {
     transform: translateY(-200%);
   }
 }
-
-
 .main-navigation {
   display: block;
   position: relative;
@@ -79,10 +77,10 @@
   list-style: none;
   margin: 0;
   padding-left: 0;
-  padding-right: 1em;
+  padding-right: 0;
   background-color: $color-font;
   color: $color-bg;
-  @include for-tablet-landscape-up {
+  @include for-tablet-portrait-up {
     display: flex; 
     flex-direction: row;
     position: relative;
@@ -97,7 +95,7 @@
 .main-navigation li {
   position: relative;
   text-align: center;
-  @include for-tablet-landscape-up {
+  @include for-tablet-portrait-up {
     text-align: inherit;
   }
 }
@@ -110,7 +108,7 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: $color-bg;    
-  @include for-tablet-landscape-up {
+  @include for-tablet-portrait-up {
     font-size: 0.75rem;
     padding: 1em;
     color: $color-font;    
@@ -127,7 +125,7 @@
   border: none;
   display: block;
   padding: 0;
-  @include for-tablet-landscape-up {
+  @include for-tablet-portrait-up {
     display: none;
   }
 }
@@ -149,7 +147,7 @@
 .main-nav-toggled .menu-toggle svg line{
   stroke: $color-bg;
 }
-@include for-tablet-landscape-up {
+@include for-tablet-portrait-up {
   .menu-toggle {
     display: none;
   }

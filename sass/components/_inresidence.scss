@@ -21,7 +21,7 @@
   flex-shrink: 0;
   scroll-snap-align: start;
   margin: 0 auto;
-  @include for-tablet-landscape-up {
+  @include for-tablet-portrait-up {
     flex-basis: 28%;
   }
 }

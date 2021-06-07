@@ -17,7 +17,7 @@
   }
 }
 .slide {
-  flex-basis: 85%;
+  flex-basis: 85vw;
   flex-shrink: 0;
   scroll-snap-align: start;
   align-self: stretch;
@@ -25,6 +25,9 @@
   display: flex;
   flex-direction: column;
   overflow: visible;
+  @include for-tablet-portrait-up {
+    flex-basis: 41vw;
+  }
   @include for-tablet-landscape-up {
     scroll-snap-align: center;
     flex-basis: 41vw;

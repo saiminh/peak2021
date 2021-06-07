@@ -1,5 +1,6 @@
 import "./navigation.js";
 import "./faq.js";
+// import { pageScrolls } from "./pagescrolls.js";
 import { homepage } from "./home.js";
 import { homeIntro } from "./home-intro.js";
 import { peakCardsNav } from "./peak-cards-nav.js";
@@ -26,3 +27,4 @@ import { teamCoin } from "./team-coins.js";
   if (document.querySelector('.team-header-coin')) {
     teamCoin();
   };
+  // pageScrolls();
