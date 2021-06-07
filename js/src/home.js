@@ -63,6 +63,8 @@ function homepage(){
   function createEmptySegment(segmentName ){  
     ScrollTrigger.create({
       trigger: segmentName,
+      start: "30% 50%",
+      end: "100% 50%",
       scroller: ".home-copy",
         onEnter: () => { updateBodyClass(segmentName); },
         onEnterBack: () => { updateBodyClass(segmentName); },
@@ -75,6 +77,8 @@ function homepage(){
 
     ScrollTrigger.create({
       trigger: segmentName,
+      start: "30% 50%",
+      end: "100% 50%",
       scroller: ".home-copy",
         onEnter: () => { updateBodyClass(segmentName); reset() },
         onEnterBack: () => { updateBodyClass(segmentName); reset(); },
@@ -356,6 +360,15 @@ function homepage(){
   //   }
   // ]);
   createEmptySegment(staytuned);
+
+  let downArrows = document.querySelectorAll('.home-copy-segment-next');
+  let scrollingContainer = document.querySelector('.home-copy');
+  for ( let i = 0; i < downArrows.length; i ++ ){
+    console.log(downArrows[i].clientTop);
+    downArrows[i].addEventListener( 'click', () => {
+      scrollingContainer.scrollTo(0, (downArrows[i].offsetParent.offsetTop + scrollingContainer.clientHeight) );
+    } )
+  }
 
 }
 

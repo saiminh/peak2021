@@ -9,7 +9,7 @@ body.home #masthead {
   opacity: 0;
 }
 body.home .main-navigation {
-  @include for-tablet-landscape-up {
+  @include for-tablet-portrait-up {
     display: none;
   }
 }
@@ -61,26 +61,69 @@ body.home.currentSegment_home-copy-segment-staytuned {
     }
   }
 }
+.home-copy-segment-next {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  z-index: 5;
+  left: calc(50% - 30px);
+  bottom: 1rem;
+  background: #000;
+  border-radius: 50%;
+  padding: .5rem;
+  cursor: pointer;
+  & path {
+    stroke: $color-bg;
+  }
+}
+.home-copy-segment.home-image .home-copy-segment-next {
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+  @include for-tablet-landscape-up {
+    display: none;
+  }
+  & path {
+    stroke: $color-font;
+  }
+}
 
 .home-segment-nav {
   display: none;
+  // ------
+  // In case we ever want the segment nav in tablet view, simply
+  // replace the landscape-up viewport below with these commented lines:
+  // ------
+  // @include for-tablet-portrait-up {
+  //   display: flex;
+  //   flex-direction: column;
+  //   position: absolute;
+  //   right: 0;
+  //   top: 50%;
+  //   transform: translate(-1em, -50%);
+  //   z-index: 1000;
+  // }
+  // @include for-tablet-landscape-up {
+  //   right: 50%;
+  // }
+  // ------
   @include for-tablet-landscape-up {
     display: flex;
     flex-direction: column;
     position: absolute;
-    right: 50%;
     top: 50%;
+    right: 50%;
     transform: translate(-1em, -50%);
     z-index: 1000;
   }
 }
 .home-segment-nav-link {
   position: relative;
-  width: 1em;
-  height: 1em;
+  width: 16px;
+  height: 16px;
   overflow: hidden;
-  text-indent: -2em;
-  margin: .5em 0;
+  text-indent: -100px;
+  margin: 8px 0;
   &:after {
     content: '';
     position: absolute;
@@ -90,9 +133,12 @@ body.home.currentSegment_home-copy-segment-staytuned {
     transform: translate(-50%, -50%) scale(.5);
     transition: transform .1s ease-in-out;
     background-color: $color-font;
-    width: 1em;
-    height: 1em;
+    width: 16px;
+    height: 16px;
     border-radius: 50%;
+    // @include for-tablet-portrait-up {
+    //   background-color: $color-bg;
+    // }
   }
   &:hover:after {
     transform: translate(-50%, -50%) scale(1);
@@ -155,14 +201,17 @@ body.home.currentSegment_home-copy-segment-staytuned {
 #home-copy-segment-our-founders {
   justify-content: flex-start;
   padding-top: 6rem;
+  @include for-tablet-portrait-up {
+    padding-top: 11rem;
+  }
   @include for-tablet-landscape-up {
     padding-top: 3rem;
   }
 }
-.home-copy-segment > * {
-  position: relative;
-  z-index: 1;
-}
+// .home-copy-segment > * {
+//   // position: relative;
+//   // z-index: 1;
+// }
 .home-copy-segment small {
   display: block;
   text-align: center;
@@ -173,6 +222,9 @@ body.home.currentSegment_home-copy-segment-staytuned {
   text-align: center;
   line-height: 1.1;
   letter-spacing: 0.015em;
+  @include for-tablet-portrait-up {
+    font-size: 6vw;
+  }
   @include for-tablet-landscape-up {
     font-size: 3.25vw;
   }
@@ -273,6 +325,12 @@ body.home.currentSegment_home-copy-segment-staytuned {
   text-align: center;
   font-size: 18px;
   font-weight: bold;
+  @include for-tablet-portrait-up {
+    font-size: 3.5vw;
+  }
+  @include for-tablet-landscape-up {
+    font-size: 18px;
+  }
 }
 #home-copy-segment-staytuned {
   padding-bottom: 0;

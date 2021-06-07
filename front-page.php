@@ -29,6 +29,9 @@ get_header();
         <div class="home-image-contact-details">
           €66M Founder-Funded — 31 Investments — Europe <br>
           SaaS — Marketplaces — Platforms 
+        </div>
+        <div class="home-copy-segment-next">
+          <?php get_template_part( 'inc/inline', 'ui-arrow-down.svg' ); ?>
         </div>      
       </div>
 
@@ -39,6 +42,9 @@ get_header();
             <a href="<?php echo get_home_url() ?>/founders" class="wp-block-button__link">Our Founders...</a>
           </div>
         </div>
+        <div class="home-copy-segment-next">
+          <?php get_template_part( 'inc/inline', 'ui-arrow-down.svg' ); ?>
+        </div> 
       </div>
 
       <div class="home-copy-segment" id="home-copy-segment-our-team">
@@ -50,6 +56,9 @@ get_header();
             <a href="<?php echo get_home_url() ?>/team" class="wp-block-button__link">Our Team...</a>
           </div>
         </div>
+        <div class="home-copy-segment-next">
+          <?php get_template_part( 'inc/inline', 'ui-arrow-down.svg' ); ?>
+        </div> 
       </div>
       
       <div class="home-copy-segment" id="home-copy-segment-our-focus">
@@ -66,7 +75,11 @@ get_header();
           </div>
         </div>
         <small>*initial ticket size</small>
+        <div class="home-copy-segment-next">
+          <?php get_template_part( 'inc/inline', 'ui-arrow-down.svg' ); ?>
+        </div> 
       </div>
+
       <div class="home-copy-segment" id="home-copy-segment-contact">
         <h1 class="home-copy-segment-title">
           Share your vision with&nbsp;us.
@@ -79,7 +92,11 @@ get_header();
             <a href="<?php echo get_home_url() ?>/focus#contact-us" class="wp-block-button__link">Contact Us...</a>
           </div>
         </div>
+        <div class="home-copy-segment-next">
+          <?php get_template_part( 'inc/inline', 'ui-arrow-down.svg' ); ?>
+        </div> 
       </div>
+
       <div class="home-copy-segment" id="home-copy-segment-content">
         <h1 class="home-copy-segment-title">
           As founders ourselves, we’ve taken the&nbsp;hits.
@@ -92,7 +109,11 @@ get_header();
             <a href="<?php echo get_home_url() ?>/blog" class="wp-block-button__link">Content...</a>
           </div>
         </div>
+        <div class="home-copy-segment-next">
+          <?php get_template_part( 'inc/inline', 'ui-arrow-down.svg' ); ?>
+        </div> 
       </div>
+
       <div class="home-copy-segment" id="home-copy-segment-staytuned">
         <p>Peak, Capital C</p>
         <p>Weesperplein 4b <br> 
