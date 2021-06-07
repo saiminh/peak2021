@@ -3,7 +3,7 @@
     flex-wrap: wrap;
     @include for-tablet-portrait-up {
       margin: 0 auto;
-      padding-bottom: 5rem;
+      padding-bottom: 10rem;
     }
     @include for-tablet-landscape-up {
       width: 80%;

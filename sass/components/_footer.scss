@@ -60,8 +60,12 @@
 
 }
 .blog .site-footer-social,
+.archive .site-footer-social,
 .single-post .site-footer-social,
 .page-template-page-events .site-footer-social {
+  a[href^="https://www.youtube"] polygon {
+    fill: $color-font;
+  }
   & path {
     fill: $color-bg;
   }

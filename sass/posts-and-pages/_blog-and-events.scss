@@ -1,4 +1,5 @@
 body.blog,
+body.archive,
 body.page-template-page-events {
   background-color: $color-font;
   color: $color-bg;
@@ -43,7 +44,8 @@ body.page-template-page-events {
     color: $color-font;
   }
 }
-.blog .site-main {
+.blog .site-main,
+.archive .site-main {
   @include for-tablet-portrait-up {
     display: grid;
     grid-template-columns: repeat( 4, minmax( 0, 1fr ) );
