@@ -487,7 +487,7 @@ function my_content_image_sizes_attr( $sizes, $size, $alignment ) {
         $sizes = '(min-width: 769px) 25vw, calc(100vw - 2rem)';
       }
       else if ( is_page_template( 'page-founders.php' ) ) {
-        $sizes = '100vw';
+        $sizes = '(min-width: 769px) 66vw, 100vw';
       }
       else {
         if ( $width >= 1920 ) { //hero image
