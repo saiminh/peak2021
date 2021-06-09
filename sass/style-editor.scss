@@ -122,7 +122,8 @@
 .peak-residence-item-image figcaption {
   display: none;
 }
-.peak-residence-item-image img {
+.peak-residence-item-image img,
+.peak-residence-item-image picture {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -163,7 +164,8 @@
 .peak-in-the-news-item-coin {
   right: 0;
 }
-.peak-in-the-news-item-coin img {
+.peak-in-the-news-item-coin img,
+.peak-in-the-news-item-coin picture {
   position: relative;
 }
 
@@ -236,7 +238,7 @@ strong {
   & > div:first-child {    
     height: 250px!important;
   }
-  & img, & svg {
+  & img, & svg, & picture {
     border-radius: 50%;
     width: 100%;
     height: 100%;
@@ -277,7 +279,9 @@ strong {
   margin-top: 0;
 }
 .post-hero img,
-.peak-page-header-heroimg img {
+.post-hero picture,
+.peak-page-header-heroimg img,
+.peak-page-header-heroimg picture {
   width: 100%;
   height: 100%;
   object-fit: cover;

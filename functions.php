@@ -9,7 +9,7 @@
 
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '1.0.38' );
+	define( '_S_VERSION', '1.0.39' );
 }
 
 if ( ! function_exists( 'peak2021_setup' ) ) :
@@ -285,7 +285,7 @@ function display_teammembers() {
         echo '<div class="card">
           <div class="card-preview">
             <div class="card-preview-image">';
-              the_post_thumbnail( 'large' );
+              the_post_thumbnail( 'teammember-photo-small' );
             echo '</div>
             <div class="card-preview-text">
               <h3 class="card-preview-title">';
@@ -304,7 +304,7 @@ function display_teammembers() {
           echo '<div class="card-full">';
             echo get_template_part( 'inc/inline', 'peak_logo.svg' );
             echo '<div class="card-full-image">';
-              the_post_thumbnail( 'full' );
+              the_post_thumbnail( 'teammember-photo-full' );
             echo '</div>
               <div class="card-full-content">
                 <h1 class="card-full-content-title">';
@@ -455,40 +455,54 @@ add_action( 'wp_before_admin_bar_render', 'mytheme_admin_bar_render' );
 //------------------------
 // Responsive image sizes
 //------------------------
-
-// function custom_responsive_image_sizes($sizes, $size) {
-//   $width = $size[0];
-//   // blog posts
-//   if ( is_singular( 'post' ) ) {
-//     // half width images - medium size
-//     if ( $width === 600 ) {
-//       return '(min-width: 768px) 322px, (min-width: 576px) 255px, calc( (100vw - 30px) / 2)';
-//     }
-//     // full width images - large size
-//     if ( $width === 1024 ) {
-//       return '(min-width: 768px) 642px, (min-width: 576px) 510px, calc(100vw - 30px)';
-//     }
-//     // default to return if condition is not met
-//     return '(max-width: ' . $width . 'px) 100vw, ' . $width . 'px';
-//   }
-  
-//   // default to return if condition is not met
-//   return '(max-width: ' . $width . 'px) 100vw, ' . $width . 'px';
-// }
-// add_filter('wp_calculate_image_sizes', 'custom_responsive_image_sizes', 10 , 2);
-
-function custom_declare_custom_image_responsive_sizes($attr, $attachment, $size) {
-  // Full width header images
-  if ( is_page_template( 'page-team.php' )) {
-    if ($size === 'large') {
-      $attr['sizes'] = '(min-width: 769px) 25vw, 100vw';
-    }
-  }
-  else if ( is_page_template( 'page-founders.php' )) {
-    if ($size) {
-      $attr['sizes'] = '(min-width: 769px) 50vw, calc(100vw - 2rem)';
-    }
-  }
-  return $attr;
+function peak_add_image_sizes() {
+  add_image_size( 'hero', 1920, 1280 );
+  add_image_size( 'founder-photo', 960, 960, true );
+  add_image_size( 'teammember-photo-small', 320, 480, true );
+  add_image_size( 'teammember-photo-full', 1280, 1920, true );
 }
-add_filter('wp_get_attachment_image_attributes', 'custom_declare_custom_image_responsive_sizes', 10 , 3);
+add_action('after_setup_theme', 'peak_add_image_sizes');
+
+function peak_custom_sizes( $sizes ) {
+  return array_merge( $sizes, array(
+    'hero' => __( 'Hero image' ),
+    'founder-photo' => __( 'Founder Photo' ),
+    'teammember-photo-small' => __( 'Team member Small' ),
+    'teammember-photo-full' => __( 'Team member Full' ),
+    ) );
+}
+add_filter( 'image_size_names_choose', 'peak_custom_sizes' );
+
+function my_content_image_sizes_attr( $sizes, $size, $alignment ) {
+  $width = $size[0];
+  $height = $size[1];
+
+      if ( is_single() ) { // if blog post images
+        $sizes = '(min-width: 1281px) 720px, (min-width: 900px) 49.68vw, (min-width: 700px) 648px, 100vw';
+      }
+      else if ( is_home() ) { // if blog page ( wordpress home is NOT website home!!! )
+        $sizes = '(min-width: 600px) 50vw, 100vw';
+      }
+      else if ( is_page_template( 'page-team.php' ) && $width === 320 ) {
+        $sizes = '(min-width: 769px) 25vw, calc(100vw - 2rem)';
+      }
+      else if ( is_page_template( 'page-founders.php' ) ) {
+        $sizes = '100vw';
+      }
+      else {
+        if ( $width >= 1920 ) { //hero image
+          $sizes = '100vw';
+        } 
+        if ( $width === 960 && $height === 960 ) { //founder photo
+          $sizes = '(min-width: 769px) 33vw, 60vw';
+        }
+        if ( $width === 320 && $height === 480 ) { //team member small photo
+          $sizes = '(min-width: 769px) 25vw, calc(100vw - 2rem)';
+        }
+        if ( $width === 1280 && $height === 1920 ) { //team member large photo
+          $sizes = ' (min-width: 769px) 50vw, calc(100vw - 2rem)';
+        }
+      }
+  return $sizes;
+}
+add_filter( 'wp_calculate_image_sizes', 'my_content_image_sizes_attr', 10, 3 );

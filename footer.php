@@ -42,19 +42,18 @@
           </a>
       </div>
       <div class="site-footer-column site-footer-site-info">
-        <p>Peak <br> 
-        Capital C </p>
-        <p>Weesperplein 4b <br>
+        <p>Peak HQ</p> 
+        <p>Capital C <br>
+        Weesperplein 4b <br>
         1018 XA Amsterdam <br>
         Netherlands </p>
-        <p><a href="tel:+31 85 001 4343">+31 85 001 4343</a><br>
+        <p style="margin-top: -.666em"><a href="tel:+31 85 001 4343">+31 85 001 4343</a><br>
         <a href="mailto:<?php the_global_var('email'); ?>"><?php the_global_var('email'); ?></a></p>
       </div><!-- .site-info -->
       <div class="site-footer-column site-footer-site-mail">
         <p>Mail:</p>
         <p>Eerste Jacob van Campenstraat 46-1 <br>
-        1072 BG <br> 
-        Amsterdam
+        1072 BG Amsterdam
       </div>
       
     </div>

@@ -77,9 +77,7 @@ body.home.currentSegment_home-copy-segment-staytuned {
   }
 }
 .home-copy-segment.home-image .home-copy-segment-next {
-  background-color: transparent;
-  padding: 0;
-  border-radius: 0;
+  background-color: $color-bg;
   @include for-tablet-landscape-up {
     display: none;
   }
@@ -308,7 +306,8 @@ body.home.currentSegment_home-copy-segment-staytuned {
     height: 41vw;
   }
 }
-.home-image .post-thumbnail img {
+.home-image .post-thumbnail img,
+.home-image .post-thumbnail picture {
   margin: auto;
   display: block;
   object-fit: cover;

@@ -12,9 +12,13 @@ get_header();
   <header class="page-header peak-headline">
     <?php
     the_archive_title( '<h1 class="page-title">', '</h1>' );
-    the_archive_description( '<div class="archive-description">', '</div>' );
+    //the_archive_description( '<div class="archive-description">', '</div>' );
     ?>
   </header><!-- .page-header -->
+  <nav class="peak-media-subnav">
+    <a class="peak-media-subnav-button wp-block-button__link has-brand-yellow-background-color" href="<?php echo home_url(); ?>/blog">Media</a>
+    <a class="peak-media-subnav-button wp-block-button__link has-brand-pink-background-color disabled" href="<?php echo home_url(); ?>/events">Events</a>
+  </nav>
 	<main id="primary" class="site-main">
 
 		<?php if ( have_posts() ) : ?>

@@ -6,8 +6,8 @@
   background-size: 100%;
   background-image: url('./img/footer-bg-mobile.svg');
   @include for-tablet-landscape-up {
-    font-size: 1rem;
-    padding-bottom: 9rem;
+    font-size: 1.38vw;
+    padding-bottom: 6rem;
     background-image: url('./img/footer-bg-desktop-nopeaklogo.svg');
   }
 }
@@ -31,12 +31,17 @@
   @include for-tablet-landscape-up {
     margin: 0;
     padding: 0 .5rem;
-    flex-basis: 20%;
+    flex-basis: 16.666%;
+  }
+}
+.site-footer-column:nth-child(1) {
+  @include for-tablet-landscape-up {
+    margin-left: 8.3%;
+    margin-right: 16.66%;
   }
 }
 .site-footer-column:nth-child(2) {
   @include for-tablet-landscape-up {
-    margin-right: 20%;
   }
 }
 .site-footer-menu {
@@ -55,7 +60,7 @@
   flex-basis: 100%;
   @include for-tablet-landscape-up {
     margin-bottom: 0;
-    flex-basis: 20%;
+    flex-basis: 16.666%;
   }
 
 }
@@ -77,9 +82,9 @@
   }
 }
 .site-footer-social a {
-  padding: .25rem;
+  padding: .125rem;
   position: relative;
-  left: -.2rem;
+  left: -.125rem;
   display: inline-block;
-  font-size: 1.5rem;
+  font-size: 1em;
 }

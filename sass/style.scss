@@ -107,6 +107,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "posts-and-pages/team-page";
 @import "posts-and-pages/blog-and-events";
 @import "posts-and-pages/blogpost";
+@import "posts-and-pages/page-not-found-404";
 
 .sticky {
   display: block;
@@ -170,7 +171,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   max-width: 100%;
 }
 
-.wp-caption img[class*="wp-image-"] {
+.wp-caption img[class*="wp-image-"],
+.wp-caption picture[class*="wp-image-"] {
   display: block;
   margin-left: auto;
   margin-right: auto;
