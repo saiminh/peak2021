@@ -1,9 +1,8 @@
 import Matter, { Body, Render } from 'matter-js';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-//import { homeIntro } from "./home-intro.js";
 
-function homepage(){
+function homepage_v2(){
 
   gsap.registerPlugin(ScrollTrigger);
 
@@ -58,7 +57,6 @@ function homepage(){
     // Add current segment class name to body
     body.classList.add('currentSegment_' + seg.getAttribute('id'));
   }
-
 
   function createEmptySegment(segmentName ){  
     ScrollTrigger.create({
@@ -176,52 +174,10 @@ function homepage(){
 
   createEmptySegment(hero);
 
-  const url = document.location.href;
-  let path = new URL(url);
-  path.hash = "";
-  let nohashpath = path.href;
+  let nohashpath = document.location.origin + '/';
 
   createEmptySegment(ourTeam);
-
-  // createCoinSegment(ourTeam, [
-  //   {
-  //     file: nohashpath+'wp-content/themes/peak2021/img/home-sprites/ourteam01-220.png', 
-  //     radius: 110,
-  //     imgSizeFactor: 0.5
-  //   },
-  //   {
-  //     file: nohashpath+'wp-content/themes/peak2021/img/home-sprites/ourteam04-160.png', 
-  //     radius: 80,
-  //     imgSizeFactor: 0.5
-  //   },
-  //   {
-  //     file: nohashpath+'wp-content/themes/peak2021/img/home-sprites/ourteam02-220.png', 
-  //     radius: 110,
-  //     imgSizeFactor: 0.5
-  //   },
-  //   {
-  //     file: nohashpath+'wp-content/themes/peak2021/img/home-sprites/ourteam03-220.png', 
-  //     radius: 110,
-  //     imgSizeFactor: 0.5
-  //   },
-  //   {
-  //     file: nohashpath+'wp-content/themes/peak2021/img/home-sprites/ourteam05-160.png', 
-  //     radius: 80,
-  //     imgSizeFactor: 0.5
-  //   },
-  //   {
-  //     file: nohashpath+'wp-content/themes/peak2021/img/home-sprites/ourteam06-160.png', 
-  //     radius: 80,
-  //     imgSizeFactor: 0.5
-  //   }
-  // ]);
-
   createCoinSegment(ourFounders, [
-    // {
-    //   file: nohashpath+'wp-content/themes/peak2021/img/home-sprites/ourfounders-Catawiki-220.png', 
-    //   radius: 110,
-    //   imgSizeFactor: 0.5
-    // },
     {
       file: nohashpath+'wp-content/themes/peak2021/img/home-sprites/ourfounders-Channale-160.png', 
       radius: 80,
@@ -237,11 +193,6 @@ function homepage(){
       radius: 80,
       imgSizeFactor: 0.5
     },
-    // {
-    //   file: nohashpath+'wp-content/themes/peak2021/img/home-sprites/ourfounders-MediaDistillery-220.png', 
-    //   radius: 110,
-    //   imgSizeFactor: 0.5
-    // },
     {
       file: nohashpath+'wp-content/themes/peak2021/img/home-sprites/ourfounders-OpenSocial-160.png', 
       radius: 80,
@@ -266,99 +217,8 @@ function homepage(){
   ]);
 
   createEmptySegment(ourFocus);
-  // createCoinSegment(ourFocus, [
-  //   {
-  //     file: nohashpath+'wp-content/themes/peak2021/img/home-sprites/ourfocus01-160.png', 
-  //     radius: 80,
-  //     imgSizeFactor: 0.5
-  //   },
-  //   {
-  //     file: nohashpath+'wp-content/themes/peak2021/img/home-sprites/ourfocus02-160.png', 
-  //     radius: 80,
-  //     imgSizeFactor: 0.5
-  //   },
-  //   {
-  //     file: nohashpath+'wp-content/themes/peak2021/img/home-sprites/ourfocus03-220.png', 
-  //     radius: 110,
-  //     imgSizeFactor: 0.5
-  //   },
-  //   {
-  //     file: nohashpath+'wp-content/themes/peak2021/img/home-sprites/ourfocus04-220.png', 
-  //     radius: 110,
-  //     imgSizeFactor: 0.5
-  //   },
-  //   {
-  //     file: nohashpath+'wp-content/themes/peak2021/img/home-sprites/ourfocus05-220.png', 
-  //     radius: 110,
-  //     imgSizeFactor: 0.5
-  //   },
-  //   {
-  //     file: nohashpath+'wp-content/themes/peak2021/img/home-sprites/ourfocus06-220.png', 
-  //     radius: 110,
-  //     imgSizeFactor: 0.5
-  //   }
-  // ]);
   createEmptySegment(contact);
-  // createCoinSegment(contact, [
-  //   {
-  //     file: nohashpath+'wp-content/themes/peak2021/img/home-sprites/contactus-01-220.png', 
-  //     radius: 110,
-  //     imgSizeFactor: 0.5,
-  //   },
-  //   {
-  //     file: nohashpath+'wp-content/themes/peak2021/img/home-sprites/contactus-02-160.png', 
-  //     radius: 80,
-  //     imgSizeFactor: 0.5,
-  //   },
-  //   {
-  //     file: nohashpath+'wp-content/themes/peak2021/img/home-sprites/contactus-03-220.png', 
-  //     radius: 110,
-  //     imgSizeFactor: 0.5,
-  //   },
-  //   {
-  //     file: nohashpath+'wp-content/themes/peak2021/img/home-sprites/contactus-04-160.png', 
-  //     radius: 80,
-  //     imgSizeFactor: 0.5,
-  //   },
-  //   {
-  //     file: nohashpath+'wp-content/themes/peak2021/img/home-sprites/contactus-05-220.png', 
-  //     radius: 110,
-  //     imgSizeFactor: 0.5,
-  //   }
-  // ]);
   createEmptySegment(content);
-  // createCoinSegment(content, [
-  //   {
-  //     file: nohashpath+'wp-content/themes/peak2021/img/home-sprites/content01-220.png', 
-  //     radius: 110,
-  //     imgSizeFactor: 0.5
-  //   },
-  //   {
-  //     file: nohashpath+'wp-content/themes/peak2021/img/home-sprites/content02-220.png', 
-  //     radius: 110,
-  //     imgSizeFactor: 0.5
-  //   },
-  //   {
-  //     file: nohashpath+'wp-content/themes/peak2021/img/home-sprites/content03-220.png', 
-  //     radius: 110,
-  //     imgSizeFactor: 0.5
-  //   },
-  //   {
-  //     file: nohashpath+'wp-content/themes/peak2021/img/home-sprites/content04-160.png', 
-  //     radius: 80,
-  //     imgSizeFactor: 0.5
-  //   },
-  //   {
-  //     file: nohashpath+'wp-content/themes/peak2021/img/home-sprites/content05-160.png', 
-  //     radius: 80,
-  //     imgSizeFactor: 0.5
-  //   },
-  //   {
-  //     file: nohashpath+'wp-content/themes/peak2021/img/home-sprites/content06-220.png', 
-  //     radius: 110,
-  //     imgSizeFactor: 0.5
-  //   }
-  // ]);
   createEmptySegment(staytuned);
 
   let downArrows = document.querySelectorAll('.home-copy-segment-next');
@@ -370,6 +230,55 @@ function homepage(){
     } )
   }
 
+  gsap.to( '.logo-clone svg', {
+    rotationZ: 360,
+    transformOrigin: '50% 50%',
+    ease: 'none',
+    scrollTrigger: {
+      scroller: '.home-copy',
+      trigger: '#home-copy-segment-our-founders',
+      start: '0% 0%',
+      end: '500% 0%',
+      scrub: true,
+      // markers: true
+    } 
+  })
+  if ( window.matchMedia( '(orientation: portrait)' ).matches ) {
+    var shrinkTrigger = {
+      scroller: '.home-copy',
+      trigger: '#home-copy-segment-our-founders',
+      start: '-100% 0%',
+      end: '0% 0%',
+      toggleActions: "play complete reverse reverse",
+      scrub: true
+    };
+    gsap.fromTo( '.logo-clone', {
+      width: '80vw',
+      height: '80vw',
+      x: '10vw',
+      y: '10vw',
+    },{
+      width: document.querySelector('.peak-branding .peak-logo-svg').clientWidth,
+      height: document.querySelector('.peak-branding .peak-logo-svg').clientWidth,
+      x: '1rem',
+      y: '1rem',
+      scrollTrigger: shrinkTrigger
+    });
+    gsap.to( '.logo-clone .peak-logo-svg g', {
+      transformOrigin: '50% 50%',
+      rotationZ: 360,
+      scrollTrigger: shrinkTrigger
+    });
+    gsap.to( '.logo-clone .peak-logo-svg-circle', {
+      fill: "#FFFFFF",
+      scrollTrigger: shrinkTrigger
+    });
+    gsap.to( '.logo-clone .peak-logo-svg-letters', {
+      fill: "#000000",
+      scrollTrigger: shrinkTrigger
+    });
+  }
+
 }
 
-export { homepage };
+export { homepage_v2 };
