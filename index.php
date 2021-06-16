@@ -15,7 +15,7 @@
 get_header();
 ?>
 <?php if ( !is_singular( ) ) : ?>
-  <h1 class="peak-headline ">
+  <h1 class="peak-headline">
     Here we share our latest ideas on entrepreneurship and our events
   </h1>
   <nav class="peak-media-subnav">
@@ -30,7 +30,6 @@ get_header();
 			/* Start the Loop */
 			while ( have_posts() ) :
 				the_post();
-
 				/*
 				 * Include the Post-Type-specific template for the content.
 				 * If you want to override this in a child theme, then include a file

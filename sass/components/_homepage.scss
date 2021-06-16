@@ -322,13 +322,13 @@ body.home.currentSegment_home-copy-segment-staytuned {
 }
 .home-image-contact-details {
   text-align: center;
-  font-size: 18px;
+  font-size: 4.8vw;
   font-weight: bold;
   @include for-tablet-portrait-up {
     font-size: 3.5vw;
   }
   @include for-tablet-landscape-up {
-    font-size: 18px;
+    font-size: 21px;
   }
 }
 #home-copy-segment-staytuned {

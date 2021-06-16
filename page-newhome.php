@@ -113,7 +113,7 @@ get_header();
         </h1>
         <div class="wp-block-buttons is-content-justification-center">
           <div class="wp-block-button is-style-fill">
-            <a href="<?php echo get_home_url() ?>/blog" class="wp-block-button__link">Content...</a>
+            <a href="<?php echo get_home_url() ?>/blog" class="wp-block-button__link">Thoughts & Resources</a>
           </div>
         </div>
         <div class="home-copy-segment-next">
