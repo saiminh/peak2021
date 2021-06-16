@@ -39,7 +39,7 @@ get_header();
       <h1 class="home-copy-segment-title">We dare Europe’s extraordinary founders to realise their visions&nbsp;quicker.</h1>
       <div class="wp-block-buttons is-content-justification-center">
         <div class="wp-block-button is-style-fill">
-          <a href="<?php echo get_home_url() ?>/founders" class="wp-block-button__link">Our Founders...</a>
+          <a href="<?php echo get_home_url() ?>/founders" class="wp-block-button__link">Our Founders</a>
         </div>
       </div>
       <div class="home-copy-segment-next">
@@ -53,7 +53,7 @@ get_header();
       </div>
       <div class="wp-block-buttons is-content-justification-center">
         <div class="wp-block-button is-style-fill">
-          <a href="<?php echo get_home_url() ?>/team" class="wp-block-button__link">Our Team...</a>
+          <a href="<?php echo get_home_url() ?>/team" class="wp-block-button__link">Our Team</a>
         </div>
       </div>
       <div class="home-copy-segment-next">
@@ -71,7 +71,7 @@ get_header();
       </h1>
       <div class="wp-block-buttons is-content-justification-center">
         <div class="wp-block-button is-style-fill">
-          <a href="<?php echo get_home_url() ?>/focus" class="wp-block-button__link">Our Focus...</a>
+          <a href="<?php echo get_home_url() ?>/focus" class="wp-block-button__link">Our Focus</a>
         </div>
       </div>
       <small>*initial ticket size</small>
@@ -89,7 +89,7 @@ get_header();
       </h1>
       <div class="wp-block-buttons is-content-justification-center">
         <div class="wp-block-button is-style-fill">
-          <a href="<?php echo get_home_url() ?>/focus#contact-us" class="wp-block-button__link">Contact Us...</a>
+          <a href="<?php echo get_home_url() ?>/focus#contact-us" class="wp-block-button__link">Contact Us</a>
         </div>
       </div>
       <div class="home-copy-segment-next">
