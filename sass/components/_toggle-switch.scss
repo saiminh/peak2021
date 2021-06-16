@@ -64,8 +64,7 @@ input:checked + .darkmode-toggle-slider {
   border-color: #FFF;
 }
 input:focus + .darkmode-toggle-slider {
-  //box-shadow: 0 0 1px #000;
-  //border-color: #000;
+  box-shadow: 0 0 1px $color-green;
 }
 input:checked + .darkmode-toggle-slider:before {
   -webkit-transform: translateX(26px);
