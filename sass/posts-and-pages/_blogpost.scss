@@ -114,6 +114,12 @@ body.single-post.darkmode-off {
   & .ui-hamburger line {
     stroke: $color-font;
   }
+  & .main-navigation a {
+    color: $color-bg;
+    @include for-tablet-portrait-up {
+      color: $color-font;
+    }
+  }
   & #site-navigation {
     @include for-tablet-portrait-up {
       background-color: $color-bg;
