@@ -7,6 +7,7 @@ import { peakCardsNav } from "./peak-cards-nav.js";
 import { slider } from "./slider.js";
 import { foundersPage } from "./founders-coins.js";
 import { teamCoin } from "./team-coins.js";
+import { darkmodeToggle } from "./darkmode-toggle.js";
 
   // Homepage script only runs on Homepage (Duh)
   if ( document.body.classList.contains( 'home' ) ){
@@ -27,4 +28,7 @@ import { teamCoin } from "./team-coins.js";
   if (document.querySelector('.team-header-coin')) {
     teamCoin();
   };
+  if ( document.querySelector('.darkmode-toggle') ) {
+    darkmodeToggle();
+  }
   pageScrolls();

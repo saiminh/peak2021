@@ -11,14 +11,14 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
-    <!-- <div class="darkmode-toggle">
+    <div class="darkmode-toggle">
       <label class="darkmode-toggle-switch">
-        <input type="checkbox">
+        <input type="checkbox" checked>
         <span class="darkmode-toggle-slider round"></span>
         <br>
         <span class="darkmode-toggle-title">Darkmode</span>
       </label>
-    </div> -->
+    </div>
 		<?php
 		while ( have_posts() ) :
 			the_post();
