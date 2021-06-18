@@ -10,12 +10,23 @@ function homeIntro_v2(){
   
   var homeLogoSize;
   var homeLogoLeft;
+  var homeLogoTop;
   if ( window.matchMedia( "(orientation: landscape)" ).matches ){
-    homeLogoSize = "40vw";
-    homeLogoLeft = "5vw";
-  } else {
+    if ( window.innerWidth / window.innerHeight >= 1.75 ){
+      homeLogoSize = window.innerHeight / 1.66;
+      homeLogoLeft = ( window.innerWidth / 4 ) - ( homeLogoSize / 2 );
+      homeLogoTop = ( window.innerHeight / 2 ) - ( homeLogoSize / 1.666 );
+    }
+    else {
+      homeLogoSize = "40vw";
+      homeLogoLeft = "5vw";
+      homeLogoTop = "5vw"
+    }
+  } 
+  else {
     homeLogoSize = "80vw";
     homeLogoLeft = "10vw";
+    homeLogoTop = "10vw";
   };
 
   if ( document.querySelector('.home-copy').scrollTop === 0 ){
@@ -54,7 +65,7 @@ function homeIntro_v2(){
     }, 'coinIn' )
     .to( '.logo-clone', {
       x: homeLogoLeft,
-      y: homeLogoLeft,
+      y: homeLogoTop,
       xPercent: 0,
       yPercent: 0,
       duration: 1
@@ -77,7 +88,7 @@ function homeIntro_v2(){
       width: homeLogoSize,
       height: homeLogoSize,
       x: homeLogoLeft,
-      y: homeLogoLeft,
+      y: homeLogoTop,
       xPercent: 0,
       yPercent: 0,
       duration: 1
